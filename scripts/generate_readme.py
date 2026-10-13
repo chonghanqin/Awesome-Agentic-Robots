@@ -24,13 +24,14 @@ def icon_link(label, name, url):
 
 def table_lines(table, papers):
     centered = {1} | {i+2 for i in range(len(table['headers'])-2)
-                       if {row['cells'][i] for row in table['rows']} <= {'', '✓'}}
+                       if {row['cells'][i] for row in table['rows']} <= {'', '✓', '✅', '❌'}}
     # Reserve space for two inline icons plus GitHub's cell padding.
     link_width = max(11, table['widths'][1])
     scale = (100-link_width)/(100-table['widths'][1])
     widths = [link_width if i == 1 else w*scale
               for i,w in enumerate(table['widths'])]
-    lines = ['<table width="100%">', '<thead><tr>']
+    caption = table['caption'].replace('Paper and Code link to', 'Paper and GitHub icons link to')
+    lines = ['<p>'+caption+'</p>', '', '<table width="100%">', '<thead><tr>']
     lines += [f'<th width="{w:g}%" align="{"center" if i in centered else "left"}"{" nowrap" if i == 1 else ""}>{escape(h)}</th>'
               for i,(h,w) in enumerate(zip(table['headers'], widths))]
     lines += ['</tr></thead>', '<tbody>']
@@ -49,8 +50,7 @@ def table_lines(table, papers):
         lines.append('<tr>'+''.join(('<td align="center" nowrap>' if i == 1 else
                                        '<td align="center">' if i in centered else '<td>')
                                        +c+'</td>' for i,c in enumerate(cells))+'</tr>')
-    caption = table['caption'].replace('Paper and Code link to', 'Paper and GitHub icons link to')
-    lines += ['</tbody>', '</table>', '', '<p>'+caption+'</p>']
+    lines += ['</tbody>', '</table>']
     if table['notes']: lines += ['<p>'+'<br>'.join(table['notes'])+'</p>']
     if any(row['code_partial'] for row in table['rows']): lines += ['<p><sup>†</sup> Partial code release.</p>']
     return lines
@@ -62,7 +62,9 @@ def render(papers, tables):
         lines += [f'### {domain}', '']
         for table in tables:
             if table['domain'] == domain:
-                lines += [f'#### {table["category"]}', '', *table_lines(table,lookup), '']
+                anchor = table['category'].lower().replace(' ', '-')
+                lines += [f'<a id="{anchor}"></a>', '',
+                          f'#### {domain} · {table["category"]}', '', *table_lines(table,lookup), '']
     return '\n'.join(lines)
 
 

@@ -13,11 +13,8 @@
   - 23.1254
   - 21.2757
   - 24.975
-  caption: 'Comparison of works on training. Compact entries summarize the configurations discussed here. Approach and Data
-    / feedback use shared tags: evolutionary search keeps the best of several candidates per round, iterative refinement revises
-    artifacts across rounds, and single-pass generation produces the artifact without revising it from training outcomes;
-    training metrics are logged during policy training, whereas evaluation metrics score the resulting policies. Paper and
-    Code link to the paper and repository; - denotes an unavailable repository link.'
+  caption: Comparison of works on training. Training metrics are collected during policy learning; evaluation metrics assess
+    the resulting policies.
   notes: []
   rows:
   - bibkey: survey_ax_2310_12931
@@ -185,16 +182,11 @@
   - 21.2779
   - 21.2779
   - 26.8173
-  caption: 'Comparison of works on perception. Compact entries summarize the configurations discussed here. Input lists observations;
-    task instructions and queries are omitted. Output and Perception process use shared tags: 3D targets are metric positions
-    or poses; object handles are persistent object references; geometric estimation derives metric quantities from depth,
-    calibration or point clouds; frontier ranking scores exploration frontiers or candidate viewpoints; visual reasoning yields
-    targets or commands rather than answers; verification re-checks a candidate before it is accepted. Paper and Code link
-    to the paper and repository; - denotes an unavailable repository link.'
-  notes:
-  - <sup>a</sup> Simulation uses sensor depth; real-world deployment estimates depth from RGB.
-  - <sup>b</sup> Evaluated via offline one-step replay of recorded observations.
-  - <sup>c</sup> Simulation uses oracle instance masks/IDs; real-world deployment uses learned perception.
+  caption: Comparison of works on perception. Input lists observations, excluding task instructions and queries. 3D targets
+    are metric positions or poses; object handles are persistent references. OpenFrontier uses sensor depth in simulation
+    and estimates depth from RGB on robots. INSPECT is evaluated via offline one-step replay of recorded observations. CoRelNav
+    uses oracle instance masks/IDs in simulation and learned perception on robots.
+  notes: []
   rows:
   - bibkey: survey_ax_2502_13143
     work: SoFar
@@ -237,7 +229,7 @@
     - Language commands; pixel coordinates
     - Visual reasoning
   - bibkey: survey_ax_2603_05377
-    work: OpenFrontier<sup>a</sup>
+    work: OpenFrontier
     paper: https://www.roboticsproceedings.org/rss22/p067.html
     code: https://github.com/cvg/OpenFrontier
     code_partial: false
@@ -347,7 +339,7 @@
     - Object handles; 3D targets
     - Visual grounding; geometric estimation; verification
   - bibkey: survey_ax_2609_20615
-    work: INSPECT<sup>b</sup>
+    work: INSPECT
     paper: https://arxiv.org/abs/2609.20615v1
     code: https://github.com/Kratos-Wen/INSPECT
     code_partial: false
@@ -357,7 +349,7 @@
     - Camera viewpoints; answers
     - View selection; verification
   - bibkey: survey_ax_2609_27720
-    work: CoRelNav<sup>c</sup>
+    work: CoRelNav
     paper: https://arxiv.org/abs/2609.27720v1
     code: null
     code_partial: false
@@ -391,12 +383,8 @@
   - 23.5
   - 15.5
   - 32.0
-  caption: 'Comparison of works on planning. Manipulation includes mobile manipulation. Plan output: Action, discrete skills
-    (single or sequenced); Goal, language, visual, or spatial targets; Trajectory, paths or waypoints; Program, code, pseudocode,
-    or behavior trees; Schedule, task allocation or ordering. Model lists selected backbones for planning, replanning, or
-    verification. LocalNav and CoRelNav use privileged semantics in simulation and learned perception on real robots. The
-    slash in ActionReasoning 2.0 separates conflicting model names in the source. Icons link to the paper and repository;
-    - denotes an unreported model or an unavailable repository link.'
+  caption: Comparison of works on planning. Manipulation includes mobile manipulation; Model lists planning, replanning, or
+    verification backbones.
   notes: []
   rows:
   - bibkey: survey_ax_2307_01928
@@ -498,7 +486,7 @@
     cells:
     - Human–Robot Interaction
     - Action
-    - '-'
+    - Doubao-Seed-1.8
   - bibkey: survey_ax_2602_21198
     work: Reflective Test-Time Planning
     paper: https://arxiv.org/abs/2602.21198v3
@@ -725,21 +713,19 @@
   headers:
   - Work
   - Link
-  - Command
+  - Control Output
   - Executor
   - Feedback
   widths:
-  - 23.1277
-  - 7.4993
-  - 24.0476
-  - 21.2779
-  - 24.0476
-  caption: Comparison of works on robot control. Compact entries summarize the configurations discussed here. Feedback includes
-    observations and execution-state information. Paper and Code link to the paper and repository; - denotes an unavailable
-    repository link.
-  notes:
-  - <sup>a</sup> Contracts and skill templates are adapted before online execution.
-  - <sup>b</sup> Execution is monitored for traceability; the plan is selected before execution.
+  - 22.0
+  - 7.0
+  - 22.0
+  - 24.5
+  - 24.5
+  caption: Comparison of works on robot control. Control Output lists the commands or representations passed to the execution
+    module. Executor identifies the module that turns these outputs into robot actions. Feedback lists the information returned
+    during execution.
+  notes: []
   rows:
   - bibkey: survey_ax_2307_05973
     work: VoxPoser
@@ -748,9 +734,9 @@
     code_partial: false
     group: null
     cells:
-    - 3D value maps
-    - Trajectory optimizer
-    - Updated observations
+    - Cost
+    - Optimizer
+    - Vision; State
   - bibkey: survey_ax_2409_01652
     work: ReKep
     paper: https://proceedings.mlr.press/v270/huang25g.html
@@ -758,9 +744,9 @@
     code_partial: false
     group: null
     cells:
-    - Keypoint constraints
-    - Motion optimizer
-    - Tracked 3D keypoints
+    - Constraint
+    - Optimizer
+    - Vision; State
   - bibkey: survey_ax_2601_20334
     work: FAEA
     paper: https://arxiv.org/abs/2601.20334v2
@@ -768,9 +754,9 @@
     code_partial: false
     group: null
     cells:
-    - Python programs
-    - Robot-control APIs
-    - Privileged simulator states; errors; success
+    - Program
+    - Interpreter
+    - State; Execution Status
   - bibkey: survey_ax_2605_02600
     work: CoRAL
     paper: https://www.roboticsproceedings.org/rss22/p054.html
@@ -778,9 +764,9 @@
     code_partial: false
     group: null
     cells:
-    - Costs; contact strategy; physics
-    - MPPI controller
-    - Sensor state; execution history
+    - Cost
+    - Optimizer
+    - State
   - bibkey: survey_doi_353abec881f4d997
     work: SCOPE
     paper: https://doi.org/10.1145/3757279.3785641
@@ -788,9 +774,9 @@
     code_partial: false
     group: null
     cells:
-    - Pan / tilt / zoom calls
-    - PTZ camera API
-    - Images; tool results
+    - Action
+    - Controller
+    - Text; Execution Status
   - bibkey: survey_ax_2606_12299
     work: LWSV
     paper: https://arxiv.org/abs/2606.12299v1
@@ -798,9 +784,9 @@
     code_partial: false
     group: null
     cells:
-    - Language instructions
-    - Frozen VLA
-    - Images; robot state
+    - Language
+    - Learned Policy
+    - Vision; State
   - bibkey: survey_ax_2607_10383
     work: ABot-N1
     paper: https://arxiv.org/abs/2607.10383v3
@@ -808,9 +794,9 @@
     code_partial: false
     group: null
     cells:
-    - Language; target / affordance pixels
-    - Waypoint policy
-    - Images; visual history
+    - Language; Target
+    - Learned Policy
+    - Vision
   - bibkey: survey_ax_2607_11119
     work: VIA
     paper: https://arxiv.org/abs/2607.11119v2
@@ -818,9 +804,9 @@
     code_partial: false
     group: null
     cells:
-    - Pose proposals; execute calls
-    - Motion controller
-    - Visual previews; updated views
+    - Target
+    - Controller
+    - Vision; State; Execution Status
   - bibkey: survey_ax_2607_22832
     work: MEMENTO
     paper: https://arxiv.org/abs/2607.22832v1
@@ -828,9 +814,9 @@
     code_partial: false
     group: null
     cells:
-    - Stateful programs
-    - Program interpreter
-    - Observations; program state
+    - Program
+    - Interpreter
+    - State; Execution Status
   - bibkey: survey_ax_2608_03924
     work: ETA
     paper: https://arxiv.org/abs/2608.03924v1
@@ -838,9 +824,9 @@
     code_partial: false
     group: null
     cells:
-    - Gated tool requests
-    - Validated robot tools
-    - Observations; execution receipts
+    - Action
+    - Controller
+    - Vision; State; Execution Status
   - bibkey: survey_ax_2608_14047
     work: ART
     paper: https://arxiv.org/abs/2608.14047v3
@@ -848,9 +834,9 @@
     code_partial: false
     group: null
     cells:
-    - Tool calls; robot actions
-    - Tools; robot controller
-    - Tool-enhanced observations
+    - Action
+    - Controller
+    - Vision; State
   - bibkey: survey_ax_2608_29379
     work: BSP
     paper: https://arxiv.org/abs/2608.29379v1
@@ -858,9 +844,9 @@
     code_partial: false
     group: null
     cells:
-    - Semantic action requests
-    - MoveIt task templates
-    - Planning / reachability errors
+    - Action
+    - Controller
+    - State; Execution Status
   - bibkey: survey_ax_2609_10522
     work: Show-Harness
     paper: https://arxiv.org/abs/2609.10522v1
@@ -868,29 +854,29 @@
     code_partial: false
     group: null
     cells:
-    - Motion / gripper commands
-    - Action interpreter
-    - Images; state; action history
+    - Action
+    - Controller
+    - Vision; State; Execution Status
   - bibkey: survey_ax_2609_16331
-    work: ManiSkillFormer<sup>a</sup>
+    work: ManiSkillFormer
     paper: https://arxiv.org/abs/2609.16331v3
     code: null
     code_partial: false
     group: null
     cells:
-    - Contracts; motion templates
-    - IK; PD controller
-    - Object geometry; joint state
+    - Target
+    - Controller
+    - State; Execution Status
   - bibkey: survey_ax_2609_19347
-    work: A-RAM<sup>b</sup>
+    work: A-RAM
     paper: https://arxiv.org/abs/2609.19347v1
     code: null
     code_partial: false
     group: null
     cells:
-    - Motion / extrusion trajectory
-    - Motion / extrusion controllers
-    - Robot state; commanded extrusion
+    - Trajectory
+    - Controller
+    - State
   - bibkey: survey_ax_2609_19138
     work: GPT-Policy
     paper: https://arxiv.org/abs/2609.19138v1
@@ -898,9 +884,9 @@
     code_partial: false
     group: null
     cells:
-    - Robot-tool requests
-    - Constrained robot tools
-    - Observations; tool results
+    - Target
+    - Controller
+    - Vision; State; Execution Status
   - bibkey: survey_ax_2609_18869
     work: KINO
     paper: https://arxiv.org/abs/2609.18869v1
@@ -908,9 +894,9 @@
     code_partial: false
     group: null
     cells:
-    - Retargeted pose keyframes
-    - Whole-body RL policy
-    - Robot / object state; previous action
+    - Target
+    - Learned Policy
+    - Vision; State; Execution Status
   - bibkey: survey_ax_2609_22966
     work: RoboDawn
     paper: https://arxiv.org/abs/2609.22966v1
@@ -918,9 +904,9 @@
     code_partial: false
     group: null
     cells:
-    - Semantic action commands
-    - Action interpreter
-    - Images; state; execution results
+    - Action
+    - Controller
+    - Vision; State; Execution Status
   - bibkey: survey_ax_2609_28429
     work: ARMS
     paper: https://arxiv.org/abs/2609.28429v1
@@ -928,9 +914,9 @@
     code_partial: false
     group: null
     cells:
-    - Context tokens
-    - VLA action expert
-    - Images; arm state; action history
+    - Feature
+    - Learned Policy
+    - Vision; State
   - bibkey: survey_ax_2609_28247
     work: COMPASS
     paper: https://arxiv.org/abs/2609.28247v1
@@ -938,9 +924,9 @@
     code_partial: false
     group: null
     cells:
-    - Latent reasoning vectors
-    - Spatial-transformer controller
-    - Fleet-state tokens
+    - Feature
+    - Learned Policy
+    - State; Feature
   - bibkey: survey_ax_2609_29389
     work: Robo-Harness K1
     paper: https://arxiv.org/abs/2609.29389v1
@@ -948,9 +934,9 @@
     code_partial: false
     group: null
     cells:
-    - Move / pose / gripper calls
-    - Motion / gripper tools
-    - Achieved motion; residual errors
+    - Target
+    - Controller
+    - Vision; State; Execution Status
   - bibkey: survey_ax_2609_29964
     work: WAA
     paper: https://arxiv.org/abs/2609.29964v1
@@ -958,31 +944,27 @@
     code_partial: false
     group: null
     cells:
-    - Pose proposals; execute calls
-    - Feasibility-checked motion tools
-    - Visual previews; planning feedback
+    - Target
+    - Controller
+    - Vision; Execution Status
 - key: model.adaptation
   domain: Model
   category: Adaptation
   headers:
   - Work
   - Link
-  - Updated item
-  - Reuse
-  - Update method
+  - Adapted Component
+  - Adaptation Method
+  - Adaptation Signal
   widths:
-  - 25.9
-  - 7.5
-  - 24.05
-  - 16.65
-  - 25.9
-  caption: 'Comparison of works on adaptation. Compact entries summarize the configurations discussed here. Reuse describes
-    the reported scope of the listed updates: current episode, later trials or tasks, or both. Paper and Code link to the
-    paper and repository; - denotes an unavailable repository link.'
-  notes:
-  - <sup>a</sup> During online updates, the policy vision-language backbone remains frozen.
-  - <sup>b</sup> Model weights remain frozen; task references are separate from the updated interaction history.
-  - <sup>c</sup> Model weights, the robot profile and reference examples remain fixed within an episode.
+  - 24.5
+  - 6.5
+  - 22.0
+  - 27.0
+  - 20.0
+  caption: Comparison of works on adaptation. Demonstrations include task examples and action trajectories; Corrections include
+    corrective instructions and interventions. Execution Outcomes include success, failure, and execution feedback.
+  notes: []
   rows:
   - bibkey: adaptation_ax_2212_07398
     work: PAFF
@@ -991,9 +973,9 @@
     code_partial: false
     group: null
     cells:
-    - Policy weights
-    - Later episodes
-    - Relabeling; imitation learning
+    - Model Weights
+    - Supervised Learning
+    - Demonstrations; Execution Outcomes
   - bibkey: adaptation_ax_2305_05658
     work: TidyBot
     paper: https://link.springer.com/article/10.1007/s10514-023-10139-z
@@ -1001,9 +983,9 @@
     code_partial: false
     group: null
     cells:
-    - Placement / handling rules
-    - Later episodes
-    - Summarize user examples
+    - Memory
+    - Summarization
+    - Demonstrations
   - bibkey: survey_ax_2306_11706
     work: RoboCat
     paper: https://arxiv.org/pdf/2306.11706v2
@@ -1011,9 +993,9 @@
     code_partial: false
     group: null
     cells:
-    - Specialist / generalist policies
-    - Later episodes
-    - Imitation learning; self-generated data
+    - Model Weights
+    - Supervised Learning
+    - Demonstrations; Execution Outcomes
   - bibkey: adaptation_ax_2310_17555
     work: OLAF
     paper: https://arxiv.org/abs/2310.17555v1
@@ -1021,9 +1003,9 @@
     code_partial: false
     group: null
     cells:
-    - Policy weights
-    - Later episodes
-    - Action relabeling; imitation learning
+    - Model Weights
+    - Supervised Learning
+    - Corrections
   - bibkey: survey_ax_2311_10678
     work: DROC
     paper: https://arxiv.org/abs/2311.10678v2
@@ -1031,9 +1013,9 @@
     code_partial: false
     group: null
     cells:
-    - Rules; parameters; code
-    - Both
-    - Extract knowledge from corrections
+    - Context; Memory
+    - In-Context Learning; Summarization
+    - Corrections
   - bibkey: adaptation_ax_2402_11450
     work: LMPC
     paper: https://roboticsproceedings.org/rss20/p125.html
@@ -1041,9 +1023,9 @@
     code_partial: false
     group: null
     cells:
-    - Code-generating LM; context
-    - Both
-    - Fine-tuning; dialogue search
+    - Model Weights; Context
+    - Supervised Learning; In-Context Learning
+    - Corrections; Execution Outcomes
   - bibkey: adaptation_ax_2403_12910
     work: Yell At Your Robot
     paper: https://www.roboticsproceedings.org/rss20/p025.html
@@ -1051,9 +1033,9 @@
     code_partial: false
     group: null
     cells:
-    - High-level policy weights
-    - Later episodes
-    - Fine-tuning on language corrections
+    - Model Weights
+    - Supervised Learning
+    - Corrections
   - bibkey: survey_ax_2509_15155
     work: SIEFM
     paper: https://proceedings.neurips.cc/paper_files/paper/2025/hash/a3ac59dc0bf607fa35535f546110fc34-Abstract-Conference.html
@@ -1061,9 +1043,9 @@
     code_partial: false
     group: null
     cells:
-    - Policy weights
-    - Later episodes
-    - RL with self-predicted rewards
+    - Model Weights
+    - Reinforcement Learning
+    - Rewards
   - bibkey: adaptation_ax_2511_14759
     work: RECAP
     paper: https://arxiv.org/abs/2511.14759v2
@@ -1071,9 +1053,9 @@
     code_partial: false
     group: null
     cells:
-    - VLA; value function
-    - Later episodes
-    - Advantage-conditioned RL
+    - Model Weights
+    - Reinforcement Learning
+    - Corrections; Rewards
   - bibkey: survey_ax_2602_12063
     work: VLAW
     paper: https://proceedings.mlr.press/v306/guo26i.html
@@ -1081,9 +1063,9 @@
     code_partial: false
     group: null
     cells:
-    - World / reward models; VLA
-    - Later episodes
-    - Alternating model / policy training
+    - Model Weights
+    - Reinforcement Learning
+    - Rewards; Execution Outcomes
   - bibkey: adaptation_ax_2602_20323
     work: PhysMem
     paper: https://arxiv.org/abs/2602.20323v6
@@ -1091,9 +1073,9 @@
     code_partial: false
     group: null
     cells:
-    - Physical-principle memory
-    - Later episodes
-    - Hypothesis testing; consolidation
+    - Memory
+    - Hypothesis Testing
+    - Execution Outcomes
   - bibkey: survey_ax_2602_21198
     work: Reflective Test-Time Planning
     paper: https://arxiv.org/abs/2602.21198v3
@@ -1101,9 +1083,9 @@
     code_partial: false
     group: null
     cells:
-    - Action / internal reflection models; memory
-    - Current episode
-    - Memory consolidation; SFT; RL
+    - Model Weights; Memory
+    - Supervised Learning; Reinforcement Learning; Reflection
+    - Rewards; Execution Outcomes
   - bibkey: survey_ax_2602_22474
     work: UPS
     paper: https://www.roboticsproceedings.org/rss22/p142.html
@@ -1111,9 +1093,9 @@
     code_partial: false
     group: null
     cells:
-    - Residual correction policy
-    - Later episodes
-    - Imitation learning
+    - Model Weights
+    - Supervised Learning
+    - Corrections
   - bibkey: survey_ax_2603_02772
     work: SERP
     paper: https://arxiv.org/abs/2603.02772v2
@@ -1121,9 +1103,9 @@
     code_partial: false
     group: null
     cells:
-    - Planner settings; recovery memory
-    - Both
-    - Parameter search; memory update
+    - Planner Settings; Memory
+    - Parameter Tuning; Experience Retrieval
+    - Execution Outcomes
   - bibkey: survey_ax_2603_07997
     work: CMMR-VLN
     paper: https://arxiv.org/abs/2603.07997v1
@@ -1131,19 +1113,19 @@
     code_partial: false
     group: null
     cells:
-    - Navigation memory
-    - Later episodes
-    - Store successes; annotate failures
+    - Memory
+    - Reflection
+    - Execution Outcomes
   - bibkey: survey_ax_2605_00416
-    work: Learning While Deploying<sup>a</sup>
+    work: Learning While Deploying
     paper: https://arxiv.org/abs/2605.00416v4
     code: null
     code_partial: false
     group: null
     cells:
-    - VLA action expert; value models
-    - Later episodes
-    - Online RL
+    - Model Weights
+    - Reinforcement Learning
+    - Corrections; Rewards
   - bibkey: survey_ax_2606_18247
     work: VERITAS
     paper: https://www.roboticsproceedings.org/rss22/p079.html
@@ -1151,9 +1133,9 @@
     code_partial: false
     group: null
     cells:
-    - Policy weights
-    - Later episodes
-    - Imitation of verified rollouts
+    - Model Weights
+    - Supervised Learning
+    - Demonstrations; Execution Outcomes
   - bibkey: survey_ax_2607_26809
     work: HERO
     paper: https://arxiv.org/abs/2607.26809v1
@@ -1161,9 +1143,9 @@
     code_partial: false
     group: null
     cells:
-    - Trajectory exemplars; policy
-    - Later episodes
-    - Exemplar storage; imitation learning
+    - Model Weights; Memory
+    - Supervised Learning; Experience Retrieval
+    - Demonstrations; Execution Outcomes
   - bibkey: survey_ax_2609_01281
     work: EmbodiedSkills
     paper: https://arxiv.org/abs/2609.01281v1
@@ -1171,29 +1153,29 @@
     code_partial: false
     group: null
     cells:
-    - Task-specific VLA policies
-    - Later episodes
-    - Supervised fine-tuning
+    - Model Weights
+    - Supervised Learning
+    - Demonstrations
   - bibkey: survey_ax_2609_19138
-    work: GPT-Policy<sup>b</sup>
+    work: GPT-Policy
     paper: https://arxiv.org/abs/2609.19138v1
     code: https://github.com/cheng-haha/GPT-Policy
     code_partial: false
     group: null
     cells:
-    - Input context
-    - Current episode
-    - Refresh observations and history
+    - Context
+    - In-Context Learning
+    - Demonstrations; Corrections; Execution Outcomes
   - bibkey: survey_ax_2609_22966
-    work: RoboDawn<sup>c</sup>
+    work: RoboDawn
     paper: https://arxiv.org/abs/2609.22966v1
     code: https://github.com/Hugo-AGI/RoboDawn
     code_partial: false
     group: null
     cells:
-    - Episode memory
-    - Current episode
-    - Refresh state and scratchpad
+    - Memory
+    - In-Context Learning
+    - Execution Outcomes
 - key: data.collection
   domain: Data
   category: Collection
@@ -1209,9 +1191,8 @@
   - 7.5
   - 18.0
   - 48.0
-  caption: 'Comparison of agent-assisted data collection for robotics. Real: physical interaction; Sim: simulator execution;
-    Gen: generative-model synthesis. Counts retain the units and experimental scope reported by each paper. - denotes an unavailable
-    link or data.'
+  caption: 'Comparison of works on data collection. Type: Real physical interaction; Sim simulator execution; Gen generative-model
+    synthesis. Counts retain each paper&#x27;s units and scope.'
   notes: []
   rows:
   - bibkey: survey_ax_2311_01455
@@ -1391,11 +1372,9 @@
   - 15.0
   - 20.0
   - 29.0
-  caption: 'Comparison of annotation methods. Selected inputs: Image; Video; Robot data; Point cloud. Robot data includes
-    demonstration metadata and robot or simulator logs. Models perform semantic interpretation, reasoning, or annotation;
-    Tools provide supporting perception, geometry, simulation, or editing capabilities, including specialized models. Only
-    main components for the listed output are shown. NR: model identity not reported; —: no separate component listed. Works
-    may appear in multiple groups. Paper and Code link to the paper and repository; - denotes an unavailable repository link.'
+  caption: 'Comparison of works on data annotation. Input: Image; Video; Robot data; Point cloud. Robot data includes demonstration
+    metadata and logs. Models and Tools list main annotation backbones and supporting components. NR: model identity not reported;
+    —: no separate component listed. Works may appear in multiple output groups.'
   notes: []
   rows:
   - bibkey: survey_ax_2401_12168
@@ -1675,8 +1654,7 @@
   - 7.5
   - 30.0
   - 30.0
-  caption: Comparison of agent-assisted data refinement for robotics. Model lists the main backbones used for data review
-    or supervision revision. Paper and Code link to the paper and repository; - denotes an unavailable repository link.
+  caption: Comparison of works on data refinement. Model lists backbones used to review data or revise supervision.
   notes: []
   rows:
   - bibkey: survey_ax_2602_21198
@@ -1732,10 +1710,9 @@
   - 17.5
   - 17.5
   - 17.5
-  caption: 'Comparison of works on reconstruction. Groups indicate primary construction focus; labels may co-occur. Scene
-    covers scene graphs and instantiated layouts; Code denotes executable programs; Params. denotes parameters. Engines lists
-    construction or verification software, excluding export-only targets. Omitted labels do not establish absence. Input:
-    Text; Image; Video; 3D assets. Paper and Code link to the paper and repository; - denotes an unavailable repository link.'
+  caption: 'Comparison of works on reconstruction. Selected inputs and representations may co-occur. Scene includes graphs
+    and layouts; Params.: parameters. Engines lists construction or verification software, excluding export-only targets.
+    Input: Text; Image; Video; 3D assets.'
   notes: []
   rows:
   - bibkey: survey_ax_2410_13882
@@ -2030,11 +2007,9 @@
   - 17.5
   - 17.5
   - 17.5
-  caption: 'Comparison of works on task generation. Groups reflect primary focus; labels may co-occur. Input lists conditioning
-    sources; Output lists generated or revised artifacts. Eval.: success/evaluation code; Config.: initialization/randomization
-    settings; Plan: an executable solution, which may preserve the original task. Tools lists simulation/task frameworks;
-    UE5 denotes Unreal Engine 5; MolmoSp. denotes MolmoSpaces. Multiple (HARBOR): Isaac Lab, ManiSkill, Genesis, MJLab. Omitted
-    labels do not imply absence. Paper and Code link to the paper and repository; - denotes an unavailable repository link.'
+  caption: 'Comparison of works on task generation. Output lists generated or revised artifacts. Eval.: success/evaluation
+    code; Config.: initialization/randomization settings; Plan: executable solution, which may preserve the task. UE5: Unreal
+    Engine 5; MolmoSp.: MolmoSpaces. Multiple (HARBOR): Isaac Lab, ManiSkill, Genesis, MJLab.'
   notes: []
   rows:
   - bibkey: survey_ax_2310_01361
@@ -2219,13 +2194,10 @@
   - 17.5
   - 17.5
   - 17.5
-  caption: 'Comparison of works on benchmarking. Groups separate benchmarks, evaluated systems, and agent-directed evaluators.
-    Capability lists selected targets. Interface lists selected tested-system outputs: Answer (predictions), Action (motor
-    commands), Call (tools/skills), and Code (executable programs), excluding evaluator-generated code. Engines lists simulation
-    backends/frameworks; Multiple denotes heterogeneous suites detailed in the linked papers. NR: not reported; N/A: offline
-    evaluation without simulator execution. Collab.: collaboration; UE5: Unreal Engine 5. Labels may co-occur and describe
-    the summarized tracks/configurations; RobotWorld Code is optional. Setting: Real; Sim; Offline data. Paper and Code link
-    to the paper and repository; - denotes an unavailable repository link.'
+  caption: 'Comparison of works on benchmarking. Interface describes tested-system outputs: Answer (predictions), Action (motor
+    commands), Call (tools/skills), Code (programs); evaluator-generated code is excluded. RobotWorld&#x27;s Code is optional.
+    Engines lists simulation backends; Multiple denotes mixed suites. NR: not reported; N/A: offline evaluation without simulator
+    execution. Collab.: collaboration; UE5: Unreal Engine 5. Setting: Real; Sim; Offline data.'
   notes: []
   rows:
   - bibkey: survey_ax_2306_03310
@@ -2553,26 +2525,23 @@
   headers:
   - Work
   - Link
-  - Model-Based
-  - Hybrid
-  - Rule-Based
-  - Routes By
-  - Hands Off To
+  - Policy
+  - Tool
+  - Skill
+  - Other Agent
+  - Selection
   widths:
-  - 23.5
-  - 7.5
-  - 9.5
-  - 9.5
-  - 9.5
+  - 27.0
+  - 8.0
+  - 10.5
+  - 9.0
+  - 9.0
   - 14.0
-  - 26.5
-  caption: Comparison of orchestration methods, grouped by categories in the text. The decision columns mark how the executor
-    is chosen at run time, namely model-based (one LLM or VLM agent, or several communicating agents, decide each call), hybrid
-    (a model proposes calls and a rule layer authorizes or triggers them), or rule-based (a preset schedule or stage order
-    decides). <em>Routes By</em> is the information used to choose the executor, namely executor capability, execution feedback,
-    the task plan, dialogue between agents, or fixed rules. <em>Hands Off To</em> lists the executors that receive control,
-    namely learned policies (VLA, WAM, or policy pool), analytic tools (tool set, motion planner, or controller), skill libraries,
-    and other agents (robot or human). Paper and Code link to the paper and repository.
+  - 22.5
+  caption: Comparison of works on orchestration, grouped by categories in the text. Green checks (✅) mark executor types listed
+    for each method; red crosses (❌) mark those not listed. Multiple types may apply. Other Agent includes robot or human
+    agents. Selection is model-based when a model chooses the executor, rule-based when a preset schedule or stage order determines
+    the handoff, and hybrid when model proposals are combined with rule-based authorization or triggering.
   notes: []
   rows:
   - bibkey: survey_ax_2606_07723
@@ -2582,11 +2551,11 @@
     code_partial: false
     group: Routing and Dispatch
     cells:
-    - ✓
-    - ''
-    - ''
-    - Feedback
-    - VLA; Tool set
+    - ✅
+    - ✅
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2608_15549
     work: MistyPilot
     paper: https://arxiv.org/abs/2608.15549
@@ -2594,11 +2563,11 @@
     code_partial: false
     group: Routing and Dispatch
     cells:
-    - ''
-    - ✓
-    - ''
-    - Rules
-    - Skill library
+    - ❌
+    - ❌
+    - ✅
+    - ❌
+    - Hybrid
   - bibkey: survey_ax_2607_10350
     work: ABot-AgentOS
     paper: https://arxiv.org/abs/2607.10350
@@ -2606,11 +2575,11 @@
     code_partial: false
     group: Routing and Dispatch
     cells:
-    - ✓
-    - ''
-    - ''
-    - Capability
-    - Skill library
+    - ❌
+    - ❌
+    - ✅
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2609_18520
     work: AeroWeaver
     paper: https://arxiv.org/abs/2609.18520
@@ -2618,11 +2587,11 @@
     code_partial: false
     group: Routing and Dispatch
     cells:
-    - ✓
-    - ''
-    - ''
-    - Capability
-    - Skill library; Robot
+    - ❌
+    - ❌
+    - ✅
+    - ✅
+    - Model-based
   - bibkey: survey_ax_2604_11975
     work: M2HRI
     paper: https://arxiv.org/abs/2604.11975
@@ -2630,11 +2599,11 @@
     code_partial: false
     group: Routing and Dispatch
     cells:
-    - ✓
-    - ''
-    - ''
-    - Dialogue
-    - Robot; Human
+    - ❌
+    - ❌
+    - ❌
+    - ✅
+    - Model-based
   - bibkey: survey_ax_2410_22662
     work: EMOS
     paper: https://arxiv.org/abs/2410.22662
@@ -2642,11 +2611,11 @@
     code_partial: false
     group: Routing and Dispatch
     cells:
-    - ✓
-    - ''
-    - ''
-    - Capability
-    - Skill library; Robot
+    - ❌
+    - ❌
+    - ✅
+    - ✅
+    - Model-based
   - bibkey: survey_ax_2607_21725
     work: Physical Agency
     paper: https://arxiv.org/abs/2607.21725
@@ -2654,11 +2623,11 @@
     code_partial: false
     group: Routing and Dispatch
     cells:
-    - ✓
-    - ''
-    - ''
-    - Feedback
-    - VLA; Motion planner
+    - ✅
+    - ✅
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2606_18363
     work: Guava
     paper: https://arxiv.org/abs/2606.18363
@@ -2666,11 +2635,11 @@
     code_partial: false
     group: Routing and Dispatch
     cells:
-    - ✓
-    - ''
-    - ''
-    - Feedback
-    - Tool set
+    - ❌
+    - ✅
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2605_26637
     work: EmbodiedTool
     paper: https://arxiv.org/abs/2605.26637
@@ -2678,11 +2647,11 @@
     code_partial: false
     group: Function Protocol
     cells:
-    - ✓
-    - ''
-    - ''
-    - Capability
-    - Tool set
+    - ❌
+    - ✅
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2603_26997
     work: ROSClaw
     paper: https://arxiv.org/abs/2603.26997
@@ -2690,11 +2659,11 @@
     code_partial: false
     group: Function Protocol
     cells:
-    - ''
-    - ✓
-    - ''
-    - Capability
-    - Skill library
+    - ❌
+    - ❌
+    - ✅
+    - ❌
+    - Hybrid
   - bibkey: survey_ax_2608_22657
     work: Physical Agentic AI
     paper: https://arxiv.org/abs/2608.22657
@@ -2702,11 +2671,11 @@
     code_partial: false
     group: Function Protocol
     cells:
-    - ''
-    - ✓
-    - ''
-    - Feedback
-    - Skill library
+    - ❌
+    - ❌
+    - ✅
+    - ❌
+    - Hybrid
   - bibkey: survey_ax_2609_01281
     work: EmbodiedSkills
     paper: https://arxiv.org/abs/2609.01281
@@ -2714,11 +2683,11 @@
     code_partial: false
     group: Function Protocol
     cells:
-    - ''
-    - ✓
-    - ''
-    - Plan
-    - VLA
+    - ✅
+    - ❌
+    - ❌
+    - ❌
+    - Hybrid
   - bibkey: survey_ax_2608_11246
     work: Thea
     paper: https://arxiv.org/abs/2608.11246
@@ -2726,11 +2695,11 @@
     code_partial: false
     group: Function Protocol
     cells:
-    - ✓
-    - ''
-    - ''
-    - Feedback
-    - Tool set
+    - ❌
+    - ✅
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2607_18060
     work: RoboHarness
     paper: https://arxiv.org/abs/2607.18060
@@ -2738,11 +2707,11 @@
     code_partial: false
     group: State Connection
     cells:
-    - ✓
-    - ''
-    - ''
-    - Capability
-    - Policy pool
+    - ✅
+    - ❌
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2603_07892
     work: RoboRouter
     paper: https://arxiv.org/abs/2603.07892
@@ -2750,11 +2719,11 @@
     code_partial: false
     group: State Connection
     cells:
-    - ✓
-    - ''
-    - ''
-    - Feedback
-    - Policy pool
+    - ✅
+    - ❌
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2307_04738
     work: RoCo
     paper: https://arxiv.org/abs/2307.04738
@@ -2762,11 +2731,11 @@
     code_partial: false
     group: State Connection
     cells:
-    - ✓
-    - ''
-    - ''
-    - Dialogue
-    - Motion planner; Robot
+    - ❌
+    - ✅
+    - ❌
+    - ✅
+    - Model-based
   - bibkey: survey_ax_2609_23997
     work: RoboTalk
     paper: https://arxiv.org/abs/2609.23997
@@ -2774,11 +2743,11 @@
     code_partial: false
     group: State Connection
     cells:
-    - ✓
-    - ''
-    - ''
-    - Dialogue
-    - Skill library; Robot
+    - ❌
+    - ❌
+    - ✅
+    - ✅
+    - Model-based
   - bibkey: survey_ax_2609_08402
     work: AGOS-Agent
     paper: https://arxiv.org/abs/2609.08402
@@ -2786,11 +2755,11 @@
     code_partial: false
     group: State Connection
     cells:
-    - ''
-    - ''
-    - ✓
-    - Rules
-    - Robot
+    - ❌
+    - ❌
+    - ❌
+    - ✅
+    - Rule-based
   - bibkey: survey_ax_2608_09516
     work: HarnessWAM
     paper: https://arxiv.org/abs/2608.09516
@@ -2798,11 +2767,11 @@
     code_partial: false
     group: Handoff Timing
     cells:
-    - ✓
-    - ''
-    - ''
-    - Feedback
-    - WAM
+    - ✅
+    - ❌
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2607_05377
     work: Cortex
     paper: https://arxiv.org/abs/2607.05377
@@ -2810,11 +2779,11 @@
     code_partial: false
     group: Handoff Timing
     cells:
-    - ✓
-    - ''
-    - ''
-    - Plan
-    - VLA
+    - ✅
+    - ❌
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2605_13119
     work: VLAs-as-Tools
     paper: https://arxiv.org/abs/2605.13119
@@ -2822,11 +2791,11 @@
     code_partial: false
     group: Handoff Timing
     cells:
-    - ✓
-    - ''
-    - ''
-    - Plan
-    - VLA
+    - ✅
+    - ❌
+    - ❌
+    - ❌
+    - Model-based
   - bibkey: survey_ax_2607_17213
     work: Retriever
     paper: https://arxiv.org/abs/2607.17213
@@ -2834,11 +2803,11 @@
     code_partial: false
     group: Handoff Timing
     cells:
-    - ''
-    - ''
-    - ✓
-    - Rules
-    - VLA; Controller
+    - ✅
+    - ✅
+    - ❌
+    - ❌
+    - Rule-based
 - key: harness.memory
   domain: Harness
   category: Memory
@@ -2856,12 +2825,8 @@
   - 17.0
   - 17.0
   - 12.0
-  caption: 'Comparison of works on memory, grouped by their focusing stage. <em>Stored as</em>: Text (natural-language notes),
-    Graph (scene or task graphs), Visual (maps, frames, images), or Structured (records, indices, plans, code). <em>Written
-    at</em>: every Step, a specific Event such as an action outcome or subgoal, or the Episode end. <em>Retrieved by</em>:
-    a Query on the goal or question, Similarity to past cases, Direct use as input or context, or a Check of conditions before
-    use. <em>Persists</em> marks memory kept across episodes. Paper and Code link to the paper and repository; - denotes an
-    unavailable repository link.'
+  caption: Comparison of works on memory. Structured includes records, indices, plans, and code; Persists means memory is
+    retained across episodes.
   notes: []
   rows:
   - bibkey: survey_ax_2607_29600
@@ -3178,10 +3143,8 @@
   - 15.0
   - 18.0
   - 19.0
-  caption: Comparison of monitoring and recovery methods. <em>Check Time</em> is relative to the execution of the checked
-    step, i.e., before it runs, while it runs, or after it ends. <em>Checker</em> is the component that makes the judgment,
-    <em>Signal</em> is what the check reports, and <em>Response</em> is what the system does next. Paper and Code link to
-    the paper and repository; - denotes an unavailable repository link.
+  caption: 'Comparison of works on monitoring and recovery. Check Time is relative to the checked step: before, during, or
+    after execution.'
   notes: []
   rows:
   - bibkey: survey_ax_2609_20822
@@ -3564,9 +3527,7 @@
   - 17.5782
   - 18.4982
   - 22.1978
-  caption: 'Comparison of works on skills. Skill form describes the reusable artifact; Update distinguishes code or library
-    changes from policy training. NR: not reported. Bold highlights key counts and update boundaries. Paper and Code link
-    to the paper and repository; - denotes an unavailable repository link.'
+  caption: 'Comparison of works on skills. Update distinguishes code/library changes from policy training. NR: not reported.'
   notes: []
   rows:
   - bibkey: survey_ax_2209_07753
@@ -3980,8 +3941,8 @@
   - 16.6483
   - 19.4281
   - 35.1465
-  caption: Comparison of works on infrastructure. Includes supporting tools and deployment systems; entries need not be autonomous
-    agents. Paper and Code link to the paper and repository; - denotes an unavailable repository link.
+  caption: Comparison of works on infrastructure. Includes supporting tools and deployment systems, which need not be autonomous
+    agents.
   notes: []
   rows:
   - bibkey: survey_ax_2309_09919
@@ -4281,9 +4242,8 @@
   - 14.7985
   - 18.4982
   - 27.7472
-  caption: 'Comparison of works on layered systems. Update timing names the refreshed module; rates refer to the reported
-    configurations. Architecture studies list alternatives. NR: not reported. Bold highlights reported rates and update timing.
-    Paper and Code link to the paper and repository; - denotes an unavailable repository link.'
+  caption: 'Comparison of works on layered systems. Update timing identifies the refreshed module; rates refer to the reported
+    configurations. Architecture studies list alternatives. NR: not reported.'
   notes: []
   rows:
   - bibkey: survey_ax_2204_01691

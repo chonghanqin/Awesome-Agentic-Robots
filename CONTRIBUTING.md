@@ -9,7 +9,7 @@ Please open a [paper suggestion](https://github.com/qinchonghanzuibang/Awesome-A
 - Official code URLs, if available.
 - A 1–3 sentence explanation of how the work fits the collection.
 
-Inclusion depends on relevance to the companion survey and support for the proposed placement. Suggestions are reviewed by the maintainers; submission does not guarantee inclusion.
+Inclusion depends on relevance to the scope of the accompanying work and support for the proposed placement. Suggestions are reviewed by the maintainers; submission does not guarantee inclusion.
 
 ## Local maintenance
 

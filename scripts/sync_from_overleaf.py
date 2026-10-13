@@ -78,8 +78,10 @@ def display(text):
             out.append(ICONS[command]+' ')
         elif command == 'OrchHead':
             first, i = argument(text, i); second, i = argument(text, i)
-            out.append(display(first+second))
-        elif command == 'Y': out.append('✓')
+            separator = ' ' if first and second and not first.endswith('-') else ''
+            out.append(display(first+separator+second))
+        elif command == 'Y': out.append('✅')
+        elif command == 'N': out.append('❌')
         elif command == 'OrchExec':
             icons, i = argument(text, i); value, i = argument(text, i)
             out.append(display(icons).strip() + ': ' + display(value))
@@ -134,15 +136,19 @@ def table_from_tex(path, domain, category):
             notes.append(display(re.search(r'\\footnotesize (.*)', line)[1].rsplit('}', 1)[0].rstrip('\\ ')))
     body = source.split(r'\endlastfoot', 1)[1]
     rows = []; group = None
-    for line in body.splitlines():
-        if r'\MemGroup{' in line:
-            group, _ = argument(line, line.index(r'\MemGroup')+len(r'\MemGroup')); continue
-        if 'multicolumn' in line and 'textbf' in line and 'citep' not in line:
-            position = line.index(r'\multicolumn')+len(r'\multicolumn')
-            for _ in range(3): value, position = argument(line, position)
-            group = re.sub('<[^>]+>', '', display(value)); continue
-        if r'\citep{' not in line or '&' not in line: continue
-        line = re.split(r'\\\\\*?(?:\s*\[[^\]]*\])?\s*$', line.strip())[0]
+    # TeX row terminators, rather than physical lines, also cover hand-edited multiline rows.
+    for segment in re.split(r'\\\\\*?(?:\s*\[[^\]]*\])?', body):
+        for line in segment.splitlines():
+            if r'\MemGroup{' in line:
+                group, _ = argument(line, line.index(r'\MemGroup')+len(r'\MemGroup'))
+            if 'multicolumn' in line and 'textbf' in line and 'citep' not in line:
+                position = line.index(r'\multicolumn')+len(r'\multicolumn')
+                for _ in range(3): value, position = argument(line, position)
+                group = re.sub('<[^>]+>', '', display(value))
+        if r'\citep{' not in segment or '&' not in segment: continue
+        # Discard rules and group commands preceding the work-name line.
+        start = segment.rfind('\n', 0, segment.index(r'\citep{'))+1
+        line = segment[start:].strip()
         cells = [c.strip() for c in re.split(r'(?<!\\)&', line)]
         if len(cells) != n: raise ValueError(f'{path.name}: {len(cells)} cells, expected {n}')
         key = re.search(r'\\citep\{([^}]+)\}', cells[0])[1]

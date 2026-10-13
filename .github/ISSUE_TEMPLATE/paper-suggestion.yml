@@ -1,5 +1,5 @@
 name: Paper suggestion
-description: Suggest a paper or resource for the survey companion collection.
+description: Suggest a paper or resource for the companion collection on agentic robots.
 title: "[Paper] "
 body:
   - type: input
