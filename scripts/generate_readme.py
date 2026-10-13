@@ -25,9 +25,14 @@ def icon_link(label, name, url):
 def table_lines(table, papers):
     centered = {1} | {i+2 for i in range(len(table['headers'])-2)
                        if {row['cells'][i] for row in table['rows']} <= {'', '✓'}}
+    # Reserve space for two inline icons plus GitHub's cell padding.
+    link_width = max(11, table['widths'][1])
+    scale = (100-link_width)/(100-table['widths'][1])
+    widths = [link_width if i == 1 else w*scale
+              for i,w in enumerate(table['widths'])]
     lines = ['<table width="100%">', '<thead><tr>']
-    lines += [f'<th width="{w:g}%" align="{"center" if i in centered else "left"}">{escape(h)}</th>'
-              for i,(h,w) in enumerate(zip(table['headers'], table['widths']))]
+    lines += [f'<th width="{w:g}%" align="{"center" if i in centered else "left"}"{" nowrap" if i == 1 else ""}>{escape(h)}</th>'
+              for i,(h,w) in enumerate(zip(table['headers'], widths))]
     lines += ['</tr></thead>', '<tbody>']
     previous_group = None
     for row in table['rows']:
@@ -41,7 +46,8 @@ def table_lines(table, papers):
         links += icon_link('GitHub repository', 'github', row['code']) if row['code'] else '—'
         if row['code_partial']: links += '<sup>†</sup>'
         cells = [work, links, *row['cells']]
-        lines.append('<tr>'+''.join(('<td align="center">' if i in centered else '<td>')
+        lines.append('<tr>'+''.join(('<td align="center" nowrap>' if i == 1 else
+                                       '<td align="center">' if i in centered else '<td>')
                                        +c+'</td>' for i,c in enumerate(cells))+'</tr>')
     caption = table['caption'].replace('Paper and Code link to', 'Paper and GitHub icons link to')
     lines += ['</tbody>', '</table>', '', '<p>'+caption+'</p>']
