@@ -14,6 +14,14 @@ def link(label, url):
     return f'<a href="{target}">{label}</a>'
 
 
+def icon_link(label, name, url):
+    icon = (f'<picture><source media="(prefers-color-scheme: dark)" '
+            f'srcset="assets/icons/{name}-dark.svg">'
+            f'<img src="assets/icons/{name}.svg" width="18" height="18" '
+            f'alt="{label}" title="{label}"></picture>')
+    return link(icon, url)
+
+
 def table_lines(table, papers):
     centered = {1} | {i+2 for i in range(len(table['headers'])-2)
                        if {row['cells'][i] for row in table['rows']} <= {'', '✓'}}
@@ -29,13 +37,14 @@ def table_lines(table, papers):
             previous_group = row['group']
         title = escape(papers[row['bibkey']]['title'], quote=True)
         work = f'<span title="{title}">{row["work"]}</span>'
-        links = link('Paper', row['paper']) + '<br>'
-        links += link('Code', row['code']) if row['code'] else '—'
+        links = icon_link('Paper', 'paper', row['paper']) + '&nbsp;&nbsp;'
+        links += icon_link('GitHub repository', 'github', row['code']) if row['code'] else '—'
         if row['code_partial']: links += '<sup>†</sup>'
         cells = [work, links, *row['cells']]
         lines.append('<tr>'+''.join(('<td align="center">' if i in centered else '<td>')
                                        +c+'</td>' for i,c in enumerate(cells))+'</tr>')
-    lines += ['</tbody>', '</table>', '', '<p>'+table['caption']+'</p>']
+    caption = table['caption'].replace('Paper and Code link to', 'Paper and GitHub icons link to')
+    lines += ['</tbody>', '</table>', '', '<p>'+caption+'</p>']
     if table['notes']: lines += ['<p>'+'<br>'.join(table['notes'])+'</p>']
     if any(row['code_partial'] for row in table['rows']): lines += ['<p><sup>†</sup> Partial code release.</p>']
     return lines
