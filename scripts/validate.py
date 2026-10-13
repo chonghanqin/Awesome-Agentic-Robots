@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Validate the public collection locally; no network requests or writes."""
+"""Check the public manuscript snapshot, safe markup and generated README."""
 from collections import Counter
-from datetime import date
-import re
+from html.parser import HTMLParser
 from pathlib import Path
+import re
 import sys
-import unicodedata
 from urllib.parse import urlsplit
 
 import yaml
@@ -19,107 +18,118 @@ DOMAINS = {
 }
 TAXONOMY = {f'{domain.lower()}.{name.lower().replace(" ", "_")}': (domain, name)
             for domain, names in DOMAINS.items() for name in names}
-FIELDS = {'id', 'title', 'venue', 'year', 'publication_pending', 'paper', 'code', 'categories'}
 
 
-def normalize_title(title):
-    return ''.join(c for c in unicodedata.normalize('NFKD', title).casefold()
-                   if c.isalnum())
+class DisplayMarkup(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.stack = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag not in ('strong', 'em', 'sup', 'sub') or attrs:
+            raise ValueError('Unexpected display markup: ' + tag)
+        self.stack.append(tag)
+
+    def handle_endtag(self, tag):
+        if not self.stack or self.stack.pop() != tag:
+            raise ValueError('Unbalanced display markup')
+
+    def handle_startendtag(self, tag, attrs):
+        raise ValueError('Unexpected self-closing display markup')
+
+    def handle_comment(self, data):
+        raise ValueError('Unexpected display comment')
+
+    def handle_decl(self, decl):
+        raise ValueError('Unexpected display declaration')
 
 
-def load_papers(path=ROOT / 'data/papers.yaml'):
-    papers = yaml.safe_load(path.read_text(encoding='utf-8'))
-    if not isinstance(papers, list) or not papers:
-        raise ValueError('Expected a nonempty list of paper records.')
-    return papers
+def markup(value):
+    if not isinstance(value, str) or '\\' in value:
+        raise ValueError('Display fields must be converted HTML strings')
+    parser = DisplayMarkup(); parser.feed(value); parser.close()
+    if parser.stack: raise ValueError('Unclosed display markup')
 
 
-def validate(papers):
-    ids, titles, urls = set(), {}, {}
+def url(value, optional=False):
+    if optional and value is None: return
+    if not isinstance(value, str) or re.search(r'[\s<>"\\]', value):
+        raise ValueError('Invalid public URL')
+    parsed = urlsplit(value)
+    if parsed.scheme not in ('http', 'https') or not parsed.netloc or parsed.username or parsed.password:
+        raise ValueError('Invalid public URL')
+
+
+def load_records(name):
+    data = yaml.safe_load((ROOT / 'data' / (name+'.yaml')).read_text(encoding='utf-8'))
+    if not isinstance(data, list) or not data: raise ValueError('Expected nonempty '+name)
+    return data
+
+
+def load_papers(): return load_records('papers')
+def load_tables(): return load_records('tables')
+
+
+def validate(papers, tables):
+    ids = {}; placements = set(); counts = Counter()
     for p in papers:
-        if not isinstance(p, dict) or set(p) != FIELDS:
-            raise ValueError('Record fields must match the documented public schema.')
-        identity = p['id']
-        if not isinstance(identity, str) or not re.fullmatch(
-                r'(?:arxiv:\d{4}\.\d{4,5}|doi:10\.\d{4,9}/\S+|(?:iclr|pmlr|cvf|work):[\w.-]+)', identity):
-            raise ValueError(f'Invalid canonical ID: {identity!r}')
-        if identity in ids:
-            raise ValueError(f'Duplicate ID: {identity}')
-        ids.add(identity)
-        for field in ('title', 'venue', 'paper'):
-            if not isinstance(p[field], str) or not p[field].strip():
-                raise ValueError(f'{identity}: missing {field}')
-        title = normalize_title(p['title'])
-        if not title or title in titles:
-            raise ValueError(f'Suspicious duplicate normalized title: {identity}, {titles.get(title)}')
-        titles[title] = identity
-        if type(p['year']) is not int or not 1900 <= p['year'] <= date.today().year:
-            raise ValueError(f'{identity}: expected a publication year')
-        if type(p['publication_pending']) is not bool:
-            raise ValueError(f'{identity}: publication_pending must be boolean')
-        for field in ('categories',):
-            values = p[field]
-            if not isinstance(values, list) or any(not isinstance(v, str) for v in values):
-                raise ValueError(f'{identity}: {field} must be a list of category keys')
-            if len(values) != len(set(values)) or set(values) - TAXONOMY.keys():
-                raise ValueError(f'{identity}: duplicate or unknown taxonomy key in {field}')
-        if not p['categories']:
-            raise ValueError(f'{identity}: expected a visible manuscript category')
-        for field in ('paper', 'code'):
-            url = p[field]
-            if url is None and field != 'paper':
-                continue
-            if not isinstance(url, str) or re.search(r'[\s<>"\\]', url):
-                raise ValueError(f'{identity}: invalid {field} URL')
-            parsed = urlsplit(url)
-            if parsed.scheme not in ('http', 'https') or not parsed.netloc or parsed.username or parsed.password:
-                raise ValueError(f'{identity}: invalid {field} URL')
-        url = p['paper'].rstrip('/')
-        if url in urls:
-            raise ValueError(f'Duplicate paper URL: {identity}, {urls[url]}')
-        urls[url] = identity
-        if identity.startswith('arxiv:') and p['paper'] != 'https://arxiv.org/abs/' + identity[6:]:
-            raise ValueError(f'{identity}: expected canonical arXiv paper URL')
-    counts = Counter(c for p in papers for c in p['categories'])
-    if TAXONOMY.keys() - counts.keys():
-        raise ValueError('Every category must contain at least one indexed work.')
+        if not isinstance(p, dict) or set(p) != {'id', 'title', 'categories'}:
+            raise ValueError('Unexpected paper schema')
+        if not re.fullmatch(r'[\w:.\-/]+', p['id']) or p['id'] in ids:
+            raise ValueError('Duplicate or invalid manuscript identity')
+        if not isinstance(p['title'], str) or not p['title'].strip(): raise ValueError('Missing title')
+        cats = p['categories']
+        if not isinstance(cats, list) or not cats or len(cats) != len(set(cats)) or set(cats)-TAXONOMY.keys():
+            raise ValueError('Unknown or duplicate manuscript placements')
+        ids[p['id']] = p
+    if [t['key'] for t in tables] != list(TAXONOMY):
+        raise ValueError('Tables must follow the full manuscript taxonomy and order')
+    for t in tables:
+        if set(t) != {'key', 'domain', 'category', 'headers', 'widths', 'caption', 'notes', 'rows'}:
+            raise ValueError('Unexpected comparison-table schema')
+        if TAXONOMY[t['key']] != (t['domain'], t['category']): raise ValueError('Category label mismatch')
+        headers = t['headers']; widths = t['widths']
+        if not 4 <= len(headers) <= 8 or headers[:2] != ['Work', 'Link'] or len(headers) != len(set(headers)):
+            raise ValueError('Invalid comparison headers')
+        for h in headers: markup(h)
+        if len(widths) != len(headers) or any(type(w) not in (int,float) or w <= 0 for w in widths) or abs(sum(widths)-100) > .01:
+            raise ValueError('Invalid comparison column widths')
+        markup(t['caption'])
+        for note in t['notes']: markup(note)
+        if not isinstance(t['rows'], list) or not t['rows']: raise ValueError('Empty comparison table')
+        seen = set()
+        for row in t['rows']:
+            if set(row) != {'bibkey','work','paper','code','code_partial','group','cells'}:
+                raise ValueError('Unexpected comparison row schema')
+            if row['bibkey'] not in ids: raise ValueError('Unknown comparison identity')
+            markup(row['work'])
+            if not row['work']: raise ValueError('Missing work label')
+            if row['group'] is not None: markup(row['group'])
+            if len(row['cells']) != len(headers)-2: raise ValueError('Incorrect comparison cell count')
+            for cell in row['cells']: markup(cell)
+            url(row['paper']); url(row['code'], optional=True)
+            if type(row['code_partial']) is not bool or row['code_partial'] and not row['code']:
+                raise ValueError('Invalid partial code release')
+            # A work can appear in multiple annotation output groups.
+            position = (row['bibkey'], row['group'])
+            if position in seen: raise ValueError('Duplicate table group placement')
+            seen.add(position); placements.add((row['bibkey'], t['key'])); counts[t['key']] += 1
+    if placements != {(p['id'], c) for p in papers for c in p['categories']}:
+        raise ValueError('Paper/table membership mismatch')
     return counts
-
-
-def summary(papers):
-    counts = validate(papers)
-    indexed = papers
-    lines = ['Awesome Agentic Robots validation', '',
-             f'Indexed unique works: {len(indexed)}',
-             f'Category placements: {sum(counts.values())}',
-             f'Publication pending: {sum(p["publication_pending"] for p in papers)}']
-    for domain in DOMAINS:
-        count = sum(any(TAXONOMY[c][0] == domain for c in p['categories']) for p in indexed)
-        lines += ['', f'{domain} ({count} unique works):']
-        lines += [f'  {name}: {counts[key]}' for key, (d, name) in TAXONOMY.items() if d == domain]
-    lines += ['', 'Metadata:']
-    lines += [f'  {field.title()} URLs: {sum(bool(p[field]) for p in papers)}'
-              for field in ('paper', 'code')]
-    return '\n'.join(lines)
 
 
 def main():
     try:
-        papers = load_papers()
-        validate(papers)
+        papers, tables = load_papers(), load_tables(); counts = validate(papers, tables)
         from generate_readme import updated_readme
-        readme = (ROOT / 'README.md').read_text(encoding='utf-8')
-        if readme != updated_readme(readme, papers):
-            raise ValueError('README paper list is stale; run scripts/generate_readme.py.')
-        if (ROOT / '.github/workflows').exists():
-            raise ValueError('GitHub workflows are outside this repository scope.')
-        print(summary(papers))
-        print('\nPASS: structure and generated README are consistent.')
-    except (ValueError, OSError, yaml.YAMLError) as exc:
-        print(f'FAIL: {exc}', file=sys.stderr)
-        return 1
+        readme = (ROOT/'README.md').read_text(encoding='utf-8')
+        if updated_readme(readme, papers, tables) != readme: raise ValueError('README is stale')
+        print(f'PASS: {len(papers)} works, {len(tables)} comparison tables, {sum(counts.values())} displayed rows')
+        for key,count in counts.items(): print(f'  {key}: {count}')
+    except (ValueError, OSError, KeyError, TypeError, yaml.YAMLError) as exc:
+        print('FAIL: '+str(exc), file=sys.stderr); return 1
     return 0
 
 
-if __name__ == '__main__':
-    sys.exit(main())
+if __name__ == '__main__': sys.exit(main())

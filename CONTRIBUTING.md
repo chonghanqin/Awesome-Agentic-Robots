@@ -26,8 +26,17 @@ python3 scripts/generate_readme.py
 python3 scripts/validate.py
 ```
 
-Each unique work has one record with `id`, `title`, `venue`, `year`, `publication_pending`, `paper`, `code`, and `categories`. Prefer `arxiv:` IDs, followed by `doi:` or another stable publication ID. `year` is the conference event or journal publication year, or first arXiv posting year for preprints. Set `publication_pending` to match the manuscript's provisional acceptance marker. Unconfirmed code links use `null`. Category keys use `domain.category_name`, as listed in `scripts/validate.py`.
+Each paper has a manuscript citation key (`id`), full `title`, and visible `categories`. Each comparison table in `data/tables.yaml` has its own headers, column widths, caption, notes, groups, row order, paper/code links, and technical cells. Multiple annotation groups may include the same work. Do not collapse those rows or infer that an unmarked persistence cell means explicitly absent.
 
-For a manuscript refresh, compare the current four `tables/literature_*.tex` tables and their `survey_data/*_literature_index.json` source records in the Overleaf repository, then use `ref.bib` for full paper titles and stable identifiers. Preserve only visible table placements, code links, venue labels and years; commented-out rows stay excluded. Shared works have one record with the union of visible placements. The frozen `taxonomy_mapping.json` corpus and all bibliography entries are not automatically the current displayed collection. Retain existing publication URLs for proceedings-only works and canonical arXiv URLs for arXiv identities. The public generator reads YAML only; it does not synchronize Overleaf automatically.
+For a manuscript refresh, use the active subsection tables included by the current Overleaf chapters. The comparison switch selects the current Model, Environment, and Harness tables; Data includes its comparison tables directly. Earlier literature tables and comparison JSON may be historical or differ from hand-edited active tables. `ref.bib` supplies full titles; citation keys preserve manuscript identity. The sync command reads the Overleaf repository without writing it and fails on unknown display commands:
 
-The generator changes only the marked paper-list region of the README. Edit the overview and citation outside that region directly. The validator checks structure, duplicate identities and titles, counts, and README freshness; it does not establish scientific fit or verify remote link availability.
+```sh
+python3 scripts/sync_from_overleaf.py --overleaf /path/to/overleaf --write
+python3 scripts/generate_readme.py
+python3 scripts/validate.py
+python3 scripts/sync_from_overleaf.py --overleaf /path/to/overleaf
+```
+
+The final command checks exact snapshot freshness without writing. Preserve subsection-specific fields, grouping, row order, qualifiers, source links and notes. Add or change technical cells only when supported by the manuscript/source review. Public comparison cells support only `<strong>`, `<em>`, `<sup>` and `<sub>` markup without attributes; all URLs are validated separately. Evidence logs, private reviews, source PDFs, backups, and local paths stay outside the public dataset.
+
+The README generator reads the two YAML files and changes only the marked comparison region. Edit the overview and citation outside that region directly. Validation checks structure, memberships, safe display markup, links, widths and README freshness; it does not independently establish scientific truth or verify remote link availability.

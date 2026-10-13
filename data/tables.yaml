@@ -1,0 +1,4497 @@
+- key: model.training
+  domain: Model
+  category: Training
+  headers:
+  - Work
+  - Link
+  - Target
+  - Approach
+  - Data / feedback
+  widths:
+  - 23.1254
+  - 7.4985
+  - 23.1254
+  - 21.2757
+  - 24.975
+  caption: 'Comparison of works on training. Compact entries summarize the configurations discussed here. Approach and Data
+    / feedback use shared tags: evolutionary search keeps the best of several candidates per round, iterative refinement revises
+    artifacts across rounds, and single-pass generation produces the artifact without revising it from training outcomes;
+    training metrics are logged during policy training, whereas evaluation metrics score the resulting policies. Paper and
+    Code link to the paper and repository; - denotes an unavailable repository link.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2310_12931
+    work: Eureka
+    paper: https://proceedings.iclr.cc/paper_files/paper/2024/hash/70c26937fbf3d4600b69a129031b66ec-Abstract-Conference.html
+    code: https://github.com/eureka-research/Eureka
+    code_partial: false
+    group: null
+    cells:
+    - Reward code
+    - Evolutionary search
+    - Training metrics
+  - bibkey: survey_ax_2603_27416
+    work: ADARLR
+    paper: https://arxiv.org/abs/2603.27416v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - RL code; reward weights
+    - Iterative refinement; hyperparameter search
+    - Training metrics; failure cases
+  - bibkey: survey_ax_2605_00416
+    work: Learning While Deploying
+    paper: https://arxiv.org/abs/2605.00416v4
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - VLA; value models
+    - RL
+    - Rollouts; human feedback
+  - bibkey: survey_ax_2605_11859
+    work: EvoNav
+    paper: https://arxiv.org/abs/2605.11859v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Navigation rewards
+    - Evolutionary search; iterative refinement
+    - Offline data; evaluation metrics
+  - bibkey: survey_ax_2605_11665
+    work: Nautilus
+    paper: https://arxiv.org/abs/2605.11665v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Policy / benchmark modules
+    - Pipeline composition
+    - Execution checks
+  - bibkey: survey_ax_2606_00083
+    work: Demo2Reward
+    paper: https://rlj.cs.umass.edu/2026/papers/Paper12.html
+    code: https://github.com/cgumbsch/Demo2Reward
+    code_partial: false
+    group: null
+    cells:
+    - Reward prompt
+    - Iterative refinement
+    - Demonstrations
+  - bibkey: survey_ax_2606_01672
+    work: RDA
+    paper: https://rlj.cs.umass.edu/2026/papers/Paper81.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Reward code
+    - Evolutionary search
+    - Rollout videos
+  - bibkey: survey_ax_2606_08610
+    work: HARBOR
+    paper: https://arxiv.org/abs/2606.08610
+    code: https://github.com/supersglzc/harbor-rl
+    code_partial: false
+    group: null
+    cells:
+    - RL code; configurations
+    - Iterative refinement; hyperparameter search
+    - Execution checks; training metrics
+  - bibkey: survey_ax_2606_09630
+    work: ReCoVLA
+    paper: https://arxiv.org/abs/2606.09630v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Recovery rewards; <strong>residual</strong> policies
+    - Single-pass generation; RL
+    - Failure cases; simulator state
+  - bibkey: survey_ax_2606_19980
+    work: ENPIRE
+    paper: https://arxiv.org/abs/2606.19980v2
+    code: https://github.com/NVlabs/ENPIRE
+    code_partial: false
+    group: null
+    cells:
+    - Training code
+    - Iterative refinement
+    - Rollouts; evaluation metrics
+  - bibkey: survey_ax_2606_22142
+    work: RoboLineage
+    paper: https://arxiv.org/abs/2606.22142v1
+    code: https://github.com/robolineage/robolineage
+    code_partial: false
+    group: null
+    cells:
+    - Training data; policy records
+    - Data curation; iterative refinement
+    - Rollouts; evaluation metrics
+  - bibkey: survey_ax_2606_23280
+    work: CRWM
+    paper: https://arxiv.org/abs/2606.23280v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Reward code
+    - Single-pass generation
+    - Offline data
+  - bibkey: survey_ax_2608_07555
+    work: AgenticRobotics
+    paper: https://arxiv.org/abs/2608.07555v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Tool records; reusable workflows
+    - Iterative refinement
+    - Evaluation metrics
+  - bibkey: survey_ax_2609_01281
+    work: EmbodiedSkills
+    paper: https://arxiv.org/abs/2609.01281v1
+    code: https://github.com/ZJU4EmbodiedAI/EmbodiedSkills
+    code_partial: false
+    group: null
+    cells:
+    - Planner; VLA; scheduler
+    - SFT
+    - Demonstrations
+  - bibkey: survey_ax_2609_17210
+    work: FluxVLA Engine
+    paper: https://arxiv.org/abs/2609.17210v1
+    code: https://github.com/FluxVLA/FluxVLA
+    code_partial: false
+    group: null
+    cells:
+    - Training pipelines
+    - Pipeline composition; SFT
+    - Demonstrations
+- key: model.perception
+  domain: Model
+  category: Perception
+  headers:
+  - Work
+  - Link
+  - Input
+  - Output
+  - Perception process
+  widths:
+  - 23.1277
+  - 7.4993
+  - 21.2779
+  - 21.2779
+  - 26.8173
+  caption: 'Comparison of works on perception. Compact entries summarize the configurations discussed here. Input lists observations;
+    task instructions and queries are omitted. Output and Perception process use shared tags: 3D targets are metric positions
+    or poses; object handles are persistent object references; geometric estimation derives metric quantities from depth,
+    calibration or point clouds; frontier ranking scores exploration frontiers or candidate viewpoints; visual reasoning yields
+    targets or commands rather than answers; verification re-checks a candidate before it is accepted. Paper and Code link
+    to the paper and repository; - denotes an unavailable repository link.'
+  notes:
+  - <sup>a</sup> Simulation uses sensor depth; real-world deployment estimates depth from RGB.
+  - <sup>b</sup> Evaluated via offline one-step replay of recorded observations.
+  - <sup>c</sup> Simulation uses oracle instance masks/IDs; real-world deployment uses learned perception.
+  rows:
+  - bibkey: survey_ax_2502_13143
+    work: SoFar
+    paper: https://proceedings.neurips.cc/paper_files/paper/2025/hash/6ea83df350753236215cbf2fe9716eca-Abstract-Conference.html
+    code: https://github.com/qizekun/SoFar
+    code_partial: false
+    group: null
+    cells:
+    - RGB-D
+    - Scene graph
+    - Visual grounding; geometric estimation
+  - bibkey: survey_ax_2601_14681
+    work: FARE
+    paper: https://arxiv.org/abs/2601.14681v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - LiDAR
+    - Spatial map
+    - Mapping; frontier ranking
+  - bibkey: survey_ax_2602_04157
+    work: MSR
+    paper: https://arxiv.org/abs/2602.04157v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Audio; images
+    - Retrieved images
+    - Memory retrieval; view selection
+  - bibkey: survey_ax_2602_13193
+    work: Steerable Policies
+    paper: https://www.roboticsproceedings.org/rss22/p074.html
+    code: https://github.com/steerable-policies/steerable-policies-bridge
+    code_partial: false
+    group: null
+    cells:
+    - Images
+    - Language commands; pixel coordinates
+    - Visual reasoning
+  - bibkey: survey_ax_2603_05377
+    work: OpenFrontier<sup>a</sup>
+    paper: https://www.roboticsproceedings.org/rss22/p067.html
+    code: https://github.com/cvg/OpenFrontier
+    code_partial: false
+    group: null
+    cells:
+    - RGB; depth; camera pose
+    - 3D targets
+    - Frontier ranking; visual grounding; verification
+  - bibkey: survey_ax_2603_18210
+    work: GoalVLM
+    paper: https://arxiv.org/abs/2603.18210v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - RGB-D; robot pose
+    - Spatial map
+    - Mapping; geometric estimation
+  - bibkey: survey_ax_2604_26988
+    work: VAP-TAMP
+    paper: https://arxiv.org/abs/2604.26988v1
+    code: https://github.com/aoloo-r/VAP-TAMP
+    code_partial: false
+    group: null
+    cells:
+    - RGB-D; robot pose
+    - Scene graph; symbolic predicates
+    - View selection; verification
+  - bibkey: survey_doi_353abec881f4d997
+    work: SCOPE
+    paper: https://doi.org/10.1145/3757279.3785641
+    code: https://github.com/HindsboNikolaj/SCOPE
+    code_partial: false
+    group: null
+    cells:
+    - PTZ images
+    - Answers
+    - VQA; view selection
+  - bibkey: survey_ax_2606_06061
+    work: CFHRCM
+    paper: https://arxiv.org/abs/2606.06061v1
+    code: https://github.com/cogrob-tuni/franka-llm
+    code_partial: false
+    group: null
+    cells:
+    - RGB-D; calibration
+    - 3D targets
+    - Visual grounding; geometric estimation
+  - bibkey: survey_ax_2606_10577
+    work: AgenticNav
+    paper: https://arxiv.org/abs/2606.10577v3
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - RGB; BEV; depth tool
+    - Distances; retrieved images
+    - Geometric estimation; memory retrieval
+  - bibkey: survey_ax_2607_04610
+    work: RoboVista
+    paper: https://www.roboticsproceedings.org/rss22/p095.html
+    code: https://github.com/ehehee/robovista
+    code_partial: false
+    group: null
+    cells:
+    - Images
+    - Answers
+    - VQA
+  - bibkey: survey_ax_2607_10383
+    work: ABot-N1
+    paper: https://arxiv.org/abs/2607.10383v3
+    code: https://github.com/amap-cvlab/ABot-Navigation
+    code_partial: false
+    group: null
+    cells:
+    - Images; visual history
+    - Pixel coordinates
+    - Visual reasoning; visual grounding
+  - bibkey: survey_ax_2608_17129
+    work: MG-VQA
+    paper: https://arxiv.org/abs/2608.17129v2
+    code: https://github.com/vineet2104/MG-VQA
+    code_partial: false
+    group: null
+    cells:
+    - Top-down RGB
+    - Answers; pixel coordinates
+    - Interactive perception; visual grounding; VQA
+  - bibkey: survey_ax_2609_02653
+    work: HINT
+    paper: https://arxiv.org/abs/2609.02653v2
+    code: https://github.com/robot-hint/HINT
+    code_partial: false
+    group: null
+    cells:
+    - Images; state; torques
+    - Segmentation masks
+    - View selection; tracking; visual grounding
+  - bibkey: survey_ax_2609_12285
+    work: AnchorVLN
+    paper: https://arxiv.org/abs/2609.12285v1
+    code: https://github.com/aryanmangal769/embodied-nav-mcp
+    code_partial: false
+    group: null
+    cells:
+    - Panorama; LiDAR
+    - Object handles; 3D targets
+    - Visual grounding; geometric estimation; verification
+  - bibkey: survey_ax_2609_20615
+    work: INSPECT<sup>b</sup>
+    paper: https://arxiv.org/abs/2609.20615v1
+    code: https://github.com/Kratos-Wen/INSPECT
+    code_partial: false
+    group: null
+    cells:
+    - RGB; camera poses
+    - Camera viewpoints; answers
+    - View selection; verification
+  - bibkey: survey_ax_2609_27720
+    work: CoRelNav<sup>c</sup>
+    paper: https://arxiv.org/abs/2609.27720v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - RGB-D; robot pose
+    - Object handles; 3D targets
+    - Frontier ranking; verification
+  - bibkey: survey_ax_2609_29389
+    work: Robo-Harness K1
+    paper: https://arxiv.org/abs/2609.29389v1
+    code: https://github.com/Robo-Harness/k1
+    code_partial: false
+    group: null
+    cells:
+    - RGB; state; geometry tools
+    - Segmentation masks; object handles; 3D targets
+    - Visual grounding; geometric estimation; tracking
+- key: model.planning
+  domain: Model
+  category: Planning
+  headers:
+  - Work
+  - Link
+  - Task
+  - Plan Output
+  - Model
+  widths:
+  - 23.0
+  - 6.0
+  - 23.5
+  - 15.5
+  - 32.0
+  caption: 'Comparison of works on planning. Manipulation includes mobile manipulation. Plan output: Action, discrete skills
+    (single or sequenced); Goal, language, visual, or spatial targets; Trajectory, paths or waypoints; Program, code, pseudocode,
+    or behavior trees; Schedule, task allocation or ordering. Model lists selected backbones for planning, replanning, or
+    verification. LocalNav and CoRelNav use privileged semantics in simulation and learned perception on real robots. The
+    slash in ActionReasoning 2.0 separates conflicting model names in the source. Icons link to the paper and repository;
+    - denotes an unreported model or an unavailable repository link.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2307_01928
+    work: KnowNo
+    paper: https://proceedings.mlr.press/v229/ren23a.html
+    code: https://github.com/google-research/google-research/tree/master/language_model_uncertainty
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - PaLM-2-L
+  - bibkey: survey_ax_2307_06135
+    work: SayPlan
+    paper: https://proceedings.mlr.press/v229/rana23a.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - GPT-4
+  - bibkey: survey_ax_2307_04738
+    work: RoCo
+    paper: https://ieeexplore.ieee.org/document/10610855/
+    code: https://github.com/MandiZhao/robot-collab
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action; Trajectory
+    - GPT-4
+  - bibkey: survey_pmlr_v305_feng25b
+    work: ReflectVLM
+    paper: https://proceedings.mlr.press/v305/feng25b.html
+    code: https://github.com/yunhaif/reflect-vlm
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - LLaVA-1.5-13B
+  - bibkey: survey_ax_2502_19417
+    work: HiRobot
+    paper: https://proceedings.mlr.press/v267/shi25d.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Goal
+    - PaliGemma-3B
+  - bibkey: survey_ax_2510_03342
+    work: Gemini Robotics 1.5
+    paper: https://arxiv.org/abs/2510.03342v3
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Goal
+    - Gemini Robotics-ER 1.5
+  - bibkey: survey_ax_2601_11063
+    work: EmboTeam
+    paper: https://arxiv.org/abs/2601.11063v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Program
+    - GPT-4o
+  - bibkey: survey_ax_2601_18492
+    work: DV-VLN
+    paper: https://arxiv.org/abs/2601.18492v1
+    code: https://github.com/PlumJun/DV-VLN
+    code_partial: false
+    group: null
+    cells:
+    - Navigation
+    - Action
+    - Llama-2-7B
+  - bibkey: survey_ax_2602_13081
+    work: AARC
+    paper: https://ojs.aaai.org/index.php/AAAI-SS/article/view/42578
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation; Navigation
+    - Action
+    - GPT-o3
+  - bibkey: survey_ax_2602_13591
+    work: AgentRob
+    paper: https://arxiv.org/abs/2602.13591v1
+    code: https://github.com/PKU-LLM-DS-LAB/AgentRob
+    code_partial: false
+    group: null
+    cells:
+    - Human–Robot Interaction
+    - Action
+    - '-'
+  - bibkey: survey_ax_2602_21198
+    work: Reflective Test-Time Planning
+    paper: https://arxiv.org/abs/2602.21198v3
+    code: https://github.com/Reflective-Test-Time-Planning/Reflective-Test-Time-Planning
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - LLaVA-3D-7B; Qwen2.5-VL-3B
+  - bibkey: survey_ax_2602_21670
+    work: HLMF
+    paper: https://arxiv.org/abs/2602.21670v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - GPT-4o
+  - bibkey: survey_ax_2603_03148
+    work: FLA
+    paper: https://arxiv.org/abs/2603.03148v1
+    code: https://github.com/ShinasShaji/llm-robot-cognition
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - GPT-4.1; Claude Sonnet 4
+  - bibkey: survey_ax_2603_02669
+    work: IMR-LLM
+    paper: https://arxiv.org/abs/2603.02669v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Schedule; Program
+    - GPT-4o; Qwen3-32B
+  - bibkey: survey_ax_2603_02772
+    work: SERP
+    paper: https://arxiv.org/abs/2603.02772v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Navigation
+    - Trajectory
+    - Qwen3-VL-Plus; Qwen3.7-Plus
+  - bibkey: survey_ax_2604_13533
+    work: EEAgent
+    paper: https://arxiv.org/abs/2604.13533v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - GPT-4o
+  - bibkey: survey_ax_2606_27871
+    work: LocalNav
+    paper: https://arxiv.org/abs/2606.27871v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Navigation
+    - Goal
+    - Qwen3.5-4B
+  - bibkey: survey_ax_2607_06501
+    work: HUME
+    paper: https://www.roboticsproceedings.org/rss22/p181.html
+    code: https://github.com/threefruits/HUME
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - GPT-4.1
+  - bibkey: survey_ax_2607_22999
+    work: WCM
+    paper: https://arxiv.org/abs/2607.22999v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - '-'
+  - bibkey: survey_doi_ddc6fc88fa219f08
+    work: STARS
+    paper: https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1848830/full
+    code: https://github.com/Center-for-Integrated-Cognition/STARS
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Goal
+    - GPT-3.5 (text-davinci-002); GPT-4
+  - bibkey: survey_ax_2608_28300
+    work: MaCoPlanner
+    paper: https://arxiv.org/abs/2608.28300v1
+    code: https://github.com/XinGP/MaCoPlanner
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - GPT-4o
+  - bibkey: survey_ax_2608_30396
+    work: NavMCP
+    paper: https://arxiv.org/abs/2608.30396v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Navigation; Embodied Question Answering
+    - Goal
+    - Qwen3.6-Plus
+  - bibkey: survey_doi_07c1d81a50e5849a
+    work: ATP-VPDSG
+    paper: https://www.mdpi.com/1424-8220/26/17/5595
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - Qwen3-VL
+  - bibkey: survey_ax_2609_05985
+    work: ActionReasoning 2.0
+    paper: https://arxiv.org/abs/2609.05985v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - Qwen3.7-Plus / Qwen3-7B
+  - bibkey: survey_ax_2609_08444
+    work: SafeMem
+    paper: https://arxiv.org/abs/2609.08444v1
+    code: https://github.com/lty759/SafeMem
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action
+    - GPT-4o
+  - bibkey: survey_ax_2609_11561
+    work: MaP-WAM
+    paper: https://arxiv.org/abs/2609.11561v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Goal
+    - Qwen3.5-4B; Wan2.2-5B
+  - bibkey: survey_ax_2609_13335
+    work: BTA
+    paper: https://arxiv.org/abs/2609.13335v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Navigation; Human–Robot Interaction
+    - Program
+    - GPT-OSS-120B
+  - bibkey: survey_ax_2609_19315
+    work: GAVEL
+    paper: https://arxiv.org/abs/2609.19315v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Action; Schedule
+    - Qwen3-8B
+  - bibkey: survey_ax_2609_24124
+    work: ActiveArena (Plan)
+    paper: https://arxiv.org/abs/2609.24124v2
+    code: https://github.com/leeibo/ActiveArena
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation
+    - Goal
+    - Qwen3-VL-2B
+  - bibkey: survey_ax_2609_26360
+    work: HFLEX-EQA
+    paper: https://arxiv.org/abs/2609.26360v1
+    code: https://github.com/ntnu-arl/hflex_eqa
+    code_partial: false
+    group: null
+    cells:
+    - Embodied Question Answering
+    - Goal
+    - GPT-5.5; Gemini 3.5 Pro
+  - bibkey: survey_ax_2609_27720
+    work: CoRelNav
+    paper: https://arxiv.org/abs/2609.27720v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Navigation
+    - Goal
+    - Qwen3.7-Plus
+  - bibkey: survey_ax_2609_27526
+    work: NavProbe
+    paper: https://arxiv.org/abs/2609.27526v2
+    code: https://github.com/liujy25/NavProbe
+    code_partial: false
+    group: null
+    cells:
+    - Navigation
+    - Goal; Action
+    - GPT-5.5
+- key: model.robot_control
+  domain: Model
+  category: Robot Control
+  headers:
+  - Work
+  - Link
+  - Command
+  - Executor
+  - Feedback
+  widths:
+  - 23.1277
+  - 7.4993
+  - 24.0476
+  - 21.2779
+  - 24.0476
+  caption: Comparison of works on robot control. Compact entries summarize the configurations discussed here. Feedback includes
+    observations and execution-state information. Paper and Code link to the paper and repository; - denotes an unavailable
+    repository link.
+  notes:
+  - <sup>a</sup> Contracts and skill templates are adapted before online execution.
+  - <sup>b</sup> Execution is monitored for traceability; the plan is selected before execution.
+  rows:
+  - bibkey: survey_ax_2307_05973
+    work: VoxPoser
+    paper: https://proceedings.mlr.press/v229/huang23b.html
+    code: https://github.com/huangwl18/VoxPoser
+    code_partial: false
+    group: null
+    cells:
+    - 3D value maps
+    - Trajectory optimizer
+    - Updated observations
+  - bibkey: survey_ax_2409_01652
+    work: ReKep
+    paper: https://proceedings.mlr.press/v270/huang25g.html
+    code: https://github.com/huangwl18/ReKep
+    code_partial: false
+    group: null
+    cells:
+    - Keypoint constraints
+    - Motion optimizer
+    - Tracked 3D keypoints
+  - bibkey: survey_ax_2601_20334
+    work: FAEA
+    paper: https://arxiv.org/abs/2601.20334v2
+    code: https://github.com/robiemusketeer/faea-sim
+    code_partial: false
+    group: null
+    cells:
+    - Python programs
+    - Robot-control APIs
+    - <strong>Privileged simulator states</strong>; errors; success
+  - bibkey: survey_ax_2605_02600
+    work: CoRAL
+    paper: https://www.roboticsproceedings.org/rss22/p054.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Costs; contact strategy; physics
+    - MPPI controller
+    - Sensor state; execution history
+  - bibkey: survey_doi_353abec881f4d997
+    work: SCOPE
+    paper: https://doi.org/10.1145/3757279.3785641
+    code: https://github.com/HindsboNikolaj/SCOPE
+    code_partial: false
+    group: null
+    cells:
+    - Pan / tilt / zoom calls
+    - PTZ camera API
+    - Images; tool results
+  - bibkey: survey_ax_2606_12299
+    work: LWSV
+    paper: https://arxiv.org/abs/2606.12299v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Language instructions
+    - Frozen VLA
+    - Images; robot state
+  - bibkey: survey_ax_2607_10383
+    work: ABot-N1
+    paper: https://arxiv.org/abs/2607.10383v3
+    code: https://github.com/amap-cvlab/ABot-Navigation
+    code_partial: false
+    group: null
+    cells:
+    - Language; target / affordance pixels
+    - Waypoint policy
+    - Images; visual history
+  - bibkey: survey_ax_2607_11119
+    work: VIA
+    paper: https://arxiv.org/abs/2607.11119v2
+    code: https://github.com/hengyuan-hu/via
+    code_partial: false
+    group: null
+    cells:
+    - Pose proposals; execute calls
+    - Motion controller
+    - Visual previews; updated views
+  - bibkey: survey_ax_2607_22832
+    work: MEMENTO
+    paper: https://arxiv.org/abs/2607.22832v1
+    code: https://github.com/sygkounas/MEMENTO
+    code_partial: false
+    group: null
+    cells:
+    - Stateful programs
+    - Program interpreter
+    - Observations; program state
+  - bibkey: survey_ax_2608_03924
+    work: ETA
+    paper: https://arxiv.org/abs/2608.03924v1
+    code: https://github.com/OpenMOSS/OpenETA
+    code_partial: false
+    group: null
+    cells:
+    - Gated tool requests
+    - Validated robot tools
+    - Observations; execution receipts
+  - bibkey: survey_ax_2608_14047
+    work: ART
+    paper: https://arxiv.org/abs/2608.14047v3
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Tool calls; robot actions
+    - Tools; robot controller
+    - Tool-enhanced observations
+  - bibkey: survey_ax_2608_29379
+    work: BSP
+    paper: https://arxiv.org/abs/2608.29379v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Semantic action requests
+    - MoveIt task templates
+    - Planning / reachability errors
+  - bibkey: survey_ax_2609_10522
+    work: Show-Harness
+    paper: https://arxiv.org/abs/2609.10522v1
+    code: https://github.com/showlab/Show-Harness
+    code_partial: false
+    group: null
+    cells:
+    - Motion / gripper commands
+    - Action interpreter
+    - Images; state; action history
+  - bibkey: survey_ax_2609_16331
+    work: ManiSkillFormer<sup>a</sup>
+    paper: https://arxiv.org/abs/2609.16331v3
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Contracts; motion templates
+    - IK; PD controller
+    - Object geometry; joint state
+  - bibkey: survey_ax_2609_19347
+    work: A-RAM<sup>b</sup>
+    paper: https://arxiv.org/abs/2609.19347v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Motion / extrusion trajectory
+    - Motion / extrusion controllers
+    - Robot state; <strong>commanded</strong> extrusion
+  - bibkey: survey_ax_2609_19138
+    work: GPT-Policy
+    paper: https://arxiv.org/abs/2609.19138v1
+    code: https://github.com/cheng-haha/GPT-Policy
+    code_partial: false
+    group: null
+    cells:
+    - Robot-tool requests
+    - Constrained robot tools
+    - Observations; tool results
+  - bibkey: survey_ax_2609_18869
+    work: KINO
+    paper: https://arxiv.org/abs/2609.18869v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Retargeted pose keyframes
+    - Whole-body RL policy
+    - Robot / object state; previous action
+  - bibkey: survey_ax_2609_22966
+    work: RoboDawn
+    paper: https://arxiv.org/abs/2609.22966v1
+    code: https://github.com/Hugo-AGI/RoboDawn
+    code_partial: false
+    group: null
+    cells:
+    - Semantic action commands
+    - Action interpreter
+    - Images; state; execution results
+  - bibkey: survey_ax_2609_28429
+    work: ARMS
+    paper: https://arxiv.org/abs/2609.28429v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Context tokens
+    - VLA action expert
+    - Images; arm state; action history
+  - bibkey: survey_ax_2609_28247
+    work: COMPASS
+    paper: https://arxiv.org/abs/2609.28247v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Latent reasoning vectors
+    - Spatial-transformer controller
+    - Fleet-state tokens
+  - bibkey: survey_ax_2609_29389
+    work: Robo-Harness K1
+    paper: https://arxiv.org/abs/2609.29389v1
+    code: https://github.com/Robo-Harness/k1
+    code_partial: false
+    group: null
+    cells:
+    - Move / pose / gripper calls
+    - Motion / gripper tools
+    - Achieved motion; residual errors
+  - bibkey: survey_ax_2609_29964
+    work: WAA
+    paper: https://arxiv.org/abs/2609.29964v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Pose proposals; execute calls
+    - Feasibility-checked motion tools
+    - Visual previews; planning feedback
+- key: model.adaptation
+  domain: Model
+  category: Adaptation
+  headers:
+  - Work
+  - Link
+  - Updated item
+  - Reuse
+  - Update method
+  widths:
+  - 25.9
+  - 7.5
+  - 24.05
+  - 16.65
+  - 25.9
+  caption: 'Comparison of works on adaptation. Compact entries summarize the configurations discussed here. Reuse describes
+    the reported scope of the listed updates: current episode, later trials or tasks, or both. Paper and Code link to the
+    paper and repository; - denotes an unavailable repository link.'
+  notes:
+  - <sup>a</sup> During online updates, the policy vision-language backbone remains frozen.
+  - <sup>b</sup> Model weights remain frozen; task references are separate from the updated interaction history.
+  - <sup>c</sup> Model weights, the robot profile and reference examples remain fixed within an episode.
+  rows:
+  - bibkey: adaptation_ax_2212_07398
+    work: PAFF
+    paper: https://openaccess.thecvf.com/content/CVPR2023/html/Ge_Policy_Adaptation_From_Foundation_Model_Feedback_CVPR_2023_paper.html
+    code: https://github.com/geyuying/PAFF_code
+    code_partial: false
+    group: null
+    cells:
+    - Policy weights
+    - Later episodes
+    - Relabeling; imitation learning
+  - bibkey: adaptation_ax_2305_05658
+    work: TidyBot
+    paper: https://link.springer.com/article/10.1007/s10514-023-10139-z
+    code: https://github.com/jimmyyhwu/tidybot
+    code_partial: false
+    group: null
+    cells:
+    - Placement / handling rules
+    - Later episodes
+    - Summarize user examples
+  - bibkey: survey_ax_2306_11706
+    work: RoboCat
+    paper: https://arxiv.org/pdf/2306.11706v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Specialist / generalist policies
+    - Later episodes
+    - Imitation learning; self-generated data
+  - bibkey: adaptation_ax_2310_17555
+    work: OLAF
+    paper: https://arxiv.org/abs/2310.17555v1
+    code: https://github.com/UT-Austin-RPL/olaf
+    code_partial: false
+    group: null
+    cells:
+    - Policy weights
+    - Later episodes
+    - Action relabeling; imitation learning
+  - bibkey: survey_ax_2311_10678
+    work: DROC
+    paper: https://arxiv.org/abs/2311.10678v2
+    code: https://github.com/Stanford-ILIAD/droc
+    code_partial: false
+    group: null
+    cells:
+    - Rules; parameters; code
+    - Both
+    - Extract knowledge from corrections
+  - bibkey: adaptation_ax_2402_11450
+    work: LMPC
+    paper: https://roboticsproceedings.org/rss20/p125.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Code-generating LM; context
+    - Both
+    - Fine-tuning; dialogue search
+  - bibkey: adaptation_ax_2403_12910
+    work: Yell At Your Robot
+    paper: https://www.roboticsproceedings.org/rss20/p025.html
+    code: https://github.com/yay-robot/yay_robot
+    code_partial: false
+    group: null
+    cells:
+    - High-level policy weights
+    - Later episodes
+    - Fine-tuning on language corrections
+  - bibkey: survey_ax_2509_15155
+    work: SIEFM
+    paper: https://proceedings.neurips.cc/paper_files/paper/2025/hash/a3ac59dc0bf607fa35535f546110fc34-Abstract-Conference.html
+    code: https://github.com/self-improving-efms/self-improving-efms.github.io/blob/main/pointmass_notebook.ipynb
+    code_partial: false
+    group: null
+    cells:
+    - Policy weights
+    - Later episodes
+    - RL with self-predicted rewards
+  - bibkey: adaptation_ax_2511_14759
+    work: RECAP
+    paper: https://arxiv.org/abs/2511.14759v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - VLA; value function
+    - Later episodes
+    - Advantage-conditioned RL
+  - bibkey: survey_ax_2602_12063
+    work: VLAW
+    paper: https://proceedings.mlr.press/v306/guo26i.html
+    code: https://github.com/Robert-gyj/Ctrl-World
+    code_partial: false
+    group: null
+    cells:
+    - World / reward models; VLA
+    - Later episodes
+    - Alternating model / policy training
+  - bibkey: adaptation_ax_2602_20323
+    work: PhysMem
+    paper: https://arxiv.org/abs/2602.20323v6
+    code: https://github.com/haoyangli16/PhysMem
+    code_partial: false
+    group: null
+    cells:
+    - Physical-principle memory
+    - Later episodes
+    - Hypothesis testing; consolidation
+  - bibkey: survey_ax_2602_21198
+    work: Reflective Test-Time Planning
+    paper: https://arxiv.org/abs/2602.21198v3
+    code: https://github.com/Reflective-Test-Time-Planning/Reflective-Test-Time-Planning
+    code_partial: false
+    group: null
+    cells:
+    - Action / internal reflection models; memory
+    - Current episode
+    - Memory consolidation; SFT; RL
+  - bibkey: survey_ax_2602_22474
+    work: UPS
+    paper: https://www.roboticsproceedings.org/rss22/p142.html
+    code: https://github.com/CMU-IntentLab/uncertainty_aware_policy_steering
+    code_partial: false
+    group: null
+    cells:
+    - <strong>Residual</strong> correction policy
+    - Later episodes
+    - Imitation learning
+  - bibkey: survey_ax_2603_02772
+    work: SERP
+    paper: https://arxiv.org/abs/2603.02772v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Planner settings; recovery memory
+    - Both
+    - Parameter search; memory update
+  - bibkey: survey_ax_2603_07997
+    work: CMMR-VLN
+    paper: https://arxiv.org/abs/2603.07997v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Navigation memory
+    - Later episodes
+    - Store successes; annotate failures
+  - bibkey: survey_ax_2605_00416
+    work: Learning While Deploying<sup>a</sup>
+    paper: https://arxiv.org/abs/2605.00416v4
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - VLA action expert; value models
+    - Later episodes
+    - Online RL
+  - bibkey: survey_ax_2606_18247
+    work: VERITAS
+    paper: https://www.roboticsproceedings.org/rss22/p079.html
+    code: https://github.com/princeton-prism/veritas
+    code_partial: false
+    group: null
+    cells:
+    - Policy weights
+    - Later episodes
+    - Imitation of verified rollouts
+  - bibkey: survey_ax_2607_26809
+    work: HERO
+    paper: https://arxiv.org/abs/2607.26809v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Trajectory exemplars; policy
+    - Later episodes
+    - Exemplar storage; imitation learning
+  - bibkey: survey_ax_2609_01281
+    work: EmbodiedSkills
+    paper: https://arxiv.org/abs/2609.01281v1
+    code: https://github.com/ZJU4EmbodiedAI/EmbodiedSkills
+    code_partial: false
+    group: null
+    cells:
+    - Task-specific VLA policies
+    - Later episodes
+    - Supervised fine-tuning
+  - bibkey: survey_ax_2609_19138
+    work: GPT-Policy<sup>b</sup>
+    paper: https://arxiv.org/abs/2609.19138v1
+    code: https://github.com/cheng-haha/GPT-Policy
+    code_partial: false
+    group: null
+    cells:
+    - Input context
+    - Current episode
+    - Refresh observations and history
+  - bibkey: survey_ax_2609_22966
+    work: RoboDawn<sup>c</sup>
+    paper: https://arxiv.org/abs/2609.22966v1
+    code: https://github.com/Hugo-AGI/RoboDawn
+    code_partial: false
+    group: null
+    cells:
+    - Episode memory
+    - Current episode
+    - Refresh state and scratchpad
+- key: data.collection
+  domain: Data
+  category: Collection
+  headers:
+  - Work
+  - Link
+  - Type
+  - Collected data
+  - Reported scale
+  widths:
+  - 19.0
+  - 7.5
+  - 7.5
+  - 18.0
+  - 48.0
+  caption: 'Comparison of agent-assisted data collection for robotics. Real: physical interaction; Sim: simulator execution;
+    Gen: generative-model synthesis. Counts retain the units and experimental scope reported by each paper. - denotes an unavailable
+    link or data.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2311_01455
+    work: RoboGen
+    paper: https://proceedings.mlr.press/v235/wang24cc.html
+    code: https://github.com/Genesis-Embodied-AI/RoboGen
+    code_partial: false
+    group: null
+    cells:
+    - Sim
+    - Robot trajectories
+    - <strong>106</strong> generated tasks
+  - bibkey: survey_ax_2407_20635
+    work: SOAR
+    paper: https://proceedings.mlr.press/v270/zhou25b.html
+    code: https://github.com/rail-berkeley/soar
+    code_partial: false
+    group: null
+    cells:
+    - Real
+    - Robot trajectories
+    - <strong>≈30,500</strong> trajectories in the released dataset.
+  - bibkey: survey_ax_2502_09886
+    work: Video2Policy
+    paper: https://arxiv.org/abs/2502.09886
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Sim
+    - Robot trajectories
+    - <strong>100</strong> trajectories/policy from <strong>100</strong> lifting videos
+  - bibkey: survey_ax_2503_16408
+    work: RoboFactory
+    paper: https://openaccess.thecvf.com/content/ICCV2025/html/Qin_RoboFactory_Exploring_Embodied_Agent_Collaboration_with_Compositional_Constraints_ICCV_2025_paper.html
+    code: https://github.com/MARS-EAI/RoboFactory
+    code_partial: false
+    group: null
+    cells:
+    - Sim
+    - Robot trajectories
+    - Up to <strong>150</strong> demos/task across <strong>11</strong> tasks
+  - bibkey: survey_ax_2507_00833
+    work: HumanoidGen
+    paper: https://proceedings.neurips.cc/paper_files/paper/2025/hash/e4ef7454447baa15a424314e6284441b-Abstract-Conference.html
+    code: https://github.com/TeleHuman/HumanoidGen
+    code_partial: false
+    group: null
+    cells:
+    - Sim
+    - Robot trajectories
+    - <strong>100</strong> demos/task across <strong>20</strong> HGen-Bench tasks
+  - bibkey: survey_ax_2602_18742
+    work: RoboCurate
+    paper: https://arxiv.org/abs/2602.18742v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Gen
+    - Robot trajectories
+    - <strong>10,000</strong> generated trajectories before filtering
+  - bibkey: survey_ax_2602_22474
+    work: UPS
+    paper: https://www.roboticsproceedings.org/rss22/p142.html
+    code: https://github.com/CMU-IntentLab/uncertainty_aware_policy_steering
+    code_partial: false
+    group: null
+    cells:
+    - Real / Sim
+    - Teleoperated demonstrations
+    - –
+  - bibkey: survey_ax_2603_03278
+    work: Tether
+    paper: https://openreview.net/pdf?id=FqDmvMZish
+    code: https://github.com/tether-research/tether
+    code_partial: false
+    group: null
+    cells:
+    - Real
+    - Robot trajectories
+    - <strong>1,085</strong> successes in <strong>1,946</strong> attempts
+  - bibkey: survey_ax_2603_18811
+    work: V-Dreamer
+    paper: https://arxiv.org/abs/2603.18811
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Sim / Gen
+    - Robot trajectories
+    - Up to <strong>2,500</strong> generated trajectories for lifting
+  - bibkey: survey_ax_2606_22142
+    work: RoboLineage
+    paper: https://arxiv.org/abs/2606.22142
+    code: https://github.com/robolineage/robolineage
+    code_partial: false
+    group: null
+    cells:
+    - Real
+    - Robot trajectories
+    - <strong>30</strong> demos/task/round over <strong>3</strong> rounds
+  - bibkey: survey_ax_2606_22136
+    work: Wh0
+    paper: https://arxiv.org/abs/2606.22136v2
+    code: https://github.com/chenyt31/Wh0
+    code_partial: false
+    group: null
+    cells:
+    - Gen
+    - Human-hand videos; Hand poses
+    - <strong>50,000</strong> generated video episodes in WM-H
+  - bibkey: survey_ax_2607_14047
+    work: Zero2Skill
+    paper: https://arxiv.org/abs/2607.14047
+    code: https://github.com/open-gigaai/Zero2Skill
+    code_partial: false
+    group: null
+    cells:
+    - Real
+    - Robot trajectories
+    - <strong>50</strong> successful demos for desktop clearing
+  - bibkey: survey_ax_2609_24563
+    work: ARSTAG
+    paper: https://arxiv.org/abs/2609.24563
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Sim
+    - Robot trajectories
+    - <strong>1,000</strong> successful demos/task for sim-to-real transfer
+  - bibkey: survey_ax_2609_23997
+    work: RoboTalk
+    paper: https://arxiv.org/abs/2609.23997v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Sim
+    - Inter-robot messages
+    - <strong>7,950</strong> validated trajectories across <strong>53</strong> tasks
+  - bibkey: survey_ax_2609_32069
+    work: FIND
+    paper: https://arxiv.org/abs/2609.32069v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Real
+    - Robot trajectories
+    - <strong>456</strong> episodes in six hours
+  - bibkey: survey_ax_2609_38905
+    work: EmbodiRSI
+    paper: https://arxiv.org/abs/2609.38905v3
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Real / Sim
+    - Robot trajectories
+    - <strong>400</strong> sim + <strong>10</strong> real trajectories/subtask
+- key: data.annotation
+  domain: Data
+  category: Annotation
+  headers:
+  - Work
+  - Link
+  - Input
+  - Output
+  - Models
+  - Tools
+  widths:
+  - 19.0
+  - 7.0
+  - 10.0
+  - 15.0
+  - 20.0
+  - 29.0
+  caption: 'Comparison of annotation methods. Selected inputs: Image; Video; Robot data; Point cloud. Robot data includes
+    demonstration metadata and robot or simulator logs. Models perform semantic interpretation, reasoning, or annotation;
+    Tools provide supporting perception, geometry, simulation, or editing capabilities, including specialized models. Only
+    main components for the listed output are shown. NR: model identity not reported; —: no separate component listed. Works
+    may appear in multiple groups. Paper and Code link to the paper and repository; - denotes an unavailable repository link.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2401_12168
+    work: SpatialVLM
+    paper: https://openaccess.thecvf.com/content/CVPR2024/html/Chen_SpatialVLM_Endowing_Vision-Language_Models_with_Spatial_Reasoning_Capabilities_CVPR_2024_paper.html
+    code: null
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Image
+    - QA pairs
+    - FlexCap
+    - RPN; Segmentation; ZoeDepth; Geometric QA
+  - bibkey: survey_ax_2407_08693
+    work: ECoT
+    paper: https://proceedings.mlr.press/v270/zawalski25a.html
+    code: https://github.com/MichalZawalski/embodied-CoT
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Video / Robot data
+    - Reasoning traces
+    - Prismatic-7B; Gemini 1.0
+    - Grounding DINO; OWLv2; SAM
+  - bibkey: survey_ax_2410_17772
+    work: NILS
+    paper: https://proceedings.mlr.press/v270/blank25a.html
+    code: https://github.com/intuitive-robots/NILS
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Video
+    - Task descriptions
+    - Gemini 1.5; Gemini Pro
+    - Grounding DINO; DEVA; Depth Anything; GMFlow; SigLIP
+  - bibkey: survey_ax_2411_16537
+    work: RoboSpatial
+    paper: https://openaccess.thecvf.com/content/CVPR2025/html/Song_RoboSpatial_Teaching_Spatial_Understanding_to_2D_and_3D_Vision-Language_Models_CVPR_2025_paper.html
+    code: https://github.com/NVlabs/RoboSpatial
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Image
+    - QA pairs
+    - —
+    - Geometric rules; QA templates
+  - bibkey: survey_ax_2505_08548
+    work: FSD
+    paper: https://openreview.net/pdf?id=yngvAamNQi
+    code: https://github.com/pickxiguapi/Embodied-FSD
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Image / Video
+    - QA pairs
+    - GPT-4o
+    - Grounded SAM; Metric3Dv2; Geometric QA
+  - bibkey: survey_ax_2605_00438
+    work: IVLR
+    paper: https://arxiv.org/abs/2605.00438v1
+    code: null
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Video
+    - Captions
+    - Qwen3-VL
+    - UVD
+  - bibkey: survey_ax_2606_13497
+    work: SPARC
+    paper: https://arxiv.org/abs/2606.13497
+    code: https://github.com/intuitive-robots/sparc
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Video / Robot data
+    - Task descriptions
+    - Qwen3.6-30B
+    - Gripper-event parsing
+  - bibkey: survey_ax_2606_17446
+    work: AnnotateAnything
+    paper: https://arxiv.org/abs/2606.17446v2
+    code: null
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Image / Robot data / Point cloud
+    - QA pairs
+    - '-'
+    - Simulation-log queries
+  - bibkey: survey_ax_2607_13653
+    work: REAL
+    paper: https://link.springer.com/chapter/10.1007/978-3-032-37422-6_36
+    code: https://github.com/InternRobotics/REAL
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Image / Robot data
+    - Dialogue; Reasoning traces
+    - Gemini 3 Pro
+    - Trajectory replay
+  - bibkey: survey_ax_2609_37655
+    work: Exemplar2VQA
+    paper: https://arxiv.org/abs/2609.37655
+    code: https://github.com/yingjiayu12/Exemplar2VQA
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Robot data
+    - QA pairs
+    - Qwen3-Coder-30B-A3B
+    - Python; Geometric APIs; AI2-THOR
+  - bibkey: survey_ax_2609_39378
+    work: EgoTools
+    paper: https://arxiv.org/abs/2609.39378v2
+    code: https://github.com/Ropedia/EgoTools
+    code_partial: false
+    group: Text Annotation
+    cells:
+    - Video
+    - Captions
+    - Gemini 3 Flash
+    - —
+  - bibkey: survey_ax_2407_08693
+    work: ECoT
+    paper: https://proceedings.mlr.press/v270/zawalski25a.html
+    code: https://github.com/MichalZawalski/embodied-CoT
+    code_partial: false
+    group: Spatial Annotation
+    cells:
+    - Video / Robot data
+    - Bounding boxes; Gripper positions
+    - Prismatic-7B
+    - Grounding DINO; OWLv2; SAM; RANSAC
+  - bibkey: survey_ax_2410_17772
+    work: NILS
+    paper: https://proceedings.mlr.press/v270/blank25a.html
+    code: https://github.com/intuitive-robots/NILS
+    code_partial: false
+    group: Spatial Annotation
+    cells:
+    - Video
+    - Bounding boxes; Object masks
+    - Gemini 1.5
+    - Grounding DINO; OWLv2; DEVA
+  - bibkey: survey_ax_2505_08548
+    work: FSD
+    paper: https://openreview.net/pdf?id=yngvAamNQi
+    code: https://github.com/pickxiguapi/Embodied-FSD
+    code_partial: false
+    group: Spatial Annotation
+    cells:
+    - Image / Video
+    - Bounding boxes; Object masks
+    - GPT-4o
+    - Grounded SAM
+  - bibkey: survey_ax_2606_13497
+    work: SPARC
+    paper: https://arxiv.org/abs/2606.13497
+    code: https://github.com/intuitive-robots/sparc
+    code_partial: false
+    group: Spatial Annotation
+    cells:
+    - Video / Robot data
+    - Object trajectories
+    - Qwen3.6-30B
+    - LLMDet; SAM2; RobotSeg; AllTracker; MoGe-2
+  - bibkey: survey_ax_2606_17446
+    work: AnnotateAnything
+    paper: https://arxiv.org/abs/2606.17446v2
+    code: null
+    code_partial: false
+    group: Spatial Annotation
+    cells:
+    - Image / Robot data / Point cloud
+    - Part masks; Part labels
+    - Qwen3.5-VL
+    - P3-SAM; X-Part
+  - bibkey: survey_ax_2607_07459
+    work: EmbodiedGen V2
+    paper: https://arxiv.org/abs/2607.07459
+    code: https://github.com/HorizonRobotics/EmbodiedGen
+    code_partial: false
+    group: Spatial Annotation
+    cells:
+    - Image
+    - Part masks; Part labels
+    - GPT-5.4
+    - P3-SAM
+  - bibkey: survey_ax_2512_14442
+    work: A4-Agent
+    paper: https://link.springer.com/book/10.1007/978-3-032-37086-0
+    code: https://github.com/EnVision-Research/A4-Agent
+    code_partial: false
+    group: Interaction Annotation
+    cells:
+    - Image
+    - Affordance masks
+    - GPT-4o
+    - Qwen-Image-Editing; Rex-Omni; SAM2-Large
+  - bibkey: survey_ax_2601_16046
+    work: DextER
+    paper: https://openaccess.thecvf.com/content/CVPR2026/html/Lee_DextER_Language-driven_Dexterous_Grasp_Generation_with_Embodied_Reasoning_CVPR_2026_paper.html
+    code: https://github.com/junha-l/dexter
+    code_partial: false
+    group: Interaction Annotation
+    cells:
+    - Image / Robot data
+    - Contact points; Grasp descriptions
+    - Gemma 3
+    - MuJoCo
+  - bibkey: survey_ax_2605_00663
+    work: Affordance Agent Harness
+    paper: https://arxiv.org/abs/2605.00663v2
+    code: https://github.com/tenplusgood/A-Harness
+    code_partial: false
+    group: Interaction Annotation
+    cells:
+    - Image
+    - Affordance masks
+    - GPT-4o
+    - Qwen3-VL-235B-A22B; SAM2-Large; Retrieval; Interaction imagination
+  - bibkey: survey_ax_2606_04172
+    work: Affordance2Action
+    paper: https://arxiv.org/abs/2606.04172v2
+    code: https://github.com/arc-l/a2a
+    code_partial: false
+    group: Interaction Annotation
+    cells:
+    - Image
+    - Affordance masks
+    - Qwen3.5-9B
+    - SAM3; Grounding DINO
+  - bibkey: survey_ax_2508_01943
+    work: ROVER
+    paper: https://proceedings.nips.cc/paper_files/paper/2025/hash/cdb1f1b572b616042f01b57fd13db878-Abstract-Conference.html
+    code: https://github.com/Philip-MIT/rover-vlm
+    code_partial: false
+    group: Outcome Annotation
+    cells:
+    - Video
+    - Progress scores
+    - Gemini 1.5 Pro
+    - —
+  - bibkey: survey_ax_2607_14047
+    work: Zero2Skill
+    paper: https://arxiv.org/abs/2607.14047
+    code: https://github.com/open-gigaai/Zero2Skill
+    code_partial: false
+    group: Outcome Annotation
+    cells:
+    - Image
+    - Success labels
+    - Seed1.8
+    - —
+  - bibkey: survey_ax_2609_34484
+    work: ARS
+    paper: https://arxiv.org/abs/2609.34484v1
+    code: null
+    code_partial: false
+    group: Outcome Annotation
+    cells:
+    - Video
+    - Progress scores
+    - Qwen3.6-27B
+    - Video inspection; Timeline editing; Progress editing
+- key: data.refinement
+  domain: Data
+  category: Refinement
+  headers:
+  - Work
+  - Link
+  - Refinement Target
+  - Model
+  widths:
+  - 32.5
+  - 7.5
+  - 30.0
+  - 30.0
+  caption: Comparison of agent-assisted data refinement for robotics. Model lists the main backbones used for data review
+    or supervision revision. Paper and Code link to the paper and repository; - denotes an unavailable repository link.
+  notes: []
+  rows:
+  - bibkey: survey_ax_2602_21198
+    work: Reflective Test-Time Planning
+    paper: https://arxiv.org/abs/2602.21198
+    code: https://github.com/Reflective-Test-Time-Planning/Reflective-Test-Time-Planning
+    code_partial: false
+    group: null
+    cells:
+    - Action scores and reflections
+    - LLaVA-3D-7B / Qwen2.5-VL-3B
+  - bibkey: survey_ax_2606_22142
+    work: RoboLineage
+    paper: https://arxiv.org/abs/2606.22142
+    code: https://github.com/robolineage/robolineage
+    code_partial: false
+    group: null
+    cells:
+    - Robot trajectories
+    - Claude Sonnet 4.6
+  - bibkey: survey_ax_2607_14047
+    work: Zero2Skill
+    paper: https://arxiv.org/abs/2607.14047
+    code: https://github.com/open-gigaai/Zero2Skill
+    code_partial: false
+    group: null
+    cells:
+    - Robot trajectories; Outcome labels
+    - Seed1.8
+  - bibkey: survey_ax_2609_34484
+    work: ARS
+    paper: https://arxiv.org/abs/2609.34484v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Action segments; Progress annotations
+    - Qwen3.6-27B
+- key: environment.reconstruction
+  domain: Environment
+  category: Reconstruction
+  headers:
+  - Work
+  - Link
+  - Input
+  - Representation
+  - Agent Operations
+  - Engines
+  widths:
+  - 20.0
+  - 10.0
+  - 17.5
+  - 17.5
+  - 17.5
+  - 17.5
+  caption: 'Comparison of works on reconstruction. Groups indicate primary construction focus; labels may co-occur. Scene
+    covers scene graphs and instantiated layouts; Code denotes executable programs; Params. denotes parameters. Engines lists
+    construction or verification software, excluding export-only targets. Omitted labels do not establish absence. Input:
+    Text; Image; Video; 3D assets. Paper and Code link to the paper and repository; - denotes an unavailable repository link.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2410_13882
+    work: Articulate-Anything
+    paper: https://proceedings.iclr.cc/paper_files/paper/2025/hash/2c8047bf3ed8ef6905351608d641f02f-Abstract-Conference.html
+    code: https://github.com/vlongle/articulate-anything
+    code_partial: false
+    group: Assets
+    cells:
+    - Video / 3D assets
+    - URDF; Code
+    - Retrieve; Fit; Edit
+    - PyBullet; SAPIEN
+  - bibkey: survey_ax_2605_15187
+    work: Articraft
+    paper: https://arxiv.org/abs/2605.15187v1
+    code: https://github.com/mattzh72/articraft
+    code_partial: false
+    group: Assets
+    cells:
+    - Text
+    - URDF; Code
+    - Generate; Edit
+    - CadQuery
+  - bibkey: survey_ax_2609_23103
+    work: DiagGen
+    paper: https://arxiv.org/abs/2609.23103
+    code: https://github.com/diaggen/diaggen
+    code_partial: false
+    group: Assets
+    cells:
+    - Image
+    - Mesh; Params.
+    - Generate; Edit
+    - Genesis
+  - bibkey: survey_ax_2502_09886
+    work: Video2Policy
+    paper: https://arxiv.org/abs/2502.09886
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Video
+    - Mesh; URDF
+    - Generate; Fit; Assemble
+    - Isaac Gym
+  - bibkey: survey_ax_2601_02078
+    work: Genie Sim 3.0
+    paper: https://arxiv.org/abs/2601.02078
+    code: https://github.com/AgibotTech/genie_sim
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text
+    - Scene; Code
+    - Retrieve; Generate; Assemble
+    - Isaac Sim; OpenUSD
+  - bibkey: survey_ax_2602_09153
+    work: SceneSmith
+    paper: https://proceedings.mlr.press/v306/pfaff26a.html
+    code: https://github.com/nepfaff/scenesmith
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text
+    - Mesh; Scene
+    - Generate; Assemble; Edit
+    - Drake
+  - bibkey: survey_ax_2602_10116
+    work: SAGE
+    paper: https://openaccess.thecvf.com/content/CVPR2026/html/Xia_SAGE_Scalable_Agentic_3D_Scene_Generation_for_Embodied_AI_CVPR_2026_paper.html
+    code: https://github.com/NVlabs/sage
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text
+    - Mesh; Scene
+    - Generate; Assemble; Edit
+    - Isaac Sim
+  - bibkey: survey_ax_2604_05226
+    work: RoboPlayground
+    paper: https://arxiv.org/abs/2604.05226
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text
+    - Code
+    - Generate; Edit
+    - MuJoCo
+  - bibkey: survey_ax_2604_09860
+    work: RoboLab
+    paper: https://www.roboticsproceedings.org/rss22/p096.html
+    code: https://github.com/NVlabs/RoboLab
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text
+    - Scene
+    - Assemble; Edit
+    - Isaac Sim
+  - bibkey: survey_ax_2605_05241
+    work: DexSim2Real
+    paper: https://arxiv.org/abs/2605.05241
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Image
+    - Params.
+    - Optimize
+    - Isaac Sim
+  - bibkey: survey_ax_2605_09423
+    work: SimWorld Studio
+    paper: https://arxiv.org/abs/2605.09423
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text / Image
+    - Scene; Code
+    - Generate; Assemble; Edit
+    - Unreal Engine
+  - bibkey: survey_ax_2606_28276
+    work: SimFoundry
+    paper: https://arxiv.org/abs/2606.28276
+    code: https://github.com/NVlabs/SimFoundry
+    code_partial: false
+    group: Scenes
+    cells:
+    - Video
+    - Mesh; URDF; Scene
+    - Generate; Fit; Assemble
+    - PyBullet; CoACD
+  - bibkey: survey_ax_2607_07459
+    work: EmbodiedGen V2
+    paper: https://arxiv.org/abs/2607.07459
+    code: https://github.com/HorizonRobotics/EmbodiedGen
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text / Image
+    - URDF; Scene
+    - Generate; Assemble
+    - SAPIEN; CoACD
+  - bibkey: survey_ax_2609_05927
+    work: GIF
+    paper: https://arxiv.org/abs/2609.05927
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text / Image
+    - Mesh; Params.
+    - Generate; Fit; Optimize
+    - MuJoCo; Drake
+  - bibkey: survey_ax_2609_24563
+    work: ARSTAG
+    paper: https://arxiv.org/abs/2609.24563
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text / Image
+    - Mesh; Scene
+    - Generate; Fit; Assemble; Edit
+    - Isaac Sim
+  - bibkey: survey_ax_2609_30249
+    work: RAPID
+    paper: https://arxiv.org/abs/2609.30249
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text / Video
+    - Mesh; Scene
+    - Generate; Fit; Assemble
+    - MuJoCo
+  - bibkey: survey_ax_2609_36024
+    work: CoDimRecon
+    paper: https://arxiv.org/abs/2609.36024
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Image
+    - Mesh; Scene
+    - Generate; Fit; Edit
+    - Blender; MuJoCo
+  - bibkey: survey_ax_2609_35318
+    work: DexAgent
+    paper: https://arxiv.org/abs/2609.35318
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text / Video
+    - URDF; Scene
+    - Generate; Fit; Edit
+    - MuJoCo; Isaac Sim
+  - bibkey: survey_ax_2609_36380
+    work: LEGO-Anything
+    paper: https://arxiv.org/abs/2609.36380
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Image
+    - Code; Scene
+    - Generate; Edit
+    - Blender
+  - bibkey: survey_ax_2609_36777
+    work: Code4Scene
+    paper: https://arxiv.org/abs/2609.36777
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text / Image
+    - Scene
+    - Generate; Assemble; Edit
+    - Unreal Engine
+  - bibkey: survey_ax_2610_02274
+    work: Awomo-SimDataEngine
+    paper: https://arxiv.org/abs/2610.02274
+    code: null
+    code_partial: false
+    group: Scenes
+    cells:
+    - Text / Image
+    - URDF; Scene
+    - Generate; Assemble; Edit
+    - Isaac Sim
+  - bibkey: survey_ax_2605_14398
+    work: ChronoAgentic
+    paper: https://arxiv.org/abs/2605.14398
+    code: null
+    code_partial: false
+    group: Dynamics
+    cells:
+    - Text / Image
+    - Code
+    - Generate; Edit
+    - PyChrono
+  - bibkey: survey_ax_2607_19190
+    work: Agentic Real2Sim
+    paper: https://arxiv.org/abs/2607.19190v4
+    code: https://github.com/agentic-real2sim/agentic_real2sim
+    code_partial: false
+    group: Dynamics
+    cells:
+    - Video
+    - Mesh; Params.
+    - Generate; Fit; Optimize
+    - MuJoCo
+  - bibkey: survey_ax_2610_03715
+    work: 4DCodeBench
+    paper: https://arxiv.org/abs/2610.03715
+    code: https://github.com/4DCodeBench/4DCodeBench
+    code_partial: false
+    group: Dynamics
+    cells:
+    - Video
+    - Code
+    - Generate; Edit
+    - Blender
+  - bibkey: survey_ax_2610_04432
+    work: Video2World
+    paper: https://arxiv.org/abs/2610.04432v2
+    code: https://github.com/AetherLabsAI/Video2World
+    code_partial: false
+    group: Dynamics
+    cells:
+    - Video
+    - Code; Scene
+    - Generate; Edit
+    - SAPIEN; Isaac Sim; MuJoCo
+- key: environment.task_generation
+  domain: Environment
+  category: Task Generation
+  headers:
+  - Work
+  - Link
+  - Input
+  - Output
+  - Agent Operations
+  - Tools
+  widths:
+  - 20.0
+  - 10.0
+  - 17.5
+  - 17.5
+  - 17.5
+  - 17.5
+  caption: 'Comparison of works on task generation. Groups reflect primary focus; labels may co-occur. Input lists conditioning
+    sources; Output lists generated or revised artifacts. Eval.: success/evaluation code; Config.: initialization/randomization
+    settings; Plan: an executable solution, which may preserve the original task. Tools lists simulation/task frameworks;
+    UE5 denotes Unreal Engine 5; MolmoSp. denotes MolmoSpaces. Multiple (HARBOR): Isaac Lab, ManiSkill, Genesis, MJLab. Omitted
+    labels do not imply absence. Paper and Code link to the paper and repository; - denotes an unavailable repository link.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2310_01361
+    work: GenSim
+    paper: https://proceedings.iclr.cc/paper_files/paper/2024/hash/143ea4a156ef64f32d4d905206cf32e1-Abstract-Conference.html
+    code: https://github.com/liruiw/GenSim
+    code_partial: false
+    group: Tasks
+    cells:
+    - Goal; Examples
+    - Task; Curriculum
+    - Generate; Select
+    - Ravens
+  - bibkey: survey_ax_2311_01455
+    work: RoboGen
+    paper: https://proceedings.mlr.press/v235/wang24cc.html
+    code: https://github.com/Genesis-Embodied-AI/RoboGen
+    code_partial: false
+    group: Tasks
+    cells:
+    - Assets; Examples
+    - Task; Reward; Plan
+    - Generate; Compose
+    - Genesis; OMPL
+  - bibkey: survey_ax_2502_09886
+    work: Video2Policy
+    paper: https://arxiv.org/abs/2502.09886
+    code: null
+    code_partial: false
+    group: Tasks
+    cells:
+    - Demo
+    - Task; Reward; Eval.
+    - Generate; Repair; Select
+    - Isaac Gym
+  - bibkey: survey_ax_2411_00081
+    work: PARTNR
+    paper: https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3cf318fbeec1126da21e9185ae9908c-Abstract-Conference.html
+    code: https://github.com/facebookresearch/partnr-planner
+    code_partial: false
+    group: Tasks
+    cells:
+    - Scene; Examples
+    - Task; Eval.
+    - Generate; Vary
+    - Habitat 3.0
+  - bibkey: survey_ax_2604_05226
+    work: RoboPlayground
+    paper: https://arxiv.org/abs/2604.05226
+    code: null
+    code_partial: false
+    group: Tasks
+    cells:
+    - Goal
+    - Task; Eval.
+    - Generate; Vary; Repair
+    - MuJoCo
+  - bibkey: survey_ax_2604_09860
+    work: RoboLab
+    paper: https://www.roboticsproceedings.org/rss22/p096.html
+    code: https://github.com/NVlabs/RoboLab
+    code_partial: false
+    group: Tasks
+    cells:
+    - Scene; Examples
+    - Task; Eval.
+    - Generate; Compose; Repair
+    - Isaac Sim
+  - bibkey: survey_ax_2603_01505
+    work: FATE
+    paper: https://arxiv.org/abs/2603.01505
+    code: null
+    code_partial: false
+    group: Tasks
+    cells:
+    - Scene; Goal; Policy
+    - Task; Reward
+    - Repair
+    - Isaac Sim
+  - bibkey: survey_ax_2606_08610
+    work: HARBOR
+    paper: https://arxiv.org/abs/2606.08610
+    code: https://github.com/supersglzc/harbor-rl
+    code_partial: false
+    group: Tasks
+    cells:
+    - Goal; Code
+    - Task; Reward; Config.
+    - Generate; Repair
+    - Multiple
+  - bibkey: survey_ax_2409_18382
+    work: CurricuLLM
+    paper: https://arxiv.org/abs/2409.18382
+    code: https://github.com/labicon/CurricuLLM
+    code_partial: false
+    group: Curricula
+    cells:
+    - Goal; Scene
+    - Curriculum; Reward
+    - Generate; Schedule; Select
+    - Gymnasium; Isaac Lab
+  - bibkey: survey_ax_2605_09423
+    work: SimWorld Studio
+    paper: https://arxiv.org/abs/2605.09423
+    code: null
+    code_partial: false
+    group: Curricula
+    cells:
+    - Goal; Scene; History
+    - Task; Curriculum
+    - Generate; Vary; Schedule
+    - UE5; Gymnasium
+  - bibkey: survey_ax_2606_19419
+    work: RATs
+    paper: https://arxiv.org/abs/2606.19419
+    code: https://github.com/Playful-RATs/RATs
+    code_partial: false
+    group: Curricula
+    cells:
+    - Scene; Skills; History
+    - Task
+    - Generate; Select
+    - LIBERO-PRO; MolmoSp.
+  - bibkey: survey_ax_2609_24563
+    work: ARSTAG
+    paper: https://arxiv.org/abs/2609.24563
+    code: null
+    code_partial: false
+    group: Plans
+    cells:
+    - Image; Goal
+    - Plan; Config.
+    - Compose; Vary
+    - Isaac Sim
+  - bibkey: survey_ax_2602_12065
+    work: Scene2Demo
+    paper: https://arxiv.org/abs/2602.12065
+    code: null
+    code_partial: false
+    group: Plans
+    cells:
+    - Image; Goal
+    - Task; Eval.; Plan
+    - Generate; Compose; Repair
+    - OmniGibson
+  - bibkey: survey_ax_2604_08664
+    work: GenPHRI
+    paper: https://arxiv.org/abs/2604.08664v2
+    code: null
+    code_partial: false
+    group: Plans
+    cells:
+    - Goal
+    - Config.; Plan
+    - Generate; Repair
+    - Genesis; SceneSmith
+  - bibkey: survey_ax_2610_07969
+    work: EmbodiedSmith
+    paper: https://arxiv.org/abs/2610.07969
+    code: null
+    code_partial: false
+    group: Plans
+    cells:
+    - Goal; Robot
+    - Plan; Config.
+    - Compose; Repair
+    - Isaac Sim; cuRobo
+- key: environment.benchmarking
+  domain: Environment
+  category: Benchmarking
+  headers:
+  - Work
+  - Link
+  - Setting
+  - Capability
+  - Interface
+  - Engines
+  widths:
+  - 20.0
+  - 10.0
+  - 17.5
+  - 17.5
+  - 17.5
+  - 17.5
+  caption: 'Comparison of works on benchmarking. Groups separate benchmarks, evaluated systems, and agent-directed evaluators.
+    Capability lists selected targets. Interface lists selected tested-system outputs: Answer (predictions), Action (motor
+    commands), Call (tools/skills), and Code (executable programs), excluding evaluator-generated code. Engines lists simulation
+    backends/frameworks; Multiple denotes heterogeneous suites detailed in the linked papers. NR: not reported; N/A: offline
+    evaluation without simulator execution. Collab.: collaboration; UE5: Unreal Engine 5. Labels may co-occur and describe
+    the summarized tracks/configurations; RobotWorld Code is optional. Setting: Real; Sim; Offline data. Paper and Code link
+    to the paper and repository; - denotes an unavailable repository link.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2306_03310
+    work: LIBERO
+    paper: https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html
+    code: https://github.com/Lifelong-Robot-Learning/LIBERO
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Transfer
+    - Action
+    - robosuite
+  - bibkey: survey_ax_2411_00081
+    work: PARTNR
+    paper: https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3cf318fbeec1126da21e9185ae9908c-Abstract-Conference.html
+    code: https://github.com/facebookresearch/partnr-planner
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Planning; Collab.
+    - Call
+    - Habitat 3.0
+  - bibkey: survey_ax_2502_09560
+    work: EmbodiedBench
+    paper: https://proceedings.mlr.press/v267/yang25f.html
+    code: https://github.com/EmbodiedBench/EmbodiedBench
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Planning; Reasoning
+    - Action; Call
+    - AI2-THOR; Habitat; CoppeliaSim
+  - bibkey: survey_ax_2510_03827
+    work: LIBERO-PRO
+    paper: https://arxiv.org/abs/2510.03827
+    code: null
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Robustness
+    - Action
+    - LIBERO
+  - bibkey: survey_ax_2604_09860
+    work: RoboLab
+    paper: https://www.roboticsproceedings.org/rss22/p096.html
+    code: https://github.com/NVlabs/RoboLab
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Robustness; Control
+    - Action
+    - Isaac Sim
+  - bibkey: survey_ax_2603_22435
+    work: CaP-X
+    paper: https://proceedings.mlr.press/v306/fu26u.html
+    code: null
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim / Real
+    - Coding
+    - Code
+    - robosuite; LIBERO-PRO; BEHAVIOR
+  - bibkey: survey_ax_2604_25788
+    work: KinDER
+    paper: https://www.roboticsproceedings.org/rss22/p184.html
+    code: https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Reasoning
+    - Action; Call
+    - Pymunk; PyBullet; MuJoCo
+  - bibkey: survey_ax_2605_10921
+    work: RoboMemArena
+    paper: https://arxiv.org/abs/2605.10921
+    code: https://github.com/OpenHelix-Team/RoboMemArena
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim / Real
+    - Memory
+    - Action; Call
+    - NR
+  - bibkey: survey_ax_2605_26637
+    work: EmbodiedTool
+    paper: https://arxiv.org/abs/2605.26637
+    code: null
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Offline data
+    - Tools
+    - Answer; Call
+    - N/A
+  - bibkey: survey_ax_2607_22014
+    work: MissionBench
+    paper: https://arxiv.org/abs/2607.22014
+    code: https://github.com/FraunhoferIVI/MissionBench
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Planning; Perception
+    - Answer; Action
+    - Cosys-AirSim; UE5
+  - bibkey: survey_ax_2608_08036
+    work: RoboGraph
+    paper: https://arxiv.org/abs/2608.08036
+    code: null
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Memory
+    - Call
+    - RoboTwin; RoboCasa
+  - bibkey: survey_ax_2609_08292
+    work: EvoNav-Bench
+    paper: https://arxiv.org/abs/2609.08292
+    code: null
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Memory; Robustness
+    - Action
+    - AI2-THOR
+  - bibkey: survey_ax_2609_10895
+    work: ReactHuman
+    paper: https://arxiv.org/abs/2609.10895
+    code: null
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Reasoning; Safety
+    - Action
+    - Genesis
+  - bibkey: survey_ax_2609_19554
+    work: VABench
+    paper: https://arxiv.org/abs/2609.19554
+    code: null
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Perception; Control
+    - Action
+    - NR
+  - bibkey: survey_ax_2609_24124
+    work: ActiveArena
+    paper: https://arxiv.org/abs/2609.24124
+    code: https://github.com/leeibo/ActiveArena
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Perception; Memory
+    - Action; Call
+    - RoboTwin 2.0
+  - bibkey: survey_ax_2609_27308
+    work: EmbodiedSWE
+    paper: https://arxiv.org/abs/2609.27308v2
+    code: https://github.com/EmbodiedSWE/EmbodiedSWE
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Coding; Control
+    - Code
+    - Isaac Lab
+  - bibkey: survey_ax_2610_00854
+    work: Embodied Agent Arena
+    paper: https://arxiv.org/abs/2610.00854
+    code: https://github.com/embodied-agent-arena/embodied-agent-arena
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Offline data / Sim
+    - Reasoning; Planning
+    - Action; Call; Code
+    - Multiple
+  - bibkey: survey_ax_2607_04434
+    work: RoboDojo
+    paper: https://arxiv.org/abs/2607.04434
+    code: https://github.com/RoboDojo-Benchmark/RoboDojo
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim / Real
+    - Control; Robustness
+    - Action
+    - Isaac Lab; Isaac Sim
+  - bibkey: survey_ax_2608_17386
+    work: ManiGuard
+    paper: https://arxiv.org/abs/2608.17386
+    code: null
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Safety
+    - Action
+    - Isaac Sim; OmniGibson
+  - bibkey: survey_ax_2609_07047
+    work: MEMOBench
+    paper: https://arxiv.org/abs/2609.07047
+    code: https://github.com/Collab-Gen/MEMOBench
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Memory
+    - Action
+    - LIBERO; robosuite
+  - bibkey: survey_ax_2610_10409
+    work: RobotWorld
+    paper: https://arxiv.org/abs/2610.10409v1
+    code: null
+    code_partial: false
+    group: Benchmarks
+    cells:
+    - Sim
+    - Planning; Control
+    - Action; Code
+    - Multiple
+  - bibkey: survey_ax_2607_00272
+    work: ASPIRE
+    paper: https://arxiv.org/abs/2607.00272
+    code: https://github.com/NVlabs/ASPIRE
+    code_partial: false
+    group: Systems
+    cells:
+    - Sim / Real
+    - Coding; Transfer
+    - Code
+    - CaP-X
+  - bibkey: survey_ax_2607_08448
+    work: Harness VLA
+    paper: https://arxiv.org/abs/2607.08448
+    code: https://github.com/RLinf/RPent
+    code_partial: false
+    group: Systems
+    cells:
+    - Sim
+    - Memory; Robustness
+    - Call
+    - robosuite; RoboCasa; RoboTwin
+  - bibkey: survey_ax_2607_18060
+    work: RoboHarness
+    paper: https://arxiv.org/abs/2607.18060v3
+    code: null
+    code_partial: false
+    group: Systems
+    cells:
+    - Sim / Real
+    - Planning; Robustness
+    - Call
+    - LIBERO; RoboTwin
+  - bibkey: survey_ax_2609_08402
+    work: AGOS-Agent
+    paper: https://arxiv.org/abs/2609.08402
+    code: null
+    code_partial: false
+    group: Systems
+    cells:
+    - Sim
+    - Planning; Collab.
+    - Call
+    - CARLA-Air
+  - bibkey: survey_ax_2604_05226
+    work: RoboPlayground
+    paper: https://arxiv.org/abs/2604.05226
+    code: null
+    code_partial: false
+    group: Evaluators
+    cells:
+    - Sim
+    - Robustness
+    - Action
+    - MuJoCo
+  - bibkey: survey_ax_2602_01640
+    work: A2Eval
+    paper: https://arxiv.org/abs/2602.01640
+    code: null
+    code_partial: false
+    group: Evaluators
+    cells:
+    - Offline data
+    - Perception; Reasoning
+    - Answer
+    - N/A
+  - bibkey: survey_iclr_2026_8833c8aa
+    work: ManipEvalAgent
+    paper: https://proceedings.iclr.cc/paper_files/paper/2026/hash/8833c8aa10542d24d693bbaf6a4598f5-Abstract-Conference.html
+    code: null
+    code_partial: false
+    group: Evaluators
+    cells:
+    - Sim
+    - Robustness
+    - Action
+    - LIBERO; RoboTwin
+  - bibkey: survey_ax_2609_13082
+    work: Embodied-BenchForge
+    paper: https://arxiv.org/abs/2609.13082
+    code: null
+    code_partial: false
+    group: Evaluators
+    cells:
+    - Offline data / Sim
+    - Reasoning; Planning
+    - Answer; Call
+    - AI2-THOR
+- key: harness.orchestration
+  domain: Harness
+  category: Orchestration
+  headers:
+  - Work
+  - Link
+  - Model-Based
+  - Hybrid
+  - Rule-Based
+  - Routes By
+  - Hands Off To
+  widths:
+  - 23.5
+  - 7.5
+  - 9.5
+  - 9.5
+  - 9.5
+  - 14.0
+  - 26.5
+  caption: Comparison of orchestration methods, grouped by categories in the text. The decision columns mark how the executor
+    is chosen at run time, namely model-based (one LLM or VLM agent, or several communicating agents, decide each call), hybrid
+    (a model proposes calls and a rule layer authorizes or triggers them), or rule-based (a preset schedule or stage order
+    decides). <em>Routes By</em> is the information used to choose the executor, namely executor capability, execution feedback,
+    the task plan, dialogue between agents, or fixed rules. <em>Hands Off To</em> lists the executors that receive control,
+    namely learned policies (VLA, WAM, or policy pool), analytic tools (tool set, motion planner, or controller), skill libraries,
+    and other agents (robot or human). Paper and Code link to the paper and repository.
+  notes: []
+  rows:
+  - bibkey: survey_ax_2606_07723
+    work: VoLo
+    paper: https://arxiv.org/abs/2606.07723
+    code: https://github.com/NVlabs/VoLoAgent
+    code_partial: false
+    group: Routing and Dispatch
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Feedback
+    - VLA; Tool set
+  - bibkey: survey_ax_2608_15549
+    work: MistyPilot
+    paper: https://arxiv.org/abs/2608.15549
+    code: https://github.com/WangXiaoShawn/MistyPilot
+    code_partial: false
+    group: Routing and Dispatch
+    cells:
+    - ''
+    - ✓
+    - ''
+    - Rules
+    - Skill library
+  - bibkey: survey_ax_2607_10350
+    work: ABot-AgentOS
+    paper: https://arxiv.org/abs/2607.10350
+    code: null
+    code_partial: false
+    group: Routing and Dispatch
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Capability
+    - Skill library
+  - bibkey: survey_ax_2609_18520
+    work: AeroWeaver
+    paper: https://arxiv.org/abs/2609.18520
+    code: https://github.com/Admire-ljb/AeroWeaver
+    code_partial: false
+    group: Routing and Dispatch
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Capability
+    - Skill library; Robot
+  - bibkey: survey_ax_2604_11975
+    work: M2HRI
+    paper: https://arxiv.org/abs/2604.11975
+    code: https://github.com/project-m2hri/m2hri
+    code_partial: false
+    group: Routing and Dispatch
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Dialogue
+    - Robot; Human
+  - bibkey: survey_ax_2410_22662
+    work: EMOS
+    paper: https://arxiv.org/abs/2410.22662
+    code: null
+    code_partial: false
+    group: Routing and Dispatch
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Capability
+    - Skill library; Robot
+  - bibkey: survey_ax_2607_21725
+    work: Physical Agency
+    paper: https://arxiv.org/abs/2607.21725
+    code: https://github.com/lianegalanti/Pigey
+    code_partial: false
+    group: Routing and Dispatch
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Feedback
+    - VLA; Motion planner
+  - bibkey: survey_ax_2606_18363
+    work: Guava
+    paper: https://arxiv.org/abs/2606.18363
+    code: null
+    code_partial: false
+    group: Routing and Dispatch
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Feedback
+    - Tool set
+  - bibkey: survey_ax_2605_26637
+    work: EmbodiedTool
+    paper: https://arxiv.org/abs/2605.26637
+    code: null
+    code_partial: false
+    group: Function Protocol
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Capability
+    - Tool set
+  - bibkey: survey_ax_2603_26997
+    work: ROSClaw
+    paper: https://arxiv.org/abs/2603.26997
+    code: null
+    code_partial: false
+    group: Function Protocol
+    cells:
+    - ''
+    - ✓
+    - ''
+    - Capability
+    - Skill library
+  - bibkey: survey_ax_2608_22657
+    work: Physical Agentic AI
+    paper: https://arxiv.org/abs/2608.22657
+    code: https://github.com/Liuuuxy/physical-agentic-ai
+    code_partial: false
+    group: Function Protocol
+    cells:
+    - ''
+    - ✓
+    - ''
+    - Feedback
+    - Skill library
+  - bibkey: survey_ax_2609_01281
+    work: EmbodiedSkills
+    paper: https://arxiv.org/abs/2609.01281
+    code: https://github.com/ZJU4EmbodiedAI/EmbodiedSkills
+    code_partial: false
+    group: Function Protocol
+    cells:
+    - ''
+    - ✓
+    - ''
+    - Plan
+    - VLA
+  - bibkey: survey_ax_2608_11246
+    work: Thea
+    paper: https://arxiv.org/abs/2608.11246
+    code: https://github.com/EIT-HAI/Thea
+    code_partial: false
+    group: Function Protocol
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Feedback
+    - Tool set
+  - bibkey: survey_ax_2607_18060
+    work: RoboHarness
+    paper: https://arxiv.org/abs/2607.18060
+    code: null
+    code_partial: false
+    group: State Connection
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Capability
+    - Policy pool
+  - bibkey: survey_ax_2603_07892
+    work: RoboRouter
+    paper: https://arxiv.org/abs/2603.07892
+    code: null
+    code_partial: false
+    group: State Connection
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Feedback
+    - Policy pool
+  - bibkey: survey_ax_2307_04738
+    work: RoCo
+    paper: https://arxiv.org/abs/2307.04738
+    code: https://github.com/MandiZhao/robot-collab
+    code_partial: false
+    group: State Connection
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Dialogue
+    - Motion planner; Robot
+  - bibkey: survey_ax_2609_23997
+    work: RoboTalk
+    paper: https://arxiv.org/abs/2609.23997
+    code: null
+    code_partial: false
+    group: State Connection
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Dialogue
+    - Skill library; Robot
+  - bibkey: survey_ax_2609_08402
+    work: AGOS-Agent
+    paper: https://arxiv.org/abs/2609.08402
+    code: null
+    code_partial: false
+    group: State Connection
+    cells:
+    - ''
+    - ''
+    - ✓
+    - Rules
+    - Robot
+  - bibkey: survey_ax_2608_09516
+    work: HarnessWAM
+    paper: https://arxiv.org/abs/2608.09516
+    code: null
+    code_partial: false
+    group: Handoff Timing
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Feedback
+    - WAM
+  - bibkey: survey_ax_2607_05377
+    work: Cortex
+    paper: https://arxiv.org/abs/2607.05377
+    code: https://github.com/InternRobotics/Cortex
+    code_partial: false
+    group: Handoff Timing
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Plan
+    - VLA
+  - bibkey: survey_ax_2605_13119
+    work: VLAs-as-Tools
+    paper: https://arxiv.org/abs/2605.13119
+    code: null
+    code_partial: false
+    group: Handoff Timing
+    cells:
+    - ✓
+    - ''
+    - ''
+    - Plan
+    - VLA
+  - bibkey: survey_ax_2607_17213
+    work: Retriever
+    paper: https://arxiv.org/abs/2607.17213
+    code: https://github.com/openretriever/retriever
+    code_partial: false
+    group: Handoff Timing
+    cells:
+    - ''
+    - ''
+    - ✓
+    - Rules
+    - VLA; Controller
+- key: harness.memory
+  domain: Harness
+  category: Memory
+  headers:
+  - Work
+  - Link
+  - Stored as
+  - Written at
+  - Retrieved by
+  - Persists
+  widths:
+  - 27.0
+  - 10.0
+  - 17.0
+  - 17.0
+  - 17.0
+  - 12.0
+  caption: 'Comparison of works on memory, grouped by their focusing stage. <em>Stored as</em>: Text (natural-language notes),
+    Graph (scene or task graphs), Visual (maps, frames, images), or Structured (records, indices, plans, code). <em>Written
+    at</em>: every Step, a specific Event such as an action outcome or subgoal, or the Episode end. <em>Retrieved by</em>:
+    a Query on the goal or question, Similarity to past cases, Direct use as input or context, or a Check of conditions before
+    use. <em>Persists</em> marks memory kept across episodes. Paper and Code link to the paper and repository; - denotes an
+    unavailable repository link.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2607_29600
+    work: HAM-VLN
+    paper: https://arxiv.org/abs/2607.29600
+    code: null
+    code_partial: false
+    group: Memory Writing
+    cells:
+    - Graph
+    - Step
+    - Query
+    - ''
+  - bibkey: survey_ax_2605_18729
+    work: Robo-Cortex
+    paper: https://arxiv.org/abs/2605.18729
+    code: null
+    code_partial: false
+    group: Memory Writing
+    cells:
+    - Text
+    - Episode end
+    - Similarity
+    - ✓
+  - bibkey: survey_ax_2607_03449
+    work: HiMe
+    paper: https://proceedings.mlr.press/v306/ji26k.html
+    code: https://github.com/HappyWaterXP/HiMe
+    code_partial: false
+    group: Memory Writing
+    cells:
+    - Text
+    - Event
+    - Query
+    - ''
+  - bibkey: survey_ax_2607_14252
+    work: MEMORA
+    paper: https://arxiv.org/abs/2607.14252v2
+    code: https://github.com/yuzihaowashu/MEMORA
+    code_partial: false
+    group: Memory Writing
+    cells:
+    - Structured
+    - Step
+    - Query
+    - ✓
+  - bibkey: survey_ax_2609_28429
+    work: ARMS
+    paper: https://arxiv.org/abs/2609.28429
+    code: null
+    code_partial: false
+    group: Memory Writing
+    cells:
+    - Structured
+    - Event
+    - Similarity
+    - ✓
+  - bibkey: survey_ax_2609_15976
+    work: MessyMem
+    paper: https://arxiv.org/abs/2609.15976
+    code: null
+    code_partial: false
+    group: Memory Writing
+    cells:
+    - Graph
+    - Event
+    - Query
+    - ''
+  - bibkey: survey_ax_2608_09410
+    work: HyMeS
+    paper: https://arxiv.org/abs/2608.09410
+    code: null
+    code_partial: false
+    group: Memory Writing
+    cells:
+    - Structured
+    - Event
+    - Check
+    - ''
+  - bibkey: survey_ax_2608_04933
+    work: Mimir
+    paper: https://arxiv.org/abs/2608.04933
+    code: null
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Structured
+    - Step
+    - Query
+    - ''
+  - bibkey: survey_ax_2603_12939
+    work: RoboStream
+    paper: https://link.springer.com/chapter/10.1007/978-3-032-37252-9_3
+    code: https://github.com/yu2hi13/RoboStream
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Graph
+    - Step
+    - Direct
+    - ''
+  - bibkey: survey_ax_2604_12872
+    work: OVAL
+    paper: https://arxiv.org/abs/2604.12872
+    code: null
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Structured
+    - Step
+    - Query
+    - ''
+  - bibkey: survey_ax_2609_13335
+    work: MetaTool
+    paper: https://arxiv.org/abs/2609.13335
+    code: null
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Structured
+    - Event
+    - Direct
+    - ''
+  - bibkey: survey_ax_2604_13533
+    work: EEAgent
+    paper: https://arxiv.org/abs/2604.13533v2
+    code: null
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Text
+    - Event
+    - Direct
+    - ✓
+  - bibkey: survey_ax_2609_24124
+    work: ActiveArena
+    paper: https://arxiv.org/abs/2609.24124
+    code: https://github.com/leeibo/ActiveArena
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Visual
+    - Event
+    - Direct
+    - ''
+  - bibkey: survey_ax_2609_08444
+    work: SafeMem
+    paper: https://arxiv.org/abs/2609.08444
+    code: null
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Graph
+    - Step
+    - Direct
+    - ''
+  - bibkey: survey_ax_2609_27720
+    work: CoRelNav
+    paper: https://arxiv.org/abs/2609.27720
+    code: null
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Structured
+    - Step
+    - Query
+    - ''
+  - bibkey: survey_ax_2609_29964
+    work: WAA
+    paper: https://arxiv.org/abs/2609.29964
+    code: null
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Structured
+    - Episode end
+    - Query
+    - ✓
+  - bibkey: survey_ax_2609_29389
+    work: Robo-Harness K1
+    paper: https://arxiv.org/abs/2609.29389
+    code: https://github.com/Robo-Harness/k1
+    code_partial: false
+    group: Memory Updating
+    cells:
+    - Structured
+    - Event
+    - Check
+    - ''
+  - bibkey: survey_ax_2608_30396
+    work: NavMCP
+    paper: https://arxiv.org/abs/2608.30396
+    code: null
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Structured
+    - Event
+    - Query
+    - ''
+  - bibkey: survey_ax_2609_26360
+    work: HFLEX-EQA
+    paper: https://arxiv.org/abs/2609.26360
+    code: https://github.com/ntnu-arl/hflex_eqa
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Graph
+    - Step
+    - Query
+    - ''
+  - bibkey: survey_ax_2609_27526
+    work: NavProbe
+    paper: https://arxiv.org/abs/2609.27526v2
+    code: https://github.com/liujy25/NavProbe
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Structured
+    - Step
+    - Query
+    - ''
+  - bibkey: survey_ax_2604_18271
+    work: EmbodiedLGR
+    paper: https://arxiv.org/abs/2604.18271
+    code: null
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Graph
+    - Step
+    - Query
+    - ''
+  - bibkey: survey_ax_2603_07997
+    work: CMMR-VLN
+    paper: https://arxiv.org/abs/2603.07997
+    code: null
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Visual
+    - Episode end
+    - Similarity
+    - ✓
+  - bibkey: survey_ax_2606_23565
+    work: HoloAgent-0
+    paper: https://arxiv.org/abs/2606.23565
+    code: null
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Graph
+    - Step
+    - Query
+    - ✓
+  - bibkey: survey_ax_2608_16889
+    work: BATON
+    paper: https://arxiv.org/abs/2608.16889
+    code: null
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Text
+    - Episode end
+    - Check
+    - ✓
+  - bibkey: survey_ax_2609_11308
+    work: 2AM
+    paper: https://arxiv.org/abs/2609.11308
+    code: null
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Structured
+    - Event
+    - Direct
+    - ''
+  - bibkey: survey_ax_2601_20577
+    work: MeCo
+    paper: https://doi.org/10.65109/qpuc1624
+    code: https://github.com/TomWang-NPU/MeCo
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Structured
+    - Episode end
+    - Similarity
+    - ✓
+  - bibkey: survey_ax_2602_00551
+    work: APEX
+    paper: https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_APEX_A_Decoupled_Memory-based_Explorer_for_Asynchronous_Aerial_Object_Goal_CVPR_2026_paper.html
+    code: https://github.com/4amGodvzx/apex
+    code_partial: false
+    group: Memory Retrieval
+    cells:
+    - Visual
+    - Step
+    - Direct
+    - ''
+- key: harness.monitoring_and_recovery
+  domain: Harness
+  category: Monitoring and Recovery
+  headers:
+  - Work
+  - Link
+  - Check Time
+  - Checker
+  - Signal
+  - Response
+  widths:
+  - 22.0
+  - 10.0
+  - 16.0
+  - 15.0
+  - 18.0
+  - 19.0
+  caption: Comparison of monitoring and recovery methods. <em>Check Time</em> is relative to the execution of the checked
+    step, i.e., before it runs, while it runs, or after it ends. <em>Checker</em> is the component that makes the judgment,
+    <em>Signal</em> is what the check reports, and <em>Response</em> is what the system does next. Paper and Code link to
+    the paper and repository; - denotes an unavailable repository link.
+  notes: []
+  rows:
+  - bibkey: survey_ax_2609_20822
+    work: SafeHarness
+    paper: https://arxiv.org/abs/2609.20822v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Before, during
+    - Rules
+    - Constraint
+    - Replan
+  - bibkey: survey_ax_2601_18492
+    work: DV-VLN
+    paper: https://arxiv.org/abs/2601.18492
+    code: https://github.com/PlumJun/DV-VLN
+    code_partial: false
+    group: null
+    cells:
+    - Before
+    - VLM
+    - Validity
+    - Select
+  - bibkey: survey_ax_2602_12281
+    work: CoVer
+    paper: https://arxiv.org/abs/2602.12281
+    code: https://github.com/cover-vla/cover-vla
+    code_partial: false
+    group: null
+    cells:
+    - Before
+    - Learned
+    - Validity
+    - Select
+  - bibkey: survey_ax_2307_00329
+    work: DoReMi
+    paper: https://ieeexplore.ieee.org/document/10802284
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - VLM
+    - Constraint
+    - Stop, replan
+  - bibkey: survey_ax_2412_04455
+    work: Code-as-Monitor
+    paper: https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_Code-as-Monitor_Constraint-aware_Visual_Programming_for_Reactive_and_Proactive_Robotic_Failure_CVPR_2025_paper.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - Code
+    - Constraint
+    - Report
+  - bibkey: survey_ax_2607_23532
+    work: MLRA
+    paper: https://arxiv.org/abs/2607.23532
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - Rules
+    - Constraint
+    - Report
+  - bibkey: survey_ax_2603_10682
+    work: OnFly
+    paper: https://arxiv.org/abs/2603.10682
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - VLM
+    - Progress
+    - Replan
+  - bibkey: survey_ax_2603_02115
+    work: Robometer
+    paper: https://www.roboticsproceedings.org/rss22/p140.html
+    code: https://github.com/robometer/robometer
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - Learned
+    - Progress
+    - Report
+  - bibkey: survey_ax_2604_09860
+    work: RoboLab
+    paper: https://www.roboticsproceedings.org/rss22/p096.html
+    code: https://github.com/NVlabs/RoboLab
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - Code
+    - Progress
+    - Report
+  - bibkey: survey_ax_2306_15724
+    work: REFLECT
+    paper: https://proceedings.mlr.press/v229/liu23g.html
+    code: https://github.com/real-stanford/reflect
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - LLM
+    - Failure
+    - Report, replan
+  - bibkey: survey_ax_2410_00371
+    work: AHA
+    paper: https://proceedings.iclr.cc/paper_files/paper/2025/hash/70a06501001e1820fd1eb9ee821302d2-Abstract-Conference.html
+    code: https://github.com/NVlabs/AHA
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - VLM
+    - Failure
+    - Report
+  - bibkey: survey_ax_2605_26349
+    work: DQAF
+    paper: https://arxiv.org/abs/2605.26349
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - VLM + human
+    - Progress
+    - Report
+  - bibkey: survey_ax_2602_13081
+    work: AARC
+    paper: https://ojs.aaai.org/index.php/AAAI-SS/article/view/42578
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - Rules
+    - Progress
+    - Replan
+  - bibkey: survey_ax_2607_06256
+    work: DSHF
+    paper: https://arxiv.org/abs/2607.06256
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - VLM
+    - Success
+    - Retry, replan
+  - bibkey: survey_ax_2604_13942
+    work: Goal2Skill
+    paper: https://arxiv.org/abs/2604.13942
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - VLM
+    - Failure
+    - Retry, replan
+  - bibkey: survey_ax_2607_06990
+    work: CLMAF
+    paper: https://www.roboticsproceedings.org/rss22/p036.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Before, after
+    - VLM
+    - Validity
+    - Replan
+  - bibkey: survey_ax_2607_22999
+    work: WCM
+    paper: https://arxiv.org/abs/2607.22999
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - VLM
+    - Failure
+    - Replan
+  - bibkey: survey_ax_2604_02318
+    work: MetaNav
+    paper: https://arxiv.org/abs/2604.02318
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - LLM
+    - Progress
+    - Replan
+  - bibkey: survey_ax_2607_04162
+    work: ACE
+    paper: https://arxiv.org/abs/2607.04162v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - VLM + human
+    - Success
+    - Retry
+  - bibkey: survey_ax_2609_15195
+    work: HarnessVLN
+    paper: https://arxiv.org/abs/2609.15195
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Before
+    - Rules
+    - Validity
+    - Retry, stop
+  - bibkey: survey_ax_2609_06508
+    work: VLA-Corrector
+    paper: https://arxiv.org/abs/2609.06508
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - Learned
+    - Failure
+    - Adjust
+  - bibkey: survey_ax_2608_26645
+    work: FLARE
+    paper: https://openaccess.thecvf.com/content/CVPR2026/html/Zhao_FLARE_A_Failure-Aware_Framework_for_Autonomous_Correction_and_Recovery_in_CVPR_2026_paper.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - VLM
+    - Failure
+    - Retry, reset
+  - bibkey: survey_ax_2606_09630
+    work: ReCoVLA
+    paper: https://arxiv.org/abs/2606.09630
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - VLM
+    - Failure
+    - Switch
+  - bibkey: survey_ax_2605_11951
+    work: AgentChord
+    paper: https://www.roboticsproceedings.org/rss22/p180.html
+    code: https://github.com/EDEM-AI/AgentChord
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - Code
+    - Failure
+    - Switch
+  - bibkey: survey_ax_2603_02772
+    work: SERP
+    paper: https://arxiv.org/abs/2603.02772v2
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - Rules
+    - Failure
+    - Adjust, retry
+  - bibkey: survey_ax_2603_13528
+    work: Dream2Fix
+    paper: https://arxiv.org/abs/2603.13528
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - Learned
+    - Failure
+    - Adjust
+  - bibkey: survey_ax_2607_16636
+    work: PhyAgentOS
+    paper: https://arxiv.org/abs/2607.16636
+    code: https://github.com/PhyAgentOS/PhyAgentOS-core
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - Rules
+    - Success
+    - Replan
+  - bibkey: survey_ax_2609_19413
+    work: HALTER
+    paper: https://arxiv.org/abs/2609.19413
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - LLM
+    - Success
+    - Reset
+  - bibkey: survey_ax_2609_05178
+    work: LIBERO-RECOVER
+    paper: https://arxiv.org/abs/2609.05178
+    code: https://github.com/liulin815/LIBERO-Recovery
+    code_partial: false
+    group: null
+    cells:
+    - –
+    - Benchmark
+    - –
+    - –
+  - bibkey: survey_ax_2606_00104
+    work: PEACE
+    paper: https://arxiv.org/abs/2606.00104
+    code: https://github.com/erdemuysalx/PEACE
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - Rules
+    - Failure
+    - Replan
+  - bibkey: survey_ax_2606_13578
+    work: LabVLA
+    paper: https://arxiv.org/abs/2606.13578
+    code: https://github.com/zjunlp/LabVLA
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - Code + human
+    - Success, constraint
+    - Reject
+  - bibkey: survey_ax_2604_07395
+    work: PAL
+    paper: https://arxiv.org/abs/2604.07395
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - After
+    - Rules + human
+    - Failure
+    - Retry, stop
+  - bibkey: survey_ax_2607_13049
+    work: SPINE
+    paper: https://arxiv.org/abs/2607.13049
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - During
+    - Rules + human
+    - Failure
+    - Adjust, retry
+- key: harness.skills
+  domain: Harness
+  category: Skills
+  headers:
+  - Work
+  - Link
+  - Skill form
+  - Built from
+  - Reuse
+  - Update
+  widths:
+  - 18.4982
+  - 7.4993
+  - 15.7284
+  - 17.5782
+  - 18.4982
+  - 22.1978
+  caption: 'Comparison of works on skills. Skill form describes the reusable artifact; Update distinguishes code or library
+    changes from policy training. NR: not reported. Bold highlights key counts and update boundaries. Paper and Code link
+    to the paper and repository; - denotes an unavailable repository link.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2209_07753
+    work: Code as Policies
+    paper: https://doi.org/10.1109/icra48891.2023.10160591
+    code: https://github.com/google-research/google-research/tree/master/code_as_policies
+    code_partial: false
+    group: null
+    cells:
+    - Python functions
+    - Instructions; API examples
+    - Call earlier functions
+    - Generate missing functions
+  - bibkey: survey_ax_2209_11302
+    work: ProgPrompt
+    paper: https://ieeexplore.ieee.org/document/10161317/
+    code: https://github.com/NVlabs/progprompt-vh
+    code_partial: false
+    group: null
+    cells:
+    - Plans with assertions
+    - Instructions; action examples
+    - Compose provided actions
+    - Within-plan recovery; skill revision NR
+  - bibkey: survey_ax_2307_05973
+    work: VoxPoser
+    paper: https://proceedings.mlr.press/v229/huang23b.html
+    code: https://github.com/huangwl18/VoxPoser
+    code_partial: false
+    group: null
+    cells:
+    - Value-map code
+    - Instructions; visual grounding
+    - Rerun code on new observations
+    - Code <strong>fixed</strong> within each subtask
+  - bibkey: survey_ax_2305_16291
+    work: Voyager
+    paper: https://arxiv.org/abs/2305.16291
+    code: https://github.com/MineDojo/Voyager
+    code_partial: false
+    group: null
+    cells:
+    - Action programs
+    - Exploration; execution feedback
+    - Retrieve relevant programs
+    - Add success-verified programs
+  - bibkey: survey_ax_2311_10678
+    work: DROC
+    paper: https://arxiv.org/abs/2311.10678v2
+    code: https://github.com/Stanford-ILIAD/droc
+    code_partial: false
+    group: null
+    cells:
+    - Code; correction knowledge
+    - Human corrections
+    - Retrieve task/object knowledge
+    - Revise code; save reusable lessons
+  - bibkey: survey_ax_2402_16117
+    work: RoboCodeX
+    paper: https://proceedings.mlr.press/v235/mu24a.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Object-centered code units
+    - Multimodal code training
+    - Compose motion primitives
+    - Skill-library revision NR
+  - bibkey: survey_ax_2406_03757
+    work: RoboCoder
+    paper: https://arxiv.org/abs/2406.03757
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Action programs
+    - Basic actions; evaluator feedback
+    - Retrieve similar actions
+    - Repair code; add accepted actions
+  - bibkey: survey_ax_2406_18746
+    work: LRLL
+    paper: https://research.rug.nl/en/publications/lifelong-robot-library-learning-bootstrapping-composable-and-gene/
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Python skill functions
+    - Demonstrations; simulated trials
+    - Call library functions
+    - Group similar code; abstract and replay
+  - bibkey: survey_ax_2509_18597
+    work: LYRA
+    paper: https://arxiv.org/abs/2509.18597v3
+    code: https://github.com/Ghiara/LYRA
+    code_partial: false
+    group: null
+    cells:
+    - Parameterized functions
+    - Human-guided successful trials
+    - Retrieve skills and examples
+    - Extend functions with human feedback
+  - bibkey: survey_ax_2405_15019
+    work: Agentic Skill Discovery
+    paper: https://www.sciencedirect.com/science/article/pii/S0921889025003458
+    code: https://github.com/xf-zhao/Agentic-Skill-Discovery
+    code_partial: false
+    group: null
+    cells:
+    - Learned policies
+    - Generated rewards; RL
+    - Compose learned skills
+    - Train missing skills on demand
+  - bibkey: survey_ax_2603_04466
+    work: Act-Observe-Rewrite
+    paper: https://arxiv.org/abs/2603.04466
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Python controllers
+    - Episode logs; keyframe images
+    - Run controller in the next trial
+    - Rewrite <strong>between episodes</strong>
+  - bibkey: survey_ax_2603_02669
+    work: IMR-LLM
+    paper: https://arxiv.org/abs/2603.02669v1
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Process tree; robot programs
+    - Program examples; human checks
+    - Select branches; reuse code snippets
+    - Tree built once for the reported tests
+  - bibkey: survey_ax_2603_02623
+    work: Uni-Skill
+    paper: https://arxiv.org/abs/2603.02623
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - On-demand skill code
+    - Video-derived skill examples
+    - Retrieve examples from SkillFolder
+    - Generate missing skill implementations
+  - bibkey: survey_ax_2603_11558
+    work: RoboClaw
+    paper: https://arxiv.org/abs/2603.11558
+    code: https://github.com/RoboClaw-Robotics/RoboClaw
+    code_partial: false
+    group: null
+    cells:
+    - Tool-use procedures
+    - Modular skills; trained policies
+    - Compose tool and policy calls
+    - Procedure revision NR
+  - bibkey: survey_ax_2603_22435
+    work: CaP-X
+    paper: https://proceedings.mlr.press/v306/fu26u.html
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - <strong>9</strong> helper functions
+    - Successful benchmark rollouts
+    - Call the synthesized library
+    - Single library-synthesis pass
+  - bibkey: survey_ax_2606_05395
+    work: VASO
+    paper: https://arxiv.org/abs/2606.05395
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Labeling code; plan templates
+    - Task; APIs; formal rules
+    - Guide plan generation
+    - Revise using model-checker feedback
+  - bibkey: survey_ax_2606_16458
+    work: RHO
+    paper: https://arxiv.org/abs/2606.16458
+    code: https://github.com/KE7/HELIX
+    code_partial: false
+    group: null
+    cells:
+    - Policy repositories
+    - Rollouts; failure feedback
+    - Deploy the selected repository
+    - Mutate files; select by rollout scores
+  - bibkey: survey_ax_2606_19419
+    work: RATs
+    paper: https://arxiv.org/abs/2606.19419
+    code: https://github.com/Playful-RATs/RATs
+    code_partial: false
+    group: null
+    cells:
+    - Manipulation functions
+    - Self-directed play
+    - Retrieve the learned library
+    - Curate during play; <strong>freeze</strong> at test time
+  - bibkey: survey_ax_2606_19980
+    work: ENPIRE
+    paper: https://arxiv.org/abs/2606.19980
+    code: https://github.com/NVlabs/ENPIRE
+    code_partial: false
+    group: null
+    cells:
+    - Policy-learning code
+    - Physical trials; automated rewards
+    - Reuse successful training recipes
+    - Edit code; train and retest policies
+  - bibkey: survey_ax_2607_00272
+    work: ASPIRE
+    paper: https://arxiv.org/abs/2607.00272
+    code: https://github.com/NVlabs/ASPIRE
+    code_partial: false
+    group: null
+    cells:
+    - Repair notes; code sketches
+    - Primitive-level execution traces
+    - Load relevant repair guidance
+    - Admit validated, reusable repairs
+  - bibkey: survey_ax_2607_22832
+    work: MEMENTO
+    paper: https://arxiv.org/abs/2607.22832
+    code: https://github.com/sygkounas/MEMENTO
+    code_partial: false
+    group: null
+    cells:
+    - Stateful policy programs
+    - Rollout metrics; search history
+    - Run the selected program
+    - Mutate and combine code; retain the elite
+  - bibkey: survey_ax_2607_23784
+    work: ARCHITECT
+    paper: https://arxiv.org/abs/2607.23784
+    code: https://github.com/robo-architect/architect-franka
+    code_partial: false
+    group: null
+    cells:
+    - Text rules; code patterns
+    - Human language corrections
+    - Load the full skill library
+    - Append corrections as reusable skills
+  - bibkey: survey_ax_2608_07555
+    work: AgenticRobotics
+    paper: https://arxiv.org/abs/2608.07555
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Skill procedures; tool records
+    - Round logs; measured outcomes
+    - Select skill–tool pairs
+    - 'Registry promotion: live use <strong>untested</strong>'
+  - bibkey: survey_ax_2608_11350
+    work: SHAPER
+    paper: https://arxiv.org/abs/2608.11350
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Text; context-building code
+    - Target-environment rollouts
+    - Reuse guidance and context builder
+    - Test edits; retain top candidates
+  - bibkey: survey_ax_2608_14944
+    work: SkillComposer
+    paper: https://arxiv.org/abs/2608.14944
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Callable macros
+    - Accepted robot programs
+    - Expand macros into primitive calls
+    - Relearn macros after accepted prompts
+  - bibkey: survey_ax_2608_17209
+    work: Teach and Grow
+    paper: https://arxiv.org/abs/2608.17209
+    code: https://github.com/IRMVLab/TGL
+    code_partial: false
+    group: null
+    cells:
+    - Validated behavior blocks
+    - Successful demonstrations
+    - Ground blocks in the current scene
+    - Refine scope or executor; revalidate
+  - bibkey: survey_ax_2608_16590
+    work: Zetta ζ
+    paper: https://arxiv.org/abs/2608.16590
+    code: https://github.com/air-embodied-brain/Zetta-Embodiment
+    code_partial: false
+    group: null
+    cells:
+    - Critic, recovery and tool packages
+    - Failure traces; validation rollouts
+    - Deploy versioned harness packages
+    - Patch, validate and consolidate repairs
+  - bibkey: survey_ax_2609_12541
+    work: AGP
+    paper: https://arxiv.org/abs/2609.12541
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Task definitions; scripts
+    - Task materials; robot observations
+    - Reload saved task definitions
+    - Revise scripts during execution
+  - bibkey: survey_ax_2609_19906
+    work: LTCLRS
+    paper: https://arxiv.org/abs/2609.19906
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Closed-loop software
+    - Demonstrations; simulated trials
+    - Use archived code as examples
+    - Revise code; select on validation
+  - bibkey: survey_ax_2609_27308
+    work: EmbodiedSWE
+    paper: https://arxiv.org/abs/2609.27308v2
+    code: https://github.com/EmbodiedSWE/EmbodiedSWE
+    code_partial: false
+    group: null
+    cells:
+    - Executable solutions
+    - Task materials; simulator trials
+    - Use verified solutions as references
+    - Test and revise task programs
+  - bibkey: survey_ax_2609_31760
+    work: WSRSI
+    paper: https://arxiv.org/abs/2609.31760
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Skill code; model adapters
+    - Recorded failures
+    - Call skills through typed interfaces
+    - Replay failures; test on fresh tasks
+  - bibkey: survey_ax_2609_29166
+    work: HarnessPAI
+    paper: https://arxiv.org/abs/2609.29166
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Repair notes; linked code
+    - Between-rollout failure analysis
+    - Retrieve repairs by workflow node
+    - Evolve code; save failure–repair pairs
+  - bibkey: survey_ax_2609_29394
+    work: RACaP
+    paper: https://arxiv.org/abs/2609.29394
+    code: https://github.com/Robo-Harness/racap
+    code_partial: false
+    group: null
+    cells:
+    - Policy API library
+    - Development-task rollouts
+    - Call APIs with runtime arguments
+    - Paired testing; code <strong>frozen</strong> at deployment
+  - bibkey: survey_ax_2609_30249
+    work: RAPID
+    paper: https://arxiv.org/abs/2609.30249
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Relational programs
+    - One visual demonstration
+    - Bind a fixed strategy to a new scene
+    - Revise in simulation before deployment
+  - bibkey: survey_ax_2609_37810
+    work: RoboSkill
+    paper: https://arxiv.org/abs/2609.37810
+    code: https://github.com/SII-dannyXSC/RoboSkill
+    code_partial: false
+    group: null
+    cells:
+    - Text; code; supporting records
+    - Exploration and execution records
+    - Select relevant skill packages
+    - Consolidate skills after agent exit
+  - bibkey: survey_ax_2610_02204
+    work: RPG
+    paper: https://arxiv.org/abs/2610.02204
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Skill code; system prompts
+    - Simulated practice; failure diagnosis
+    - Deploy the retained system
+    - Test across tasks; merge and retest
+- key: harness.infrastructure
+  domain: Harness
+  category: Infrastructure
+  headers:
+  - Work
+  - Link
+  - Purpose
+  - Works on
+  - Main operation
+  widths:
+  - 21.2779
+  - 7.4993
+  - 16.6483
+  - 19.4281
+  - 35.1465
+  caption: Comparison of works on infrastructure. Includes supporting tools and deployment systems; entries need not be autonomous
+    agents. Paper and Code link to the paper and repository; - denotes an unavailable repository link.
+  notes: []
+  rows:
+  - bibkey: survey_ax_2309_09919
+    work: Safety Chip
+    paper: https://arxiv.org/abs/2309.09919
+    code: https://github.com/YzyLmc/ltl_safety
+    code_partial: false
+    group: null
+    cells:
+    - Action safety
+    - Proposed actions
+    - Check temporal rules; block violations and reprompt
+  - bibkey: survey_ax_2401_12202
+    work: OK-Robot
+    paper: https://www.roboticsproceedings.org/rss20/p091.html
+    code: https://github.com/ok-robot/ok-robot
+    code_partial: false
+    group: null
+    cells:
+    - Mobile manipulation
+    - Navigation; grasping; placement
+    - Connect pretrained tools through a semantic map
+  - bibkey: survey_ax_2410_13691
+    work: RoboPAIR
+    paper: https://ieeexplore.ieee.org/document/11128119/
+    code: https://github.com/arobey1/robopair
+    code_partial: false
+    group: null
+    cells:
+    - Adversarial testing
+    - Robot-language interfaces
+    - Refine attack prompts using judges and API checks
+  - bibkey: survey_ax_2503_20020
+    work: Gemini Robotics
+    paper: https://arxiv.org/abs/2503.20020
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Safety evaluation
+    - Embodied model responses
+    - Test with ASIMOV; add constitutions and safety training
+  - bibkey: survey_ax_2506_01844
+    work: SmolVLA
+    paper: https://arxiv.org/abs/2506.01844
+    code: https://github.com/huggingface/lerobot
+    code_partial: false
+    group: null
+    cells:
+    - Continuous execution
+    - Action chunks
+    - Overlap server inference with queued robot actions
+  - bibkey: survey_ax_2506_07339
+    work: RTC
+    paper: https://proceedings.neurips.cc/paper_files/paper/2025/hash/300ccb2187dedd4edcc07f7e76d8e553-Abstract-Conference.html
+    code: https://github.com/Physical-Intelligence/real-time-chunking-kinetix
+    code_partial: false
+    group: null
+    cells:
+    - Continuous execution
+    - Action chunks
+    - Freeze committed actions; fill in the next chunk
+  - bibkey: survey_ax_2510_26742
+    work: Running VLAs at Real-time Speed
+    paper: https://arxiv.org/abs/2510.26742
+    code: https://github.com/Dexmal/realtime-vla
+    code_partial: false
+    group: null
+    cells:
+    - Inference acceleration
+    - VLA GPU computation
+    - Fuse operations and optimize GPU kernels
+  - bibkey: survey_ax_2512_01031
+    work: VLASH
+    paper: https://arxiv.org/abs/2512.01031
+    code: https://github.com/mit-han-lab/vlash
+    code_partial: false
+    group: null
+    cells:
+    - Delay compensation
+    - VLA state inputs
+    - Condition on the predicted execution-time robot state
+  - bibkey: survey_ax_2512_05964
+    work: Training-time RTC
+    paper: https://arxiv.org/abs/2512.05964
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Delay compensation
+    - Action-chunk policies
+    - Train on committed action prefixes and sampled delays
+  - bibkey: survey_ax_2512_10394
+    work: RoboNeuron
+    paper: https://arxiv.org/abs/2512.10394
+    code: https://github.com/guanweifan/RoboNeuron
+    code_partial: false
+    group: null
+    cells:
+    - Robot middleware
+    - Tool calls; robot streams
+    - Separate tool orchestration from streaming execution
+  - bibkey: survey_ax_2503_07885
+    work: RoboGuard
+    paper: https://arxiv.org/abs/2503.07885
+    code: https://github.com/KumarRobotics/RoboGuard
+    code_partial: false
+    group: null
+    cells:
+    - Plan safety
+    - LLM-generated plans
+    - Check plans against context-specific temporal rules
+  - bibkey: survey_ax_2506_07530
+    work: BitVLA
+    paper: https://arxiv.org/abs/2506.07530
+    code: https://github.com/ustcwhy/BitVLA
+    code_partial: false
+    group: null
+    cells:
+    - Model compression
+    - VLA weights; activations
+    - Quantize weights to ternary values and activations to INT8
+  - bibkey: survey_ax_2512_21220
+    work: RoboSafe
+    paper: https://openreview.net/pdf?id=wyKCkQ2GyO
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Action safety
+    - Proposed actions; recent history
+    - Run generated safety checks; block or request replanning
+  - bibkey: survey_ax_2602_18397
+    work: VLA-Perf
+    paper: https://arxiv.org/abs/2602.18397
+    code: https://github.com/NVlabs/vla-perf
+    code_partial: false
+    group: null
+    cells:
+    - Deployment analysis
+    - Model–hardware choices
+    - Estimate inference latency and throughput analytically
+  - bibkey: survey_ax_2602_19983
+    work: CORE
+    paper: https://arxiv.org/abs/2602.19983
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Motion safety
+    - Controller outputs
+    - Ground visual safety regions; filter control commands
+  - bibkey: survey_ax_2602_22818
+    work: LeRobot
+    paper: https://openreview.net/pdf?id=CiZMMAFQR3
+    code: https://github.com/huggingface/lerobot
+    code_partial: false
+    group: null
+    cells:
+    - Robot-learning workflow
+    - Hardware; data; policies
+    - Unify data collection, training and deployment interfaces
+  - bibkey: survey_ax_2603_14371
+    work: OxyGen
+    paper: https://arxiv.org/abs/2603.14371
+    code: https://github.com/air-embodied-brain/OxyGen
+    code_partial: false
+    group: null
+    cells:
+    - Shared inference
+    - Action and language experts
+    - Reuse observation caches; prioritize action deadlines
+  - bibkey: survey_ax_2603_20711
+    work: RoboECC
+    paper: https://arxiv.org/abs/2603.20711
+    code: https://github.com/zhengzihaoPKU/RoboECC
+    code_partial: false
+    group: null
+    cells:
+    - Edge–cloud deployment
+    - VLA model partitions
+    - Choose hardware-aware splits; adjust to network changes
+  - bibkey: survey_ax_2604_05427
+    work: SafeGate
+    paper: https://arxiv.org/abs/2604.05427
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Task safety
+    - Task requests; execution
+    - Screen commands first; monitor task contracts at runtime
+  - bibkey: survey_ax_2606_08094
+    work: vla.cpp
+    paper: https://arxiv.org/abs/2606.08094
+    code: https://github.com/VinRobotics/vla.cpp
+    code_partial: false
+    group: null
+    cells:
+    - Portable inference
+    - VLA models; robot clients
+    - Run model adapters through a shared C++ runtime
+  - bibkey: survey_ax_2607_01088
+    work: ROSA
+    paper: https://arxiv.org/abs/2607.01088
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Fleet inference
+    - Requests from multiple robots
+    - Pool model serving and batch requests across robots
+  - bibkey: survey_ax_2607_05369
+    work: GaP
+    paper: https://arxiv.org/abs/2607.05369
+    code: https://github.com/graph-robots/graph-as-policy
+    code_partial: false
+    group: null
+    cells:
+    - Reusable automation
+    - Robot skill graphs
+    - Rehearse and refine graphs; deploy an edge interpreter
+  - bibkey: survey_ax_2608_00337
+    work: Armory
+    paper: https://arxiv.org/abs/2608.00337
+    code: https://github.com/GaTech-RL2/armory
+    code_partial: false
+    group: null
+    cells:
+    - Fleet scheduling
+    - Queued action chunks
+    - Plan inference batches using robot execution mirrors
+  - bibkey: survey_ax_2608_03924
+    work: ETA
+    paper: https://arxiv.org/abs/2608.03924
+    code: https://github.com/OpenMOSS/OpenETA
+    code_partial: false
+    group: null
+    cells:
+    - Checked execution
+    - Agent tool calls
+    - Gate commands; return execution records and fresh observations
+  - bibkey: survey_ax_2608_29379
+    work: Bridging Semantics and Physics
+    paper: https://arxiv.org/abs/2608.29379
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Checked execution
+    - Pouring tool calls
+    - Validate arguments, then check motion-template feasibility
+  - bibkey: survey_ax_2609_10522
+    work: Show-Harness
+    paper: https://arxiv.org/abs/2609.10522
+    code: https://github.com/showlab/Show-Harness
+    code_partial: false
+    group: null
+    cells:
+    - Robot action interface
+    - VLM action tokens
+    - Translate semantic actions into robot control deterministically
+  - bibkey: survey_ax_2609_11225
+    work: Harness Robotic OS
+    paper: https://arxiv.org/abs/2609.11225
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Inspection runtime
+    - Robot services; agent context
+    - Connect autonomy skills through shared context and interfaces
+  - bibkey: survey_ax_2609_12075
+    work: Robion
+    paper: https://arxiv.org/abs/2609.12075
+    code: null
+    code_partial: false
+    group: null
+    cells:
+    - Fleet inference
+    - Multiple VLA models
+    - Overlap model stages; assign robot traffic across GPUs
+- key: harness.layered_systems
+  domain: Harness
+  category: Layered Systems
+  headers:
+  - Work
+  - Link
+  - Upper layer
+  - Lower layer
+  - Passed down
+  - Update timing
+  widths:
+  - 17.5782
+  - 7.4993
+  - 13.8786
+  - 14.7985
+  - 18.4982
+  - 27.7472
+  caption: 'Comparison of works on layered systems. Update timing names the refreshed module; rates refer to the reported
+    configurations. Architecture studies list alternatives. NR: not reported. Bold highlights reported rates and update timing.
+    Paper and Code link to the paper and repository; - denotes an unavailable repository link.'
+  notes: []
+  rows:
+  - bibkey: survey_ax_2204_01691
+    work: SayCan
+    paper: https://proceedings.mlr.press/v205/ichter23a.html
+    code: https://github.com/google-research/google-research/tree/master/saycan
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - LLM selector
+    - Learned skills
+    - Skill description
+    - Select again after each skill
+  - bibkey: survey_ax_2305_11176
+    work: Instruct2Act
+    paper: https://arxiv.org/abs/2305.11176
+    code: https://github.com/OpenGVLab/Instruct2Act
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - LLM coder
+    - Perception APIs; controller
+    - Python program
+    - Runtime requery schedule NR
+  - bibkey: survey_ax_2307_01928
+    work: KnowNo
+    paper: https://proceedings.mlr.press/v229/ren23a.html
+    code: https://github.com/google-research/google-research/tree/master/language_model_uncertainty
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - LLM planner
+    - Skill executor
+    - Selected action option
+    - Each decision; ask for help if ambiguous
+  - bibkey: survey_ax_2402_06529
+    work: IntroPlan
+    paper: https://proceedings.neurips.cc/paper_files/paper/2024/hash/8451a20c5a7e0ee5671dda28f7daf7f3-Abstract-Conference.html
+    code: https://github.com/kevinliang888/IntroPlan
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - LLM planner
+    - Executor NR
+    - Calibrated action options
+    - Runtime schedule NR
+  - bibkey: survey_ax_2403_03174
+    work: MOKA
+    paper: https://www.roboticsproceedings.org/rss20/p062.html
+    code: https://github.com/moka-manipulation/moka
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - VLM
+    - Motion planner
+    - Keypoints; waypoints
+    - New points at each subtask start
+  - bibkey: survey_ax_2409_01652
+    work: ReKep
+    paper: https://proceedings.mlr.press/v270/huang25g.html
+    code: https://github.com/huangwl18/ReKep
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - VLM
+    - Constraint solver
+    - Keypoint constraints
+    - Solver replans at about <strong>10 Hz</strong>
+  - bibkey: survey_ax_2410_05273
+    work: HiRT
+    paper: https://proceedings.mlr.press/v270/zhang25b.html
+    code: null
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - VLM
+    - Visual policy
+    - Cached vision-language features
+    - Async; policy uses fresh images each step
+  - bibkey: survey_ax_2410_08001
+    work: RoboDual
+    paper: https://arxiv.org/abs/2410.08001
+    code: https://github.com/OpenDriveLab/RoboDual
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - Generalist VLA
+    - Diffusion policy
+    - Latent features; action chunk
+    - Async; several policy steps per VLA call
+  - bibkey: survey_ax_2412_04453
+    work: NaVILA
+    paper: https://roboticsproceedings.org/rss21/p018.html
+    code: https://github.com/AnjieCheng/NaVILA
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - Navigation VLM
+    - Locomotion policy
+    - Movement; distance or angle
+    - Motion duration set by the command
+  - bibkey: survey_ax_2502_05485
+    work: HAMSTER
+    paper: https://proceedings.iclr.cc/paper_files/paper/2025/hash/3bfee3bc6639c36e6e7b058db909f760-Abstract-Conference.html
+    code: https://github.com/liyi14/HAMSTER_beta
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - Path VLM
+    - 3D robot policy
+    - 2D path; gripper states
+    - Path generated <strong>once</strong> per episode
+  - bibkey: survey_ax_2502_19417
+    work: Hi Robot
+    paper: https://proceedings.mlr.press/v267/shi25d.html
+    code: null
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - VLM
+    - VLA
+    - Language subtask
+    - Every <strong>1 s</strong> or on new user feedback
+  - bibkey: survey_ax_2503_14734
+    work: GR00T N1
+    paper: https://arxiv.org/abs/2503.14734
+    code: https://github.com/NVIDIA/Isaac-GR00T
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - VLM
+    - Action transformer
+    - Vision-language features
+    - VLM <strong>10 Hz</strong>; actions <strong>120 Hz</strong> (L40)
+  - bibkey: survey_ax_2504_16054
+    work: π_0.5
+    paper: https://proceedings.mlr.press/v305/black25a.html
+    code: https://github.com/Physical-Intelligence/openpi
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - Subtask predictor
+    - Action expert
+    - Language subtask
+    - Actions <strong>50 Hz</strong>; upper-layer rate NR
+  - bibkey: survey_ax_2510_03342
+    work: Gemini Robotics 1.5
+    paper: https://arxiv.org/abs/2510.03342
+    code: null
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - VLM orchestrator
+    - VLA tool
+    - Language instruction
+    - Switch subtasks on detected completion
+  - bibkey: survey_ax_2512_08186
+    work: DualVLN
+    paper: https://openreview.net/pdf?id=GK4rznYwhn
+    code: https://github.com/InternRobotics/InternNav
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - Navigation VLM
+    - Trajectory policy
+    - Latent goal from pixel-waypoint reasoning
+    - Async; fast policy reuses the latest latent
+  - bibkey: survey_ax_2603_05185
+    work: Critic in the Loop
+    paper: https://arxiv.org/abs/2603.05185
+    code: null
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - VLM planner; critic
+    - Action expert
+    - Language subtask
+    - Replan on completion, anomaly or stagnation
+  - bibkey: survey_ax_2607_08448
+    work: Harness VLA
+    paper: https://arxiv.org/abs/2607.08448
+    code: https://github.com/RLinf/RPent
+    code_partial: false
+    group: Systems and planning methods
+    cells:
+    - VLM planner
+    - Analytic tools; frozen VLA
+    - JSON primitive call
+    - New observation after each primitive ends
+  - bibkey: survey_ax_2506_17561
+    work: VLA-OS
+    paper: https://proceedings.neurips.cc/paper_files/paper/2025/hash/c7af751b5e0a407c62ac023e3cb381f9-Abstract-Conference.html
+    code: https://github.com/HeegerGao/VLA-OS
+    code_partial: false
+    group: Architecture studies
+    cells:
+    - VLM; planning heads
+    - Alternative action heads
+    - Text / spatial / image plans
+    - Varies across the compared architectures
+  - bibkey: survey_ax_2606_10267
+    work: WMORP
+    paper: https://arxiv.org/abs/2606.10267
+    code: null
+    code_partial: false
+    group: Architecture studies
+    cells:
+    - VLM planner
+    - VLA
+    - Language subtask
+    - Compare fixed, success-based and VLM-timed switching
