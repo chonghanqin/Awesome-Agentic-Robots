@@ -2,3 +2,6 @@
 __pycache__/
 *.py[cod]
 /survey_workbench/local/
+
+# Local author review packet
+/AUTHOR_REVIEW.md

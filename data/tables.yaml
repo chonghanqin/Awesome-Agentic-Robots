@@ -107,7 +107,7 @@
     code_partial: false
     group: null
     cells:
-    - Recovery rewards; <strong>residual</strong> policies
+    - Recovery rewards; residual policies
     - Single-pass generation; RL
     - Failure cases; simulator state
   - bibkey: survey_ax_2606_19980
@@ -770,7 +770,7 @@
     cells:
     - Python programs
     - Robot-control APIs
-    - <strong>Privileged simulator states</strong>; errors; success
+    - Privileged simulator states; errors; success
   - bibkey: survey_ax_2605_02600
     work: CoRAL
     paper: https://www.roboticsproceedings.org/rss22/p054.html
@@ -890,7 +890,7 @@
     cells:
     - Motion / extrusion trajectory
     - Motion / extrusion controllers
-    - Robot state; <strong>commanded</strong> extrusion
+    - Robot state; commanded extrusion
   - bibkey: survey_ax_2609_19138
     work: GPT-Policy
     paper: https://arxiv.org/abs/2609.19138v1
@@ -1111,7 +1111,7 @@
     code_partial: false
     group: null
     cells:
-    - <strong>Residual</strong> correction policy
+    - Residual correction policy
     - Later episodes
     - Imitation learning
   - bibkey: survey_ax_2603_02772
