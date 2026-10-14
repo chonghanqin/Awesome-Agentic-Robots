@@ -54,13 +54,19 @@ def table_lines(table, papers):
 def render(papers, tables):
     validate(papers,tables); lookup = {p['id']:p for p in papers}; lines=[]
     for domain in DOMAINS:
-        lines += [f'### {domain}', '',
-                  f'![{domain} in agentic robotics](assets/figures/{domain.lower()}.png)', '']
+        navigation = ' · '.join(link(escape(category), '#'+category.lower().replace(' ', '-'))
+                                for category in DOMAINS[domain])
+        lines += [f'### {domain}', '', f'<p>{navigation}</p>', '',
+                  '<details>', f'<summary>{domain} overview figure</summary>', '',
+                  f'<p><img src="assets/figures/{domain.lower()}.png" '
+                  f'alt="{domain} in agentic robotics" width="100%"></p>', '',
+                  '</details>', '']
         for table in tables:
             if table['domain'] == domain:
                 anchor = table['category'].lower().replace(' ', '-')
                 lines += [f'<a id="{anchor}"></a>', '',
                           f'#### {domain} · {table["category"]}', '', *table_lines(table,lookup), '']
+        lines += ['<p align="right"><a href="#taxonomy">↑ Back to contents</a></p>', '', '---', '']
     return '\n'.join(lines)
 
 

@@ -2,16 +2,25 @@
 
 <p align="center">
   <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
-  <a href="https://github.com/chonghanqin/Awesome-Agentic-Robots/stargazers"><img src="https://img.shields.io/github/stars/chonghanqin/Awesome-Agentic-Robots?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/chonghanqin/Awesome-Agentic-Robots/stargazers"><img src="https://img.shields.io/github/stars/chonghanqin/Awesome-Agentic-Robots?style=flat&amp;label=Stars&amp;color=0969da" alt="GitHub stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/arXiv-pending-b31b1b.svg?logo=arxiv" alt="arXiv identifier pending">
 </p>
 
 <!-- Add the author-confirmed arXiv link to its badge upon release. -->
 
-Official companion repository for **Towards Agentic Robots: Model, Data, Environment, and Harness**, with papers and code on agentic robots.
+<p align="center">
+  Official companion repository for<br>
+  <strong>Towards Agentic Robots: Model, Data, Environment, and Harness</strong><br>
+  Papers and code on agentic robots.
+</p>
 
-[Taxonomy](#taxonomy) · [Papers](#papers) · [Contributing](CONTRIBUTING.md)
+<p align="center">
+  <a href="#overview">Overview</a> &nbsp;·&nbsp;
+  <a href="#taxonomy">Browse by domain</a> &nbsp;·&nbsp;
+  <a href="#papers">Papers</a> &nbsp;·&nbsp;
+  <a href="CONTRIBUTING.md">Contributing</a>
+</p>
 
 ## Overview
 
@@ -19,12 +28,33 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 
 ## Taxonomy
 
-| Domain | Categories |
-| --- | --- |
-| **Model** | [Training](#training) · [Perception](#perception) · [Planning](#planning) · [Robot Control](#robot-control) · [Adaptation](#adaptation) |
-| **Data** | [Collection](#collection) · [Annotation](#annotation) · [Refinement](#refinement) |
-| **Environment** | [Reconstruction](#reconstruction) · [Task Generation](#task-generation) · [Benchmarking](#benchmarking) |
-| **Harness** | [Orchestration](#orchestration) · [Memory](#memory) · [Monitoring and Recovery](#monitoring-and-recovery) · [Skills](#skills) · [Infrastructure](#infrastructure) · [Layered Systems](#layered-systems) |
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<strong><a href="#model">Model</a></strong><br><br>
+<a href="#training">Training</a> · <a href="#perception">Perception</a> · <a href="#planning">Planning</a><br>
+<a href="#robot-control">Robot Control</a> · <a href="#adaptation">Adaptation</a>
+</td>
+<td width="50%" valign="top">
+<strong><a href="#data">Data</a></strong><br><br>
+<a href="#collection">Collection</a> · <a href="#annotation">Annotation</a><br>
+<a href="#refinement">Refinement</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<strong><a href="#environment">Environment</a></strong><br><br>
+<a href="#reconstruction">Reconstruction</a> · <a href="#task-generation">Task Generation</a><br>
+<a href="#benchmarking">Benchmarking</a>
+</td>
+<td width="50%" valign="top">
+<strong><a href="#harness">Harness</a></strong><br><br>
+<a href="#orchestration">Orchestration</a> · <a href="#memory">Memory</a><br>
+<a href="#monitoring-and-recovery">Monitoring and Recovery</a> · <a href="#skills">Skills</a><br>
+<a href="#infrastructure">Infrastructure</a> · <a href="#layered-systems">Layered Systems</a>
+</td>
+</tr>
+</table>
 
 ## Papers
 
@@ -32,7 +62,14 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 
 ### Model
 
-![Model in agentic robotics](assets/figures/model.png)
+<p><a href="#training">Training</a> · <a href="#perception">Perception</a> · <a href="#planning">Planning</a> · <a href="#robot-control">Robot Control</a> · <a href="#adaptation">Adaptation</a></p>
+
+<details>
+<summary>Model overview figure</summary>
+
+<p><img src="assets/figures/model.png" alt="Model in agentic robotics" width="100%"></p>
+
+</details>
 
 <a id="training"></a>
 
@@ -207,9 +244,20 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 </tbody>
 </table>
 
+<p align="right"><a href="#taxonomy">↑ Back to contents</a></p>
+
+---
+
 ### Data
 
-![Data in agentic robotics](assets/figures/data.png)
+<p><a href="#collection">Collection</a> · <a href="#annotation">Annotation</a> · <a href="#refinement">Refinement</a></p>
+
+<details>
+<summary>Data overview figure</summary>
+
+<p><img src="assets/figures/data.png" alt="Data in agentic robotics" width="100%"></p>
+
+</details>
 
 <a id="collection"></a>
 
@@ -289,9 +337,20 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 </tbody>
 </table>
 
+<p align="right"><a href="#taxonomy">↑ Back to contents</a></p>
+
+---
+
 ### Environment
 
-![Environment in agentic robotics](assets/figures/environment.png)
+<p><a href="#reconstruction">Reconstruction</a> · <a href="#task-generation">Task Generation</a> · <a href="#benchmarking">Benchmarking</a></p>
+
+<details>
+<summary>Environment overview figure</summary>
+
+<p><img src="assets/figures/environment.png" alt="Environment in agentic robotics" width="100%"></p>
+
+</details>
 
 <a id="reconstruction"></a>
 
@@ -401,9 +460,20 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 </tbody>
 </table>
 
+<p align="right"><a href="#taxonomy">↑ Back to contents</a></p>
+
+---
+
 ### Harness
 
-![Harness in agentic robotics](assets/figures/harness.png)
+<p><a href="#orchestration">Orchestration</a> · <a href="#memory">Memory</a> · <a href="#monitoring-and-recovery">Monitoring and Recovery</a> · <a href="#skills">Skills</a> · <a href="#infrastructure">Infrastructure</a> · <a href="#layered-systems">Layered Systems</a></p>
+
+<details>
+<summary>Harness overview figure</summary>
+
+<p><img src="assets/figures/harness.png" alt="Harness in agentic robotics" width="100%"></p>
+
+</details>
 
 <a id="orchestration"></a>
 
@@ -647,6 +717,10 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <tr><td><a href="https://arxiv.org/abs/2606.10267">What Matters in Orchestrating Robot Policies: A Systematic Study of Hierarchical VLA Agents</a></td><td align="center" nowrap>—</td></tr>
 </tbody>
 </table>
+
+<p align="right"><a href="#taxonomy">↑ Back to contents</a></p>
+
+---
 
 <!-- END AUTO-GENERATED PAPER LIST -->
 
