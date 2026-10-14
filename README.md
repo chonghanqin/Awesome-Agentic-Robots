@@ -9,28 +9,13 @@
 
 <!-- Add the author-confirmed arXiv link to its badge upon release. -->
 
-A curated collection of papers and resources accompanying **Towards Agentic Robots: Model, Data, Environment, and Harness**.
-
-This official companion repository collects papers on agentic robots across four functional domains: **Model**, **Data**, **Environment**, and **Harness**.
+Official companion repository for **Towards Agentic Robots: Model, Data, Environment, and Harness**, with papers and code on agentic robots.
 
 [Taxonomy](#taxonomy) · [Papers](#papers) · [Contributing](CONTRIBUTING.md)
 
 ## Overview
 
-**Model · Data · Environment · Harness**
-
-Agentic robots use agents to plan and coordinate tasks, select actions, skills, or tools, and adjust execution using environmental observations and feedback. The paper traces the evolution from robot policies to agentic systems and examines how agents contribute to both task execution and the development of robot capabilities.
-
-The discussion follows four questions:
-
-- **Model:** What should the agent learn, understand, decide, and control?
-- **Data:** How should the agent collect, annotate, and refine robot data?
-- **Environment:** What worlds, tasks, and tests should the agent build?
-- **Harness:** How should robot capabilities be orchestrated, recovered, and evolved?
-
-Across these domains, the work synthesizes methods for acquiring, coordinating, and improving robotic capabilities, comparing how agent decisions depend on available tools, robot executors, and interaction feedback. It also discusses four directions for future research: fair benchmarking, real-robot deployment, efficient robot use, and cross-embodiment generalization.
-
-Papers are grouped by their roles in robotic systems. A work may appear in several categories.
+Agentic robots use foundation models to guide robot execution and learning. We organize this work around **Model**, **Data**, **Environment**, and **Harness**, connecting model decisions, data pipelines, environments, and the orchestration of robot capabilities.
 
 ## Taxonomy
 
