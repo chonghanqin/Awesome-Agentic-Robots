@@ -26,7 +26,7 @@ python3 scripts/generate_readme.py
 python3 scripts/validate.py
 ```
 
-Each paper record contains a citation key (`id`), full title, and categories. The source comparison records store category placements and links. The README displays complete paper titles and Links, with one entry per work in each category. Annotation output groups are combined in that entry.
+Each paper record contains a citation key (`id`), full title, and categories. The source comparison records store category placements and links. The README displays linked paper titles and a Code column, with one entry per work in each category. Annotation output groups are combined in that entry.
 
 To refresh the collection from Overleaf, run the sync command below. It uses the subsection tables selected by the current chapters and comparison switch, with full titles from `ref.bib`.
 

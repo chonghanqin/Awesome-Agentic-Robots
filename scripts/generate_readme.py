@@ -33,7 +33,7 @@ def listing_rows(table):
 def table_lines(table, papers):
     lines = ['<table width="100%">', '<thead><tr>',
              '<th width="89%" align="left">Paper Title</th>',
-             '<th width="11%" align="center" nowrap>Links</th>',
+             '<th width="11%" align="center" nowrap>Code</th>',
              '</tr></thead>', '<tbody>']
     for rows in listing_rows(table):
         row = rows[0]
@@ -42,8 +42,7 @@ def table_lines(table, papers):
         if len(codes) > 1: raise ValueError('Conflicting code links: '+row['bibkey'])
         code = next(iter(codes), None)
         title = link(escape(papers[row['bibkey']]['title']), row['paper'])
-        links = icon_link('Paper', 'paper', row['paper']) + '&nbsp;&nbsp;'
-        links += icon_link('GitHub repository', 'github', code) if code else '—'
+        links = icon_link('GitHub repository', 'github', code) if code else '—'
         if any(r['code_partial'] for r in rows): links += '<sup>†</sup>'
         lines.append('<tr><td>'+title+'</td><td align="center" nowrap>'+links+'</td></tr>')
     lines += ['</tbody>', '</table>']
