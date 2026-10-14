@@ -30,24 +30,24 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="1000" valign="top">
 <strong><a href="#model">Model</a></strong><br><br>
 <a href="#training">Training</a> · <a href="#perception">Perception</a> · <a href="#planning">Planning</a><br>
 <a href="#robot-control">Robot Control</a> · <a href="#adaptation">Adaptation</a>
 </td>
-<td width="50%" valign="top">
+<td width="1000" valign="top">
 <strong><a href="#data">Data</a></strong><br><br>
 <a href="#collection">Collection</a> · <a href="#annotation">Annotation</a><br>
 <a href="#refinement">Refinement</a>
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="1000" valign="top">
 <strong><a href="#environment">Environment</a></strong><br><br>
 <a href="#reconstruction">Reconstruction</a> · <a href="#task-generation">Task Generation</a><br>
 <a href="#benchmarking">Benchmarking</a>
 </td>
-<td width="50%" valign="top">
+<td width="1000" valign="top">
 <strong><a href="#harness">Harness</a></strong><br><br>
 <a href="#orchestration">Orchestration</a> · <a href="#memory">Memory</a><br>
 <a href="#monitoring-and-recovery">Monitoring and Recovery</a> · <a href="#skills">Skills</a><br>
