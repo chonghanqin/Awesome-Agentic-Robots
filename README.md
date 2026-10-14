@@ -11,8 +11,7 @@
 
 <p align="center">
   Official companion repository for<br>
-  <strong>Towards Agentic Robots: Model, Data, Environment, and Harness</strong><br>
-  Papers and code on agentic robots.
+  <strong>Towards Agentic Robots: Model, Data, Environment, and Harness</strong>
 </p>
 
 <p align="center">
@@ -30,28 +29,35 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 
 <table width="100%">
 <tr>
-<td width="1000" valign="top">
-<strong><a href="#model">Model</a></strong><br><br>
-<a href="#training">Training</a> · <a href="#perception">Perception</a> · <a href="#planning">Planning</a><br>
-<a href="#robot-control">Robot Control</a> · <a href="#adaptation">Adaptation</a>
+<td width="1000" align="center" valign="top">
+<p><strong><a href="#model">Model</a></strong></p>
+<p>
+<a href="#training">Training</a> &emsp;&emsp; <a href="#perception">Perception</a> &emsp;&emsp; <a href="#planning">Planning</a><br><br>
+<a href="#robot-control">Robot Control</a> &emsp;&emsp; <a href="#adaptation">Adaptation</a>
+</p>
 </td>
-<td width="1000" valign="top">
-<strong><a href="#data">Data</a></strong><br><br>
-<a href="#collection">Collection</a> · <a href="#annotation">Annotation</a><br>
-<a href="#refinement">Refinement</a>
+<td width="1000" align="center" valign="top">
+<p><strong><a href="#data">Data</a></strong></p>
+<p>
+<a href="#collection">Collection</a> &emsp;&emsp; <a href="#annotation">Annotation</a> &emsp;&emsp; <a href="#refinement">Refinement</a>
+</p>
 </td>
 </tr>
 <tr>
-<td width="1000" valign="top">
-<strong><a href="#environment">Environment</a></strong><br><br>
-<a href="#reconstruction">Reconstruction</a> · <a href="#task-generation">Task Generation</a><br>
+<td width="1000" align="center" valign="top">
+<p><strong><a href="#environment">Environment</a></strong></p>
+<p>
+<a href="#reconstruction">Reconstruction</a> &emsp;&emsp; <a href="#task-generation">Task Generation</a><br><br>
 <a href="#benchmarking">Benchmarking</a>
+</p>
 </td>
-<td width="1000" valign="top">
-<strong><a href="#harness">Harness</a></strong><br><br>
-<a href="#orchestration">Orchestration</a> · <a href="#memory">Memory</a><br>
-<a href="#monitoring-and-recovery">Monitoring and Recovery</a> · <a href="#skills">Skills</a><br>
-<a href="#infrastructure">Infrastructure</a> · <a href="#layered-systems">Layered Systems</a>
+<td width="1000" align="center" valign="top">
+<p><strong><a href="#harness">Harness</a></strong></p>
+<p>
+<a href="#orchestration">Orchestration</a> &emsp;&emsp; <a href="#memory">Memory</a><br><br>
+<a href="#monitoring-and-recovery">Monitoring and Recovery</a> &emsp;&emsp; <a href="#skills">Skills</a><br><br>
+<a href="#infrastructure">Infrastructure</a> &emsp;&emsp; <a href="#layered-systems">Layered Systems</a>
+</p>
 </td>
 </tr>
 </table>
