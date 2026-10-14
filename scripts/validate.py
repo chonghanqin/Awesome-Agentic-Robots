@@ -122,11 +122,13 @@ def validate(papers, tables):
 def main():
     try:
         papers, tables = load_papers(), load_tables(); counts = validate(papers, tables)
-        from generate_readme import updated_readme
+        from generate_readme import updated_readme, listing_rows
         readme = (ROOT/'README.md').read_text(encoding='utf-8')
         if updated_readme(readme, papers, tables) != readme: raise ValueError('README is stale')
-        print(f'PASS: {len(papers)} works, {len(tables)} comparison tables, {sum(counts.values())} displayed rows')
-        for key,count in counts.items(): print(f'  {key}: {count}')
+        listed = sum(len(listing_rows(t)) for t in tables)
+        print(f'PASS: {len(papers)} works, {len(tables)} paper lists, {listed} listed entries '
+              f'({sum(counts.values())} source comparison rows)')
+        for key,count in counts.items(): print(f'  {key}: {count} source rows')
     except (ValueError, OSError, KeyError, TypeError, yaml.YAMLError) as exc:
         print('FAIL: '+str(exc), file=sys.stderr); return 1
     return 0

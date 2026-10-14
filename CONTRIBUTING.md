@@ -26,7 +26,7 @@ python3 scripts/generate_readme.py
 python3 scripts/validate.py
 ```
 
-Each paper record contains a citation key (`id`), full title, and categories. The comparison tables store headers, captions, groups, row order, links, and technical cells. Annotation methods can appear in multiple output groups.
+Each paper record contains a citation key (`id`), full title, and categories. The source comparison records store the method information used to generate short summaries. The README displays complete paper titles, a Summary, and Links, with one entry per work in each category. Annotation output groups are combined in that entry.
 
 To refresh the collection from Overleaf, run the sync command below. It uses the subsection tables selected by the current chapters and comparison switch, with full titles from `ref.bib`.
 
@@ -39,4 +39,4 @@ python3 scripts/sync_from_overleaf.py --overleaf /path/to/overleaf
 
 The final command checks whether the snapshot matches the current manuscript. Keep fields, groups, row order, links, and notes aligned with the source tables. Technical cells support `<strong>`, `<em>`, `<sup>`, and `<sub>` markup.
 
-The generator updates the marked comparison region in the README. Edit the overview and citation outside that region directly. The validator checks data structure, table memberships, display markup, URLs, widths, and README freshness.
+The generator updates the marked paper-list region in the README. Edit the overview and citation outside that region directly. The validator checks data structure, table memberships, display markup, URLs, widths, and README freshness.
