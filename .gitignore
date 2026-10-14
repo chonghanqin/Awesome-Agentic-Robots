@@ -5,3 +5,6 @@ __pycache__/
 
 # Local author review packet
 /AUTHOR_REVIEW.md
+
+# Local source figures; PNGs are used in the README
+/assets/figures/*.pdf
