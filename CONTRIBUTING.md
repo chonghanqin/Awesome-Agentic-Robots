@@ -2,7 +2,7 @@
 
 We welcome paper and resource suggestions that fit the scope and taxonomy of **Towards Agentic Robots: Model, Data, Environment, and Harness**.
 
-Please open a [paper suggestion](https://github.com/qinchonghanzuibang/Awesome-Agentic-Robots/issues/new?template=paper-suggestion.yml) with:
+Please open a [paper suggestion](https://github.com/chonghanqin/Awesome-Agentic-Robots/issues/new?template=paper-suggestion.yml) with:
 
 - Paper title and paper URL.
 - Proposed category or categories from the README taxonomy.
