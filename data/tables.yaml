@@ -1566,7 +1566,7 @@
     - P3-SAM
   - bibkey: survey_ax_2512_14442
     work: A4-Agent
-    paper: https://link.springer.com/book/10.1007/978-3-032-37086-0
+    paper: https://arxiv.org/abs/2512.14442v1
     code: https://github.com/EnVision-Research/A4-Agent
     code_partial: false
     group: Interaction Annotation
@@ -2678,7 +2678,7 @@
     - Hybrid
   - bibkey: survey_ax_2609_01281
     work: EmbodiedSkills
-    paper: https://arxiv.org/abs/2609.01281
+    paper: https://arxiv.org/abs/2609.01281v1
     code: https://github.com/ZJU4EmbodiedAI/EmbodiedSkills
     code_partial: false
     group: Function Protocol
@@ -3957,7 +3957,7 @@
     - Check temporal rules; block violations and reprompt
   - bibkey: survey_ax_2401_12202
     work: OK-Robot
-    paper: https://www.roboticsproceedings.org/rss20/p091.html
+    paper: https://arxiv.org/abs/2401.12202v2
     code: https://github.com/ok-robot/ok-robot
     code_partial: false
     group: null

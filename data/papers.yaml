@@ -1130,7 +1130,7 @@
   categories:
   - model.perception
 - id: survey_ax_2609_20822
-  title: Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation
+  title: Coding Agents with Harness for Safe Robot Control
   categories:
   - harness.monitoring_and_recovery
 - id: survey_ax_2609_22966

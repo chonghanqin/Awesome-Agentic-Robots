@@ -24,6 +24,20 @@ ICONS = {'DataInputImage': 'Image', 'DataInputVideo': 'Video',
          'OrchPolicy': 'Learned policy', 'OrchTool': 'Analytic tool',
          'OrchSkill': 'Skill', 'OrchAgent': 'Other agent'}
 
+# Versions used by the manuscript's evidence indexes (checked 2026-10-14).
+# Some visible table links / bibliography titles still identify other versions.
+ANALYZED_VERSIONS = {
+    # data_comparison_index.json: Annotation source, sections 4.3–4.5 / 5.
+    'survey_ax_2512_14442': ('https://arxiv.org/abs/2512.14442v1', None),
+    # harness_literature_index.json: model_sources, section II-A.
+    'survey_ax_2401_12202': ('https://arxiv.org/abs/2401.12202v2', None),
+    # model_literature_index.json: paper_url and model_sources.
+    'survey_ax_2609_01281': ('https://arxiv.org/abs/2609.01281v1', None),
+    # harness_literature_index.json: analyzed_source explicitly identifies v2.
+    'survey_ax_2609_20822': ('https://arxiv.org/abs/2609.20822v2',
+                           'Coding Agents with Harness for Safe Robot Control'),
+}
+
 
 def argument(text, position, opening='{', closing='}'):
     while position < len(text) and text[position].isspace():
@@ -183,13 +197,18 @@ def extract(source):
         for category in categories:
             stem=domain.lower()+'_'+category.lower().replace(' ', '_')
             directive = (r'\input{tables/'+stem+'}') if domain=='Data' else (r'\ComparisonTable{'+stem+'}')
-            if directive not in chapter_text: raise ValueError('Inactive manuscript subsection: '+stem)
+            direct_input = r'\input{tables/'+stem+'_draft}'
+            if directive not in chapter_text and (domain=='Data' or direct_input not in chapter_text):
+                raise ValueError('Inactive manuscript subsection: '+stem)
             path=source/('tables/'+stem+('' if domain=='Data' else '_draft')+'.tex');paths.append(path)
             table=table_from_tex(path,domain,category);tables.append(table)
             for row in table['rows']:
                 key=row['bibkey']; fields=bibliography[key]
+                analyzed = ANALYZED_VERSIONS.get(key)
+                if analyzed: row['paper'] = analyzed[0]
                 title=display(literal(fields['title']))
                 title=unescape(re.sub('<[^>]+>','',title))
+                if analyzed and analyzed[1]: title = analyzed[1]
                 if key not in papers: papers[key]=dict(id=key,title=title,categories=[])
                 if table['key'] not in papers[key]['categories']:papers[key]['categories'].append(table['key'])
     for path in paths:hashes[str(path.relative_to(source))]=hashlib.sha256(path.read_bytes()).hexdigest()
