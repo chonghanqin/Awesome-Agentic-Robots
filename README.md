@@ -28,26 +28,16 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 ## Taxonomy
 
 <table width="100%">
-<tr>
-<td width="1000" align="left" valign="top">
-<p><strong><a href="#model">Model</a></strong></p>
-<p><a href="#training">Training</a> · <a href="#perception">Perception</a> · <a href="#planning">Planning</a> · <a href="#robot-control">Robot Control</a> · <a href="#adaptation">Adaptation</a></p>
-</td>
-<td width="1000" align="left" valign="top">
-<p><strong><a href="#data">Data</a></strong></p>
-<p><a href="#collection">Collection</a> · <a href="#annotation">Annotation</a> · <a href="#refinement">Refinement</a></p>
-</td>
-</tr>
-<tr>
-<td width="1000" align="left" valign="top">
-<p><strong><a href="#environment">Environment</a></strong></p>
-<p><a href="#reconstruction">Reconstruction</a> · <a href="#task-generation">Task Generation</a> · <a href="#benchmarking">Benchmarking</a></p>
-</td>
-<td width="1000" align="left" valign="top">
-<p><strong><a href="#harness">Harness</a></strong></p>
-<p><a href="#orchestration">Orchestration</a> · <a href="#memory">Memory</a> · <a href="#monitoring-and-recovery">Monitoring and Recovery</a> · <a href="#skills">Skills</a> · <a href="#infrastructure">Infrastructure</a> · <a href="#layered-systems">Layered Systems</a></p>
-</td>
-</tr>
+<thead><tr>
+<th width="18%" align="left">Domain</th>
+<th width="10000" align="left">Categories</th>
+</tr></thead>
+<tbody>
+<tr><td align="left"><strong><a href="#model">Model</a></strong></td><td align="left"><a href="#training">Training</a> · <a href="#perception">Perception</a> · <a href="#planning">Planning</a> · <a href="#robot-control">Robot Control</a> · <a href="#adaptation">Adaptation</a></td></tr>
+<tr><td align="left"><strong><a href="#data">Data</a></strong></td><td align="left"><a href="#collection">Collection</a> · <a href="#annotation">Annotation</a> · <a href="#refinement">Refinement</a></td></tr>
+<tr><td align="left"><strong><a href="#environment">Environment</a></strong></td><td align="left"><a href="#reconstruction">Reconstruction</a> · <a href="#task-generation">Task Generation</a> · <a href="#benchmarking">Benchmarking</a></td></tr>
+<tr><td align="left"><strong><a href="#harness">Harness</a></strong></td><td align="left"><a href="#orchestration">Orchestration</a> · <a href="#memory">Memory</a> · <a href="#monitoring-and-recovery">Monitoring and Recovery</a> · <a href="#skills">Skills</a> · <a href="#infrastructure">Infrastructure</a> · <a href="#layered-systems">Layered Systems</a></td></tr>
+</tbody>
 </table>
 
 ## Papers
