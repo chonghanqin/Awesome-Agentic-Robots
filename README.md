@@ -15,7 +15,11 @@ This official companion repository collects papers on agentic robots across four
 
 [Taxonomy](#taxonomy) · [Papers](#papers) · [Contributing](CONTRIBUTING.md)
 
+![Robot intelligence across four paradigms](assets/figures/mountain.png)
+
 ## Overview
+
+![Model, Data, Environment, and Harness](assets/figures/relation.png)
 
 **Model · Data · Environment · Harness**
 
@@ -41,6 +45,8 @@ Papers are grouped by their roles in robotic systems. A work may appear in sever
 | **Environment** | [Reconstruction](#reconstruction) · [Task Generation](#task-generation) · [Benchmarking](#benchmarking) |
 | **Harness** | [Orchestration](#orchestration) · [Memory](#memory) · [Monitoring and Recovery](#monitoring-and-recovery) · [Skills](#skills) · [Infrastructure](#infrastructure) · [Layered Systems](#layered-systems) |
 
+![Taxonomy and literature landscape of agentic robots](assets/figures/taxonomy.png)
+
 ## Papers
 
 Browse papers across 17 categories. The icons in Links open the paper and GitHub repository; a dash indicates an unavailable repository link.
@@ -48,6 +54,8 @@ Browse papers across 17 categories. The icons in Links open the paper and GitHub
 <!-- BEGIN AUTO-GENERATED PAPER LIST -->
 
 ### Model
+
+![Model in agentic robotics](assets/figures/model.png)
 
 <a id="training"></a>
 
@@ -224,6 +232,8 @@ Browse papers across 17 categories. The icons in Links open the paper and GitHub
 
 ### Data
 
+![Data in agentic robotics](assets/figures/data.png)
+
 <a id="collection"></a>
 
 #### Data · Collection
@@ -303,6 +313,8 @@ Browse papers across 17 categories. The icons in Links open the paper and GitHub
 </table>
 
 ### Environment
+
+![Environment in agentic robotics](assets/figures/environment.png)
 
 <a id="reconstruction"></a>
 
@@ -413,6 +425,8 @@ Browse papers across 17 categories. The icons in Links open the paper and GitHub
 </table>
 
 ### Harness
+
+![Harness in agentic robotics](assets/figures/harness.png)
 
 <a id="orchestration"></a>
 

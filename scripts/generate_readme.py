@@ -55,7 +55,8 @@ def table_lines(table, papers):
 def render(papers, tables):
     validate(papers,tables); lookup = {p['id']:p for p in papers}; lines=[]
     for domain in DOMAINS:
-        lines += [f'### {domain}', '']
+        lines += [f'### {domain}', '',
+                  f'![{domain} in agentic robotics](assets/figures/{domain.lower()}.png)', '']
         for table in tables:
             if table['domain'] == domain:
                 anchor = table['category'].lower().replace(' ', '-')
