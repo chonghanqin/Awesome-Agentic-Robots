@@ -30,7 +30,7 @@ The discussion follows four questions:
 
 Across these domains, the work synthesizes methods for acquiring, coordinating, and improving robotic capabilities, comparing how agent decisions depend on available tools, robot executors, and interaction feedback. It also discusses four directions for future research: fair benchmarking, real-robot deployment, efficient robot use, and cross-embodiment generalization.
 
-Works can span several categories. The tables summarize the configurations, experimental scope, and limits discussed in the paper; category placements do not imply that every component operates jointly in one configuration.
+The comparison tables organize methods by their roles in robotic systems. A work may appear in several categories.
 
 ## Taxonomy
 
@@ -43,9 +43,7 @@ Works can span several categories. The tables summarize the configurations, expe
 
 ## Papers
 
-The following 17 comparison tables follow the current manuscript's fields, work names, row order, and groups. Each subsection compares the mechanisms relevant to that topic. Work names carry full paper titles as tooltips; Link contains the paper and GitHub icons used in the manuscript. A dash under Link means no repository link is recorded. Technical-column icons in the manuscript are rendered as their legend labels here; ✓ retains the manuscript's marked entries, and an empty cell retains an unmarked entry. NR and N/A retain the meanings given in each table caption. Reported scales keep their original units and experimental scope and should not be read as cross-paper rankings.
-
-The collection is stored in [data/papers.yaml](data/papers.yaml); subsection comparisons are stored in [data/tables.yaml](data/tables.yaml).
+The 17 tables compare methods across the four domains. Hover over a work name to see its full paper title. The icons link to the paper and GitHub repository; a dash indicates an unavailable repository link. Abbreviations and symbols are explained in each caption.
 
 <!-- BEGIN AUTO-GENERATED PAPER LIST -->
 

@@ -9,7 +9,7 @@ Please open a [paper suggestion](https://github.com/qinchonghanzuibang/Awesome-A
 - Official code URLs, if available.
 - A 1–3 sentence explanation of how the work fits the collection.
 
-Inclusion depends on relevance to the scope of the accompanying work and support for the proposed placement. Suggestions are reviewed by the maintainers; submission does not guarantee inclusion.
+Maintainers review suggestions for relevance and category placement.
 
 ## Local maintenance
 
@@ -19,16 +19,16 @@ Use Python 3.9 or newer. Install the single dependency in your preferred environ
 python3 -m pip install -r requirements.txt
 ```
 
-Edit `data/papers.yaml`, then run:
+Edit `data/papers.yaml` and `data/tables.yaml`, then run:
 
 ```sh
 python3 scripts/generate_readme.py
 python3 scripts/validate.py
 ```
 
-Each paper has a manuscript citation key (`id`), full `title`, and visible `categories`. Each comparison table in `data/tables.yaml` has its own headers, column widths, caption, notes, groups, row order, paper/code links, and technical cells. Multiple annotation groups may include the same work. Do not collapse those rows or infer that an unmarked persistence cell means explicitly absent.
+Each paper record contains a citation key (`id`), full title, and categories. The comparison tables store headers, captions, groups, row order, links, and technical cells. Annotation methods can appear in multiple output groups.
 
-For a manuscript refresh, use the active subsection tables included by the current Overleaf chapters. The comparison switch selects the current Model, Environment, and Harness tables; Data includes its comparison tables directly. Earlier literature tables and comparison JSON may be historical or differ from hand-edited active tables. `ref.bib` supplies full titles; citation keys preserve manuscript identity. The sync command reads the Overleaf repository without writing it and fails on unknown display commands:
+To refresh the collection from Overleaf, run the sync command below. It uses the subsection tables selected by the current chapters and comparison switch, with full titles from `ref.bib`.
 
 ```sh
 python3 scripts/sync_from_overleaf.py --overleaf /path/to/overleaf --write
@@ -37,6 +37,6 @@ python3 scripts/validate.py
 python3 scripts/sync_from_overleaf.py --overleaf /path/to/overleaf
 ```
 
-The final command checks exact snapshot freshness without writing. Preserve subsection-specific fields, grouping, row order, qualifiers, source links and notes. Add or change technical cells only when supported by the manuscript/source review. Public comparison cells support only `<strong>`, `<em>`, `<sup>` and `<sub>` markup without attributes; all URLs are validated separately. Evidence logs, private reviews, source PDFs, backups, and local paths stay outside the public dataset.
+The final command checks whether the snapshot matches the current manuscript. Keep fields, groups, row order, links, and notes aligned with the source tables. Technical cells support `<strong>`, `<em>`, `<sup>`, and `<sub>` markup.
 
-The README generator reads the two YAML files and changes only the marked comparison region. Edit the overview and citation outside that region directly. Validation checks structure, memberships, safe display markup, links, widths and README freshness; it does not independently establish scientific truth or verify remote link availability.
+The generator updates the marked comparison region in the README. Edit the overview and citation outside that region directly. The validator checks data structure, table memberships, display markup, URLs, widths, and README freshness.
