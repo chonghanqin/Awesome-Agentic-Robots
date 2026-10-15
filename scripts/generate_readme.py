@@ -57,9 +57,10 @@ def render(papers, tables):
         navigation = ' · '.join(link(escape(category), '#'+category.lower().replace(' ', '-'))
                                 for category in DOMAINS[domain])
         lines += [f'### {domain}', '', f'<p>{navigation}</p>', '',
-                  '<details>', f'<summary>{domain} overview figure</summary>', '',
-                  f'<p><img src="assets/figures/{domain.lower()}.webp" '
-                  f'alt="{domain} in agentic robotics" width="100%"></p>', '',
+                  '<details open>', f'<summary>{domain} overview figure</summary>', '',
+                  f'<p><a href="assets/figures/{domain.lower()}.png">'
+                  f'<img src="assets/figures/{domain.lower()}.webp" '
+                  f'alt="{domain} in agentic robotics" width="100%"></a></p>', '',
                   '</details>', '']
         for table in tables:
             if table['domain'] == domain:

@@ -62,10 +62,10 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 
 <p><a href="#training">Training</a> · <a href="#perception">Perception</a> · <a href="#planning">Planning</a> · <a href="#robot-control">Robot Control</a> · <a href="#adaptation">Adaptation</a></p>
 
-<details>
+<details open>
 <summary>Model overview figure</summary>
 
-<p><img src="assets/figures/model.webp" alt="Model in agentic robotics" width="100%"></p>
+<p><a href="assets/figures/model.png"><img src="assets/figures/model.webp" alt="Model in agentic robotics" width="100%"></a></p>
 
 </details>
 
@@ -250,10 +250,10 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 
 <p><a href="#collection">Collection</a> · <a href="#annotation">Annotation</a> · <a href="#refinement">Refinement</a></p>
 
-<details>
+<details open>
 <summary>Data overview figure</summary>
 
-<p><img src="assets/figures/data.webp" alt="Data in agentic robotics" width="100%"></p>
+<p><a href="assets/figures/data.png"><img src="assets/figures/data.webp" alt="Data in agentic robotics" width="100%"></a></p>
 
 </details>
 
@@ -343,10 +343,10 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 
 <p><a href="#reconstruction">Reconstruction</a> · <a href="#task-generation">Task Generation</a> · <a href="#benchmarking">Benchmarking</a></p>
 
-<details>
+<details open>
 <summary>Environment overview figure</summary>
 
-<p><img src="assets/figures/environment.webp" alt="Environment in agentic robotics" width="100%"></p>
+<p><a href="assets/figures/environment.png"><img src="assets/figures/environment.webp" alt="Environment in agentic robotics" width="100%"></a></p>
 
 </details>
 
@@ -466,10 +466,10 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 
 <p><a href="#orchestration">Orchestration</a> · <a href="#memory">Memory</a> · <a href="#monitoring-and-recovery">Monitoring and Recovery</a> · <a href="#skills">Skills</a> · <a href="#infrastructure">Infrastructure</a> · <a href="#layered-systems">Layered Systems</a></p>
 
-<details>
+<details open>
 <summary>Harness overview figure</summary>
 
-<p><img src="assets/figures/harness.webp" alt="Harness in agentic robotics" width="100%"></p>
+<p><a href="assets/figures/harness.png"><img src="assets/figures/harness.webp" alt="Harness in agentic robotics" width="100%"></a></p>
 
 </details>
 
