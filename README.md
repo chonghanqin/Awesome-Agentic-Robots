@@ -20,9 +20,19 @@
   <a href="CONTRIBUTING.md">Contributing</a>
 </p>
 
+<p align="center">
+  <a href="assets/figures/mountain.png"><img src="assets/figures/mountain.png" alt="From robot policies to agentic robots" width="100%"></a>
+</p>
+<p align="center"><sub>From task-specific policies to VLA models, world models, and agentic robot systems.</sub></p>
+
 ## Overview
 
 Agentic robots use foundation models to guide robot execution and learning. We organize this work around **Model**, **Data**, **Environment**, and **Harness**, connecting model decisions, data pipelines, environments, and the orchestration of robot capabilities.
+
+<p align="center">
+  <a href="assets/figures/relation.png"><img src="assets/figures/relation.png" alt="Connections across Model, Data, Environment, and Harness" width="100%"></a>
+</p>
+<p align="center"><sub>Model, Data, Environment, and Harness connect robot decisions, execution, interaction, and learning from experience.</sub></p>
 
 ## Taxonomy
 
@@ -38,6 +48,11 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <tr><td align="left"><strong><a href="#harness">Harness</a></strong></td><td align="left"><a href="#orchestration">Orchestration</a> · <a href="#memory">Memory</a> · <a href="#monitoring-and-recovery">Monitoring and Recovery</a> · <a href="#skills">Skills</a> · <a href="#infrastructure">Infrastructure</a> · <a href="#layered-systems">Layered Systems</a></td></tr>
 </tbody>
 </table>
+
+<p align="center">
+  <a href="assets/figures/taxonomy.png"><img src="assets/figures/taxonomy.png" alt="Taxonomy and literature landscape of agentic robots" width="100%"></a>
+</p>
+<p align="center"><sub>Four functional domains and seventeen non-exclusive categories organize the literature on agentic robots.</sub></p>
 
 ## Papers
 
