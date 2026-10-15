@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <a href="assets/figures/mountain.png"><img src="assets/figures/mountain.webp" alt="From robot policies to agentic robots" width="100%"></a>
+  <a href="assets/figures/mountain.png"><img src="assets/figures/mountain.webp?v=dba259515e8c" alt="From robot policies to agentic robots" width="100%"></a>
 </p>
 <p align="center"><sub>From task-specific policies to VLA models, world models, and agentic robot systems.</sub></p>
 
@@ -30,7 +30,7 @@
 Agentic robots use foundation models to guide robot execution and learning. We organize this work around **Model**, **Data**, **Environment**, and **Harness**, connecting model decisions, data pipelines, environments, and the orchestration of robot capabilities.
 
 <p align="center">
-  <a href="assets/figures/relation.png"><img src="assets/figures/relation.webp" alt="Connections across Model, Data, Environment, and Harness" width="100%"></a>
+  <a href="assets/figures/relation.png"><img src="assets/figures/relation.webp?v=b45a57866742" alt="Connections across Model, Data, Environment, and Harness" width="100%"></a>
 </p>
 <p align="center"><sub>Model, Data, Environment, and Harness connect robot decisions, execution, interaction, and learning from experience.</sub></p>
 
@@ -50,7 +50,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 </table>
 
 <p align="center">
-  <a href="assets/figures/taxonomy.png"><img src="assets/figures/taxonomy.webp" alt="Taxonomy and literature landscape of agentic robots" width="100%"></a>
+  <a href="assets/figures/taxonomy.png"><img src="assets/figures/taxonomy.webp?v=774f92470310" alt="Taxonomy and literature landscape of agentic robots" width="100%"></a>
 </p>
 <p align="center"><sub>Four functional domains and seventeen non-exclusive categories organize the literature on agentic robots.</sub></p>
 
@@ -65,7 +65,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <details open>
 <summary>Model overview figure</summary>
 
-<p><a href="assets/figures/model.png"><img src="assets/figures/model.webp" alt="Model in agentic robotics" width="100%"></a></p>
+<p><a href="assets/figures/model.png"><img src="assets/figures/model.webp?v=75b6641c5bc1" alt="Model in agentic robotics" width="100%"></a></p>
 
 </details>
 
@@ -253,7 +253,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <details open>
 <summary>Data overview figure</summary>
 
-<p><a href="assets/figures/data.png"><img src="assets/figures/data.webp" alt="Data in agentic robotics" width="100%"></a></p>
+<p><a href="assets/figures/data.png"><img src="assets/figures/data.webp?v=d8c9294e9785" alt="Data in agentic robotics" width="100%"></a></p>
 
 </details>
 
@@ -346,7 +346,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <details open>
 <summary>Environment overview figure</summary>
 
-<p><a href="assets/figures/environment.png"><img src="assets/figures/environment.webp" alt="Environment in agentic robotics" width="100%"></a></p>
+<p><a href="assets/figures/environment.png"><img src="assets/figures/environment.webp?v=3d56489cdc21" alt="Environment in agentic robotics" width="100%"></a></p>
 
 </details>
 
@@ -469,7 +469,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <details open>
 <summary>Harness overview figure</summary>
 
-<p><a href="assets/figures/harness.png"><img src="assets/figures/harness.webp" alt="Harness in agentic robotics" width="100%"></a></p>
+<p><a href="assets/figures/harness.png"><img src="assets/figures/harness.webp?v=4b934143b109" alt="Harness in agentic robotics" width="100%"></a></p>
 
 </details>
 

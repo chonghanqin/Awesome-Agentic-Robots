@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Render a paper list with full titles and source links."""
+import re
+from hashlib import sha256
 from html import escape
 from urllib.parse import quote
 
@@ -7,6 +9,12 @@ from validate import DOMAINS, ROOT, load_papers, load_tables, validate
 
 BEGIN = '<!-- BEGIN AUTO-GENERATED PAPER LIST -->'
 END = '<!-- END AUTO-GENERATED PAPER LIST -->'
+
+
+def figure_src(name):
+    path = f'assets/figures/{name}.webp'
+    version = sha256((ROOT / path).read_bytes()).hexdigest()[:12]
+    return f'{path}?v={version}'
 
 
 def link(label, url):
@@ -59,7 +67,7 @@ def render(papers, tables):
         lines += [f'### {domain}', '', f'<p>{navigation}</p>', '',
                   '<details open>', f'<summary>{domain} overview figure</summary>', '',
                   f'<p><a href="assets/figures/{domain.lower()}.png">'
-                  f'<img src="assets/figures/{domain.lower()}.webp" '
+                  f'<img src="{figure_src(domain.lower())}" '
                   f'alt="{domain} in agentic robotics" width="100%"></a></p>', '',
                   '</details>', '']
         for table in tables:
@@ -75,6 +83,8 @@ def updated_readme(readme, papers, tables):
     if readme.count(BEGIN) != 1 or readme.count(END) != 1 or readme.index(BEGIN) >= readme.index(END):
         raise ValueError('README must contain one ordered generation marker pair')
     before, rest = readme.split(BEGIN,1); _,after = rest.split(END,1)
+    for name in ('mountain', 'relation', 'taxonomy'):
+        before = re.sub(rf'assets/figures/{name}\.webp(?:\?v=[a-f0-9]+)?', figure_src(name), before)
     return before+BEGIN+'\n\n'+render(papers,tables)+'\n'+END+after
 
 
