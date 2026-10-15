@@ -58,7 +58,7 @@ def render(papers, tables):
                                 for category in DOMAINS[domain])
         lines += [f'### {domain}', '', f'<p>{navigation}</p>', '',
                   '<details>', f'<summary>{domain} overview figure</summary>', '',
-                  f'<p><img src="assets/figures/{domain.lower()}.png" '
+                  f'<p><img src="assets/figures/{domain.lower()}.webp" '
                   f'alt="{domain} in agentic robotics" width="100%"></p>', '',
                   '</details>', '']
         for table in tables:
