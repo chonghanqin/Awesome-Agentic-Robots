@@ -5,6 +5,7 @@
   <a href="https://github.com/chonghanqin/Awesome-Agentic-Robots/stargazers"><img src="https://img.shields.io/github/stars/chonghanqin/Awesome-Agentic-Robots?style=flat&amp;label=Stars&amp;color=0969da" alt="GitHub stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <a href="https://arxiv.org/abs/2610.20442"><img src="https://img.shields.io/badge/arXiv-2610.20442-b31b1b.svg?logo=arxiv" alt="arXiv:2610.20442"></a>
+  <a href="https://huggingface.co/papers/2610.20442"><img src="https://img.shields.io/badge/Hugging%20Face-Daily%20Papers-FFD21E?logo=huggingface&amp;logoColor=000" alt="Hugging Face Daily Papers"></a>
 </p>
 
 <p align="center">
