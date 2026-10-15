@@ -17,7 +17,8 @@
   <a href="#overview">Overview</a> &nbsp;·&nbsp;
   <a href="#taxonomy">Browse by domain</a> &nbsp;·&nbsp;
   <a href="#papers">Papers</a> &nbsp;·&nbsp;
-  <a href="CONTRIBUTING.md">Contributing</a>
+  <a href="CONTRIBUTING.md">Contributing</a>  ·
+  <a href="#citation">Cite</a>
 </p>
 
 <p align="center">
