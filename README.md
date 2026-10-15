@@ -30,7 +30,7 @@
 Agentic robots use foundation models to guide robot execution and learning. We organize this work around **Model**, **Data**, **Environment**, and **Harness**, connecting model decisions, data pipelines, environments, and the orchestration of robot capabilities.
 
 <p align="center">
-  <a href="assets/figures/relation.png"><img src="assets/figures/relation.webp?v=b265cadd475b" alt="Connections across Model, Data, Environment, and Harness" width="100%"></a>
+  <a href="assets/figures/relation.png"><img src="assets/figures/relation-b265cadd475b.webp" alt="Connections across Model, Data, Environment, and Harness" width="100%"></a>
 </p>
 <p align="center"><sub>Model, Data, Environment, and Harness connect robot decisions, execution, interaction, and learning from experience.</sub></p>
 
