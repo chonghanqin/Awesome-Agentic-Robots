@@ -722,12 +722,27 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 
 <!-- END AUTO-GENERATED PAPER LIST -->
 
-<!-- ## Citation -->
-
-<!-- The paper's final publication identifier and BibTeX citation are pending. Please use the official citation once released. -->
-
-<!-- Replace this notice with the author-confirmed paper BibTeX upon release. -->
-
 ## Contributing
 
 Paper suggestions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the scope and submission details.
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=chonghanqin%2Fawesome-agentic-robots&type=date&legend=top-left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=chonghanqin/awesome-agentic-robots&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=chonghanqin/awesome-agentic-robots&type=date&legend=top-left" />
+    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=chonghanqin/awesome-agentic-robots&type=date&legend=top-left" />
+  </picture>
+</a>
+
+## Citation
+
+```bibtex
+@article{qin2026towards,
+  title={Towards Agentic Robots: Model, Data, Environment, and Harness},
+  author={Chonghan Qin and Dongming Wu and Kaituo Feng and Jiaxu Wang and Xinlei Yu and Peiwen Sun and Yijia Fan and Xilin He and Bingao Chen and Weitong Lian and Ryan Ji and Wenqi Ren and Xiaobin Hu and Dahua Lin and Yu-Gang Jiang and Xiangyu Yue},
+  year={2026},
+  journal={arXiv preprint arXiv:2610.20442},
+}
+```
