@@ -4,10 +4,8 @@
   <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="https://github.com/chonghanqin/Awesome-Agentic-Robots/stargazers"><img src="https://img.shields.io/github/stars/chonghanqin/Awesome-Agentic-Robots?style=flat&amp;label=Stars&amp;color=0969da" alt="GitHub stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/arXiv-pending-b31b1b.svg?logo=arxiv" alt="arXiv identifier pending">
+  <a href="https://arxiv.org/abs/2610.20442"><img src="https://img.shields.io/badge/arXiv-2610.20442-b31b1b.svg?logo=arxiv" alt="arXiv:2610.20442"></a>
 </p>
-
-<!-- Add the author-confirmed arXiv link to its badge upon release. -->
 
 <p align="center">
   Official companion repository for<br>
