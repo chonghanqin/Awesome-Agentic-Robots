@@ -13,13 +13,9 @@ END = '<!-- END AUTO-GENERATED PAPER LIST -->'
 
 def figure_src(name):
     path = f'assets/figures/{name}.webp'
-    if not (ROOT / path).exists():
-        candidates = list((ROOT / 'assets/figures').glob(f'{name}-*.webp'))
-        if len(candidates) != 1:
-            raise ValueError(f'Expected one versioned preview for {name}')
-        return candidates[0].relative_to(ROOT).as_posix()
     version = sha256((ROOT / path).read_bytes()).hexdigest()[:12]
-    return f'{path}?v={version}'
+    return ('https://raw.githubusercontent.com/chonghanqin/'
+            f'Awesome-Agentic-Robots/main/{path}?v={version}')
 
 
 def link(label, url):
@@ -89,7 +85,7 @@ def updated_readme(readme, papers, tables):
         raise ValueError('README must contain one ordered generation marker pair')
     before, rest = readme.split(BEGIN,1); _,after = rest.split(END,1)
     for name in ('mountain', 'relation', 'taxonomy'):
-        before = re.sub(rf'assets/figures/{name}(?:-[a-f0-9]+)?\.webp(?:\?v=[a-f0-9]+)?', figure_src(name), before)
+        before = re.sub(rf'(?:https://raw\.githubusercontent\.com/chonghanqin/Awesome-Agentic-Robots/main/)?assets/figures/{name}(?:-[a-f0-9]+)?\.webp(?:\?v=[a-f0-9]+)?', figure_src(name), before)
     return before+BEGIN+'\n\n'+render(papers,tables)+'\n'+END+after
 
 
