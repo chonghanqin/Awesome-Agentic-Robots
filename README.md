@@ -235,6 +235,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <tr><td><a href="https://arxiv.org/abs/2609.01281v1">EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents</a></td><td align="center" nowrap><a href="https://github.com/ZJU4EmbodiedAI/EmbodiedSkills"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td><a href="https://arxiv.org/abs/2609.19138v1">In-Context Robot Learning with VLM Agents</a></td><td align="center" nowrap><a href="https://github.com/cheng-haha/GPT-Policy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td><a href="https://arxiv.org/abs/2609.22966v1">Transferring the Intelligence of VLMs to Robotic Control</a></td><td align="center" nowrap><a href="https://github.com/Hugo-AGI/RoboDawn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
+<tr><td><a href="https://arxiv.org/abs/2609.32698">SEES: A Self-Evolving Embodied System via Failure-Guided VLA Policy Adaptation</a></td><td align="center" nowrap>—</td></tr>
 </tbody>
 </table>
 
@@ -451,6 +452,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <tr><td><a href="https://arxiv.org/abs/2602.01640">A2Eval: Agentic and Automated Evaluation for Embodied Brain</a></td><td align="center" nowrap>—</td></tr>
 <tr><td><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/8833c8aa10542d24d693bbaf6a4598f5-Abstract-Conference.html">ManipEvalAgent: Promptable and Efficient Evaluation Framework for Robotic Manipulation Policies</a></td><td align="center" nowrap>—</td></tr>
 <tr><td><a href="https://arxiv.org/abs/2609.13082">Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction</a></td><td align="center" nowrap>—</td></tr>
+<tr><td><a href="https://arxiv.org/abs/2605.18727v3">DexHoldem: An Agentic Robotics Benchmark for Dexterous Manipulation in Texas Hold&#x27;em</a></td><td align="center" nowrap><a href="https://github.com/DexHoldem/Dexholdem-Policy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 </tbody>
 </table>
 
@@ -501,6 +503,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <tr><td><a href="https://arxiv.org/abs/2607.05377">Cortex: A Bidirectionally Aligned Embodied Agent Framework for Long-horizon Manipulation</a></td><td align="center" nowrap><a href="https://github.com/InternRobotics/Cortex"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td><a href="https://arxiv.org/abs/2605.13119">Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models</a></td><td align="center" nowrap>—</td></tr>
 <tr><td><a href="https://arxiv.org/abs/2607.17213">Retriever: Composing the Perception-Reasoning-Action Loop for Long-Horizon Manipulation</a></td><td align="center" nowrap><a href="https://github.com/openretriever/retriever"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
+<tr><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>
 </tbody>
 </table>
 
@@ -541,6 +544,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <tr><td><a href="https://arxiv.org/abs/2609.11308">2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation</a></td><td align="center" nowrap>—</td></tr>
 <tr><td><a href="https://doi.org/10.65109/qpuc1624">MeCo: Enhancing LLM-Empowered Multi-Robot Collaboration via Similar Task Memoization</a></td><td align="center" nowrap><a href="https://github.com/TomWang-NPU/MeCo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_APEX_A_Decoupled_Memory-based_Explorer_for_Asynchronous_Aerial_Object_Goal_CVPR_2026_paper.html">APEX: A Decoupled Memory-based Explorer for Asynchronous Aerial Object Goal Navigation</a></td><td align="center" nowrap><a href="https://github.com/4amGodvzx/apex"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
+<tr><td><a href="https://arxiv.org/abs/2606.12372">UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning</a></td><td align="center" nowrap><a href="https://github.com/Denghaoyuan123/UniIntervene"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 </tbody>
 </table>
 
@@ -587,6 +591,8 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <tr><td><a href="https://arxiv.org/abs/2606.13578">LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories</a></td><td align="center" nowrap><a href="https://github.com/zjunlp/LabVLA"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td><a href="https://arxiv.org/abs/2604.07395">A Physical Agentic Loop for Language-Guided Grasping with Execution-State Monitoring</a></td><td align="center" nowrap>—</td></tr>
 <tr><td><a href="https://arxiv.org/abs/2607.13049">SPINE: Bridging the Cyber-Physical Gap with Agentic AI</a></td><td align="center" nowrap>—</td></tr>
+<tr><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>
+<tr><td><a href="https://arxiv.org/abs/2606.12372">UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning</a></td><td align="center" nowrap><a href="https://github.com/Denghaoyuan123/UniIntervene"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 </tbody>
 </table>
 
@@ -709,6 +715,7 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 <tr><td><a href="https://arxiv.org/abs/2607.08448">Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents</a></td><td align="center" nowrap><a href="https://github.com/RLinf/RPent"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/c7af751b5e0a407c62ac023e3cb381f9-Abstract-Conference.html">VLA-OS: Structuring and Dissecting Planning Representations and Paradigms in Vision-Language-Action Models</a></td><td align="center" nowrap><a href="https://github.com/HeegerGao/VLA-OS"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td><a href="https://arxiv.org/abs/2606.10267">What Matters in Orchestrating Robot Policies: A Systematic Study of Hierarchical VLA Agents</a></td><td align="center" nowrap>—</td></tr>
+<tr><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>
 </tbody>
 </table>
 

@@ -5,7 +5,7 @@ from hashlib import sha256
 from html import escape
 from urllib.parse import quote
 
-from validate import DOMAINS, ROOT, load_papers, load_tables, validate
+from validate import DOMAINS, ROOT, load_additions, load_papers, load_tables, validate
 
 BEGIN = '<!-- BEGIN AUTO-GENERATED PAPER LIST -->'
 END = '<!-- END AUTO-GENERATED PAPER LIST -->'
@@ -31,20 +31,23 @@ def icon_link(label, name, url):
     return link(icon, url)
 
 
-def listing_rows(table):
+def listing_rows(table, additions=()):
     # Annotation output groups can repeat a work; list each work once per category.
     grouped = {}
     for row in table['rows']:
         grouped.setdefault(row['bibkey'], []).append(row)
+    for p in additions:
+        if table['key'] in p['categories']:
+            grouped[p['id']] = [dict(bibkey=p['id'], paper=p['paper'], code=p['code'], code_partial=False)]
     return list(grouped.values())
 
 
-def table_lines(table, papers):
+def table_lines(table, papers, additions=()):
     lines = ['<table width="100%">', '<thead><tr>',
              '<th width="89%" align="left">Paper Title</th>',
              '<th width="11%" align="center" nowrap>Code</th>',
              '</tr></thead>', '<tbody>']
-    for rows in listing_rows(table):
+    for rows in listing_rows(table, additions):
         row = rows[0]
         # Prefer a recorded code link if another annotation group supplies it.
         codes = {r['code'] for r in rows if r['code']}
@@ -61,7 +64,8 @@ def table_lines(table, papers):
 
 
 def render(papers, tables):
-    validate(papers,tables); lookup = {p['id']:p for p in papers}; lines=[]
+    validate(papers,tables); additions = load_additions(papers)
+    lookup = {p['id']:p for p in papers + additions}; lines=[]
     for domain in DOMAINS:
         navigation = ' · '.join(link(escape(category), '#'+category.lower().replace(' ', '-'))
                                 for category in DOMAINS[domain])
@@ -75,7 +79,7 @@ def render(papers, tables):
             if table['domain'] == domain:
                 anchor = table['category'].lower().replace(' ', '-')
                 lines += [f'<a id="{anchor}"></a>', '',
-                          f'#### {domain} · {table["category"]}', '', *table_lines(table,lookup), '']
+                          f'#### {domain} · {table["category"]}', '', *table_lines(table,lookup,additions), '']
         lines += ['<p align="right"><a href="#taxonomy">↑ Back to contents</a></p>', '', '---', '']
     return '\n'.join(lines)
 

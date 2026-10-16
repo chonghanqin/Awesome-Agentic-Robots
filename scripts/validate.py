@@ -70,6 +70,26 @@ def load_papers(): return load_records('papers')
 def load_tables(): return load_records('tables')
 
 
+def load_additions(papers):
+    additions = load_records('additional_papers')
+    ids = {p['id'] for p in papers}
+    for p in additions:
+        if set(p) != {'id', 'title', 'categories', 'paper', 'code', 'venue', 'year'}:
+            raise ValueError('Unexpected additional paper schema')
+        if not isinstance(p['id'], str) or not re.fullmatch(r'[\w:.\-/]+', p['id']) or p['id'] in ids:
+            raise ValueError('Duplicate or invalid additional paper identity')
+        ids.add(p['id'])
+        if not isinstance(p['title'], str) or not p['title'].strip():
+            raise ValueError('Missing additional paper title')
+        cats = p['categories']
+        if not isinstance(cats, list) or not cats or len(cats) != len(set(cats)) or set(cats)-TAXONOMY.keys():
+            raise ValueError('Unknown or duplicate additional paper placements')
+        url(p['paper']); url(p['code'], optional=True)
+        if not isinstance(p['venue'], str) or not p['venue'].strip() or type(p['year']) is not int:
+            raise ValueError('Invalid additional paper venue or year')
+    return additions
+
+
 def validate(papers, tables):
     ids = {}; placements = set(); counts = Counter()
     for p in papers:
@@ -122,11 +142,12 @@ def validate(papers, tables):
 def main():
     try:
         papers, tables = load_papers(), load_tables(); counts = validate(papers, tables)
+        additions = load_additions(papers)
         from generate_readme import updated_readme, listing_rows
         readme = (ROOT/'README.md').read_text(encoding='utf-8')
         if updated_readme(readme, papers, tables) != readme: raise ValueError('README is stale')
-        listed = sum(len(listing_rows(t)) for t in tables)
-        print(f'PASS: {len(papers)} works, {len(tables)} paper lists, {listed} listed entries '
+        listed = sum(len(listing_rows(t, additions)) for t in tables)
+        print(f'PASS: {len(papers)+len(additions)} works, {len(tables)} paper lists, {listed} listed entries '
               f'({sum(counts.values())} source comparison rows)')
         for key,count in counts.items(): print(f'  {key}: {count} source rows')
     except (ValueError, OSError, KeyError, TypeError, yaml.YAMLError) as exc:

@@ -1,0 +1,35 @@
+- id: survey_ax_2609_40306
+  title: 'DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents'
+  categories:
+  - harness.orchestration
+  - harness.monitoring_and_recovery
+  - harness.layered_systems
+  paper: https://arxiv.org/abs/2609.40306
+  code: null
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2606_12372
+  title: 'UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning'
+  categories:
+  - harness.memory
+  - harness.monitoring_and_recovery
+  paper: https://arxiv.org/abs/2606.12372
+  code: https://github.com/Denghaoyuan123/UniIntervene
+  venue: CoRL
+  year: 2026
+- id: survey_ax_2605_18727
+  title: "DexHoldem: An Agentic Robotics Benchmark for Dexterous Manipulation in Texas Hold'em"
+  categories:
+  - environment.benchmarking
+  paper: https://arxiv.org/abs/2605.18727v3
+  code: https://github.com/DexHoldem/Dexholdem-Policy
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2609_32698
+  title: 'SEES: A Self-Evolving Embodied System via Failure-Guided VLA Policy Adaptation'
+  categories:
+  - model.adaptation
+  paper: https://arxiv.org/abs/2609.32698
+  code: null
+  venue: arXiv
+  year: 2026
