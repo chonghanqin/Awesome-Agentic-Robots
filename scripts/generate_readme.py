@@ -39,10 +39,10 @@ def publication_sort_key(record):
 
 def publication_label(record):
     first = record['first_public']
-    released = first[:7].replace('-', '/') if first else ''
+    released = first[2:7].replace('-', '/') if first else ''
     venue = record['venue']
     if venue != 'arXiv' and record['venue_year'] is not None:
-        venue += ' ' + str(record['venue_year'])
+        venue += '’' + str(record['venue_year'])[-2:]
     return ' · '.join(part for part in (released, venue) if part)
 
 
@@ -62,8 +62,8 @@ def listing_rows(table, additions=(), publications=None):
 
 def table_lines(table, papers, additions, publications):
     lines = ['<table width="100%">', '<thead><tr>',
-             '<th width="20%" align="left">Publication</th>',
-             '<th width="70%" align="left">Paper Title</th>',
+             '<th width="15%" align="left">Publication</th>',
+             '<th width="75%" align="left">Paper Title</th>',
              '<th width="10%" align="center" nowrap>Code</th>',
              '</tr></thead>', '<tbody>']
     for rows in listing_rows(table, additions, publications):
