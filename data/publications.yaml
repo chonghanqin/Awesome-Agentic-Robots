@@ -1,0 +1,1988 @@
+checked_on: '2026-10-22'
+papers:
+  adaptation_ax_2212_07398:
+    first_public: '2022-12-14'
+    venue: CVPR
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2212.07398
+    - https://openaccess.thecvf.com/content/CVPR2023/html/Ge_Policy_Adaptation_From_Foundation_Model_Feedback_CVPR_2023_paper.html
+  adaptation_ax_2305_05658:
+    first_public: '2023-05-09'
+    venue: Auton. Robots
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2305.05658
+    - https://link.springer.com/article/10.1007/s10514-023-10139-z
+  adaptation_ax_2310_17555:
+    first_public: '2023-10-26'
+    venue: arXiv
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2310.17555
+  adaptation_ax_2402_11450:
+    first_public: '2024-02-18'
+    venue: RSS
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2402.11450
+    - https://roboticsproceedings.org/rss20/p125.html
+  adaptation_ax_2403_12910:
+    first_public: '2024-03-19'
+    venue: RSS
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2403.12910
+    - https://www.roboticsproceedings.org/rss20/p025.html
+  adaptation_ax_2511_14759:
+    first_public: '2025-11-18'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2511.14759
+  adaptation_ax_2602_20323:
+    first_public: '2026-02-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.20323
+  survey_ax_2204_01691:
+    first_public: '2022-04-04'
+    venue: CoRL
+    venue_year: 2022
+    sources:
+    - https://arxiv.org/abs/2204.01691
+    - https://proceedings.mlr.press/v205/ichter23a.html
+    - https://proceedings.mlr.press/v205/
+  survey_ax_2209_07753:
+    first_public: '2022-09-16'
+    venue: ICRA
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2209.07753
+    - https://api.crossref.org/works/10.1109/icra48891.2023.10160591
+  survey_ax_2209_11302:
+    first_public: '2022-09-22'
+    venue: ICRA
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2209.11302
+    - https://api.crossref.org/works/10.1109/icra48891.2023.10161317
+  survey_ax_2305_11176:
+    first_public: '2023-05-18'
+    venue: arXiv
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2305.11176
+  survey_ax_2305_16291:
+    first_public: '2023-05-25'
+    venue: arXiv
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2305.16291
+  survey_ax_2306_03310:
+    first_public: '2023-06-05'
+    venue: NeurIPS
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2306.03310
+    - https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html
+  survey_ax_2306_11706:
+    first_public: '2023-06-20'
+    venue: TMLR
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2306.11706
+    - https://openreview.net/pdf?id=vsCpILiWHu
+  survey_ax_2306_15724:
+    first_public: '2023-06-27'
+    venue: CoRL
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2306.15724
+    - https://proceedings.mlr.press/v229/liu23g.html
+    - https://proceedings.mlr.press/v229/
+  survey_ax_2307_00329:
+    first_public: '2023-07-01'
+    venue: IROS
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2307.00329
+    - https://api.crossref.org/works/10.1109/IROS58592.2024.10802284
+  survey_ax_2307_01928:
+    first_public: '2023-07-04'
+    venue: CoRL
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2307.01928
+    - https://proceedings.mlr.press/v229/ren23a.html
+    - https://proceedings.mlr.press/v229/
+  survey_ax_2307_04738:
+    first_public: '2023-07-10'
+    venue: ICRA
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2307.04738
+    - https://api.crossref.org/works/10.1109/ICRA57147.2024.10610855
+  survey_ax_2307_05973:
+    first_public: '2023-07-12'
+    venue: CoRL
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2307.05973
+    - https://proceedings.mlr.press/v229/huang23b.html
+    - https://proceedings.mlr.press/v229/
+  survey_ax_2307_06135:
+    first_public: '2023-07-12'
+    venue: CoRL
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2307.06135
+    - https://proceedings.mlr.press/v229/rana23a.html
+    - https://proceedings.mlr.press/v229/
+  survey_ax_2309_09919:
+    first_public: '2023-09-18'
+    venue: arXiv
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2309.09919
+  survey_ax_2310_01361:
+    first_public: '2023-10-02'
+    venue: ICLR
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2310.01361
+    - https://proceedings.iclr.cc/paper_files/paper/2024/hash/143ea4a156ef64f32d4d905206cf32e1-Abstract-Conference.html
+  survey_ax_2310_12931:
+    first_public: '2023-10-19'
+    venue: ICLR
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2310.12931
+    - https://proceedings.iclr.cc/paper_files/paper/2024/hash/70c26937fbf3d4600b69a129031b66ec-Abstract-Conference.html
+  survey_ax_2311_01455:
+    first_public: '2023-11-02'
+    venue: ICML
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2311.01455
+    - https://proceedings.mlr.press/v235/wang24cc.html
+    - https://proceedings.mlr.press/v235/
+  survey_ax_2311_10678:
+    first_public: '2023-11-17'
+    venue: arXiv
+    venue_year: 2023
+    sources:
+    - https://arxiv.org/abs/2311.10678
+  survey_ax_2401_12168:
+    first_public: '2024-01-22'
+    venue: CVPR
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2401.12168
+    - https://openaccess.thecvf.com/content/CVPR2024/html/Chen_SpatialVLM_Endowing_Vision-Language_Models_with_Spatial_Reasoning_Capabilities_CVPR_2024_paper.html
+  survey_ax_2401_12202:
+    first_public: '2024-01-22'
+    venue: arXiv
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2401.12202
+  survey_ax_2402_06529:
+    first_public: '2024-02-09'
+    venue: NeurIPS
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2402.06529
+    - https://proceedings.neurips.cc/paper_files/paper/2024/hash/8451a20c5a7e0ee5671dda28f7daf7f3-Abstract-Conference.html
+  survey_ax_2402_16117:
+    first_public: '2024-02-25'
+    venue: ICML
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2402.16117
+    - https://proceedings.mlr.press/v235/mu24a.html
+    - https://proceedings.mlr.press/v235/
+  survey_ax_2403_03174:
+    first_public: '2024-03-05'
+    venue: RSS
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2403.03174
+    - https://www.roboticsproceedings.org/rss20/p062.html
+  survey_ax_2405_15019:
+    first_public: '2024-05-23'
+    venue: Robotics Auton. Syst.
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2405.15019
+    - https://api.crossref.org/works/10.1016/j.robot.2025.105248
+  survey_ax_2406_03757:
+    first_public: '2024-06-06'
+    venue: arXiv
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2406.03757
+  survey_ax_2406_18746:
+    first_public: '2024-05-13'
+    venue: ICRA
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2406.18746
+    - https://research.rug.nl/en/publications/lifelong-robot-library-learning-bootstrapping-composable-and-gene/
+    - https://api.crossref.org/works/10.1109/ICRA57147.2024.10611448
+  survey_ax_2407_08693:
+    first_public: '2024-07-11'
+    venue: CoRL
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2407.08693
+    - https://proceedings.mlr.press/v270/zawalski25a.html
+    - https://proceedings.mlr.press/v270/
+  survey_ax_2407_20635:
+    first_public: '2024-07-30'
+    venue: CoRL
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2407.20635
+    - https://proceedings.mlr.press/v270/zhou25b.html
+    - https://proceedings.mlr.press/v270/
+  survey_ax_2409_01652:
+    first_public: '2024-09-03'
+    venue: CoRL
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2409.01652
+    - https://proceedings.mlr.press/v270/huang25g.html
+    - https://proceedings.mlr.press/v270/
+  survey_ax_2409_18382:
+    first_public: '2024-09-27'
+    venue: ICRA
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2409.18382
+  survey_ax_2410_00371:
+    first_public: '2024-10-01'
+    venue: ICLR
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2410.00371
+    - https://proceedings.iclr.cc/paper_files/paper/2025/hash/70a06501001e1820fd1eb9ee821302d2-Abstract-Conference.html
+  survey_ax_2410_05273:
+    first_public: '2024-09-12'
+    venue: CoRL
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2410.05273
+    - https://proceedings.mlr.press/v270/zhang25b.html
+    - https://proceedings.mlr.press/v270/
+  survey_ax_2410_08001:
+    first_public: '2024-10-10'
+    venue: arXiv
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2410.08001
+  survey_ax_2410_13691:
+    first_public: '2024-10-17'
+    venue: ICRA
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2410.13691
+    - https://api.crossref.org/works/10.1109/ICRA55743.2025.11128119
+  survey_ax_2410_13882:
+    first_public: '2024-10-03'
+    venue: ICLR
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2410.13882
+    - https://proceedings.iclr.cc/paper_files/paper/2025/hash/2c8047bf3ed8ef6905351608d641f02f-Abstract-Conference.html
+  survey_ax_2410_17772:
+    first_public: '2024-10-23'
+    venue: CoRL
+    venue_year: 2024
+    sources:
+    - https://arxiv.org/abs/2410.17772
+    - https://proceedings.mlr.press/v270/blank25a.html
+    - https://proceedings.mlr.press/v270/
+  survey_ax_2410_22662:
+    first_public: '2024-10-30'
+    venue: ICLR
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2410.22662
+    - https://proceedings.iclr.cc/paper_files/paper/2025/hash/8ec46cecdae5407662899c5f6698cd8b-Abstract-Conference.html
+  survey_ax_2411_00081:
+    first_public: '2024-10-31'
+    venue: ICLR
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2411.00081
+    - https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3cf318fbeec1126da21e9185ae9908c-Abstract-Conference.html
+  survey_ax_2411_16537:
+    first_public: '2024-11-25'
+    venue: CVPR
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2411.16537
+    - https://openaccess.thecvf.com/content/CVPR2025/html/Song_RoboSpatial_Teaching_Spatial_Understanding_to_2D_and_3D_Vision-Language_Models_CVPR_2025_paper.html
+  survey_ax_2412_04453:
+    first_public: '2024-12-05'
+    venue: RSS
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2412.04453
+    - https://roboticsproceedings.org/rss21/p018.html
+  survey_ax_2412_04455:
+    first_public: '2024-12-05'
+    venue: CVPR
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2412.04455
+    - https://openaccess.thecvf.com/content/CVPR2025/html/Zhou_Code-as-Monitor_Constraint-aware_Visual_Programming_for_Reactive_and_Proactive_Robotic_Failure_CVPR_2025_paper.html
+  survey_ax_2502_05485:
+    first_public: '2025-02-08'
+    venue: ICLR
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2502.05485
+    - https://proceedings.iclr.cc/paper_files/paper/2025/hash/3bfee3bc6639c36e6e7b058db909f760-Abstract-Conference.html
+  survey_ax_2502_09560:
+    first_public: '2025-02-13'
+    venue: ICML
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2502.09560
+    - https://proceedings.mlr.press/v267/yang25f.html
+    - https://proceedings.mlr.press/v267/
+  survey_ax_2502_09886:
+    first_public: '2025-02-14'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2502.09886
+  survey_ax_2502_13143:
+    first_public: '2025-02-18'
+    venue: NeurIPS
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2502.13143
+    - https://proceedings.neurips.cc/paper_files/paper/2025/hash/6ea83df350753236215cbf2fe9716eca-Abstract-Conference.html
+    - https://api.crossref.org/works/10.52202/085713-2565
+  survey_ax_2502_19417:
+    first_public: '2025-02-26'
+    venue: ICML
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2502.19417
+    - https://proceedings.mlr.press/v267/shi25d.html
+    - https://proceedings.mlr.press/v267/
+  survey_ax_2503_07885:
+    first_public: '2025-03-10'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2503.07885
+  survey_ax_2503_14734:
+    first_public: '2025-03-18'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2503.14734
+  survey_ax_2503_16408:
+    first_public: '2025-03-20'
+    venue: ICCV
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2503.16408
+    - https://openaccess.thecvf.com/content/ICCV2025/html/Qin_RoboFactory_Exploring_Embodied_Agent_Collaboration_with_Compositional_Constraints_ICCV_2025_paper.html
+  survey_ax_2503_20020:
+    first_public: '2025-03-25'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2503.20020
+  survey_ax_2504_16054:
+    first_public: '2025-04-22'
+    venue: CoRL
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2504.16054
+    - https://proceedings.mlr.press/v305/black25a.html
+    - https://proceedings.mlr.press/v305/
+  survey_ax_2505_08548:
+    first_public: '2025-05-13'
+    venue: ICLR
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2505.08548
+  survey_ax_2506_01844:
+    first_public: '2025-06-02'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2506.01844
+  survey_ax_2506_07339:
+    first_public: '2025-06-09'
+    venue: NeurIPS
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2506.07339
+    - https://proceedings.neurips.cc/paper_files/paper/2025/hash/300ccb2187dedd4edcc07f7e76d8e553-Abstract-Conference.html
+  survey_ax_2506_07530:
+    first_public: '2025-06-09'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2506.07530
+  survey_ax_2506_17561:
+    first_public: '2025-06-21'
+    venue: NeurIPS
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2506.17561
+    - https://proceedings.neurips.cc/paper_files/paper/2025/hash/c7af751b5e0a407c62ac023e3cb381f9-Abstract-Conference.html
+  survey_ax_2507_00833:
+    first_public: '2025-07-01'
+    venue: NeurIPS
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2507.00833
+    - https://proceedings.neurips.cc/paper_files/paper/2025/hash/e4ef7454447baa15a424314e6284441b-Abstract-Conference.html
+    - https://api.crossref.org/works/10.52202/085713-5220
+  survey_ax_2508_01943:
+    first_public: '2025-08-03'
+    venue: NeurIPS
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2508.01943
+    - https://proceedings.nips.cc/paper_files/paper/2025/hash/cdb1f1b572b616042f01b57fd13db878-Abstract-Conference.html
+    - https://papers.nips.cc/paper_files/paper/2025/hash/cdb1f1b572b616042f01b57fd13db878-Abstract-Conference.html
+  survey_ax_2509_15155:
+    first_public: '2025-09-18'
+    venue: NeurIPS
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2509.15155
+    - https://proceedings.neurips.cc/paper_files/paper/2025/hash/a3ac59dc0bf607fa35535f546110fc34-Abstract-Conference.html
+    - https://api.crossref.org/works/10.52202/085713-3762
+  survey_ax_2509_18597:
+    first_public: '2025-09-23'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2509.18597
+  survey_ax_2510_03342:
+    first_public: '2025-10-02'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2510.03342
+  survey_ax_2510_03827:
+    first_public: '2025-10-04'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2510.03827
+  survey_ax_2510_26742:
+    first_public: '2025-10-30'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2510.26742
+  survey_ax_2512_01031:
+    first_public: '2025-11-30'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2512.01031
+  survey_ax_2512_05964:
+    first_public: '2025-12-05'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2512.05964
+  survey_ax_2512_08186:
+    first_public: '2025-12-09'
+    venue: ICLR
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2512.08186
+    - https://openreview.net/pdf/1a25efebc28583e7d38570ab67050516fcc20d8e.pdf
+  survey_ax_2512_10394:
+    first_public: '2025-12-11'
+    venue: arXiv
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2512.10394
+  survey_ax_2512_14442:
+    first_public: '2025-12-16'
+    venue: ECCV
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2512.14442
+    - https://github.com/EnVision-Research/A4-Agent
+  survey_ax_2512_21220:
+    first_public: '2025-12-24'
+    venue: ICLR
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2512.21220
+    - https://openreview.net/pdf?id=wyKCkQ2GyO
+  survey_ax_2601_02078:
+    first_public: '2026-01-05'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2601.02078
+  survey_ax_2601_11063:
+    first_public: '2026-01-16'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2601.11063
+  survey_ax_2601_14681:
+    first_public: '2026-01-21'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2601.14681
+  survey_ax_2601_16046:
+    first_public: '2026-01-22'
+    venue: CVPR
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2601.16046
+    - https://openaccess.thecvf.com/content/CVPR2026/html/Lee_DextER_Language-driven_Dexterous_Grasp_Generation_with_Embodied_Reasoning_CVPR_2026_paper.html
+  survey_ax_2601_18492:
+    first_public: '2026-01-26'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2601.18492
+  survey_ax_2601_20334:
+    first_public: '2026-01-28'
+    venue: IROS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2601.20334
+  survey_ax_2601_20577:
+    first_public: '2026-01-28'
+    venue: AAMAS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2601.20577
+    - https://api.crossref.org/works/10.65109/qpuc1624
+  survey_ax_2602_00551:
+    first_public: '2026-01-31'
+    venue: CVPR
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.00551
+    - https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_APEX_A_Decoupled_Memory-based_Explorer_for_Asynchronous_Aerial_Object_Goal_CVPR_2026_paper.html
+  survey_ax_2602_01640:
+    first_public: '2026-02-02'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.01640
+  survey_ax_2602_04157:
+    first_public: '2026-02-04'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.04157
+  survey_ax_2602_09153:
+    first_public: '2026-02-09'
+    venue: ICML
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.09153
+    - https://proceedings.mlr.press/v306/pfaff26a.html
+    - https://proceedings.mlr.press/v306/
+  survey_ax_2602_10116:
+    first_public: '2026-02-10'
+    venue: CVPR
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.10116
+    - https://openaccess.thecvf.com/content/CVPR2026/html/Xia_SAGE_Scalable_Agentic_3D_Scene_Generation_for_Embodied_AI_CVPR_2026_paper.html
+  survey_ax_2602_12063:
+    first_public: '2026-02-12'
+    venue: ICML
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.12063
+    - https://proceedings.mlr.press/v306/guo26i.html
+    - https://proceedings.mlr.press/v306/
+  survey_ax_2602_12065:
+    first_public: '2026-02-12'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.12065
+  survey_ax_2602_12281:
+    first_public: '2026-02-12'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.12281
+  survey_ax_2602_13081:
+    first_public: '2026-02-13'
+    venue: AAAI-SS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.13081
+    - https://api.crossref.org/works/10.1609/aaaiss.v8i1.42578
+  survey_ax_2602_13193:
+    first_public: '2026-02-13'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.13193
+    - https://www.roboticsproceedings.org/rss22/p074.html
+  survey_ax_2602_13591:
+    first_public: '2026-02-14'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.13591
+  survey_ax_2602_18397:
+    first_public: '2026-02-20'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.18397
+  survey_ax_2602_18742:
+    first_public: '2026-02-21'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.18742
+  survey_ax_2602_19983:
+    first_public: '2026-02-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.19983
+  survey_ax_2602_21198:
+    first_public: '2026-02-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.21198
+  survey_ax_2602_21670:
+    first_public: '2026-02-25'
+    venue: ICRA
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.21670
+  survey_ax_2602_22474:
+    first_public: '2026-02-25'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.22474
+    - https://www.roboticsproceedings.org/rss22/p142.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.142
+  survey_ax_2602_22818:
+    first_public: '2026-02-26'
+    venue: ICLR
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2602.22818
+    - https://openreview.net/pdf?id=CiZMMAFQR3
+  survey_ax_2603_01505:
+    first_public: '2026-03-02'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.01505
+  survey_ax_2603_02115:
+    first_public: '2026-03-02'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.02115
+    - https://www.roboticsproceedings.org/rss22/p140.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.140
+  survey_ax_2603_02623:
+    first_public: '2026-03-03'
+    venue: ICRA
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.02623
+    - https://xsw1208.github.io/xiesenwei.github.io/projects/uniskill/
+  survey_ax_2603_02669:
+    first_public: '2026-03-03'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.02669
+  survey_ax_2603_02772:
+    first_public: '2026-03-03'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.02772
+  survey_ax_2603_03148:
+    first_public: '2026-03-03'
+    venue: ICRA
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.03148
+  survey_ax_2603_03278:
+    first_public: '2026-03-03'
+    venue: ICLR
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.03278
+  survey_ax_2603_04466:
+    first_public: '2026-03-03'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.04466
+  survey_ax_2603_05185:
+    first_public: '2026-03-05'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.05185
+  survey_ax_2603_05377:
+    first_public: '2026-03-05'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.05377
+    - https://www.roboticsproceedings.org/rss22/p067.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.067
+  survey_ax_2603_07892:
+    first_public: '2026-03-09'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.07892
+  survey_ax_2603_07997:
+    first_public: '2026-03-09'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.07997
+  survey_ax_2603_10682:
+    first_public: '2026-03-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.10682
+  survey_ax_2603_11558:
+    first_public: '2026-03-12'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.11558
+  survey_ax_2603_12939:
+    first_public: '2026-03-13'
+    venue: ECCV
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.12939
+    - https://link.springer.com/chapter/10.1007/978-3-032-37252-9_3
+  survey_ax_2603_13528:
+    first_public: '2026-03-13'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.13528
+  survey_ax_2603_14371:
+    first_public: '2026-03-15'
+    venue: NeurIPS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.14371
+  survey_ax_2603_18210:
+    first_public: '2026-03-18'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.18210
+  survey_ax_2603_18811:
+    first_public: '2026-03-19'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.18811
+  survey_ax_2603_20711:
+    first_public: '2026-03-21'
+    venue: IJCNN
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.20711
+  survey_ax_2603_22435:
+    first_public: '2026-03-23'
+    venue: ICML
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.22435
+    - https://proceedings.mlr.press/v306/fu26u.html
+    - https://proceedings.mlr.press/v306/
+  survey_ax_2603_26997:
+    first_public: '2026-03-27'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.26997
+  survey_ax_2603_27416:
+    first_public: '2026-03-28'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2603.27416
+  survey_ax_2604_02318:
+    first_public: '2026-04-02'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.02318
+  survey_ax_2604_05226:
+    first_public: '2026-04-06'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.05226
+  survey_ax_2604_05427:
+    first_public: '2026-04-07'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.05427
+  survey_ax_2604_07395:
+    first_public: '2026-04-08'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.07395
+  survey_ax_2604_08664:
+    first_public: '2026-04-09'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.08664
+  survey_ax_2604_09860:
+    first_public: '2026-04-10'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.09860
+    - https://www.roboticsproceedings.org/rss22/p096.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.096
+  survey_ax_2604_11975:
+    first_public: '2026-04-13'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.11975
+  survey_ax_2604_12872:
+    first_public: '2026-04-14'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.12872
+  survey_ax_2604_13533:
+    first_public: '2026-04-15'
+    venue: IJCNN
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.13533
+  survey_ax_2604_13942:
+    first_public: '2026-04-15'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.13942
+  survey_ax_2604_18271:
+    first_public: '2026-04-20'
+    venue: IROS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.18271
+  survey_ax_2604_25788:
+    first_public: '2026-04-28'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.25788
+    - https://www.roboticsproceedings.org/rss22/p184.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.184
+  survey_ax_2604_26988:
+    first_public: '2026-04-28'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2604.26988
+  survey_ax_2605_00416:
+    first_public: '2026-05-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.00416
+  survey_ax_2605_00438:
+    first_public: '2026-05-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.00438
+  survey_ax_2605_00663:
+    first_public: '2026-05-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.00663
+  survey_ax_2605_02600:
+    first_public: '2026-05-04'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.02600
+    - https://www.roboticsproceedings.org/rss22/p054.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.054
+  survey_ax_2605_05241:
+    first_public: '2026-05-03'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.05241
+  survey_ax_2605_09423:
+    first_public: '2026-05-10'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.09423
+  survey_ax_2605_10921:
+    first_public: '2026-05-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.10921
+  survey_ax_2605_11665:
+    first_public: '2026-05-12'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.11665
+  survey_ax_2605_11859:
+    first_public: '2026-05-12'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.11859
+  survey_ax_2605_11951:
+    first_public: '2026-05-12'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.11951
+    - https://www.roboticsproceedings.org/rss22/p180.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.180
+  survey_ax_2605_13119:
+    first_public: '2026-05-13'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.13119
+  survey_ax_2605_14398:
+    first_public: '2026-05-14'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.14398
+  survey_ax_2605_15187:
+    first_public: '2026-05-14'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.15187
+  survey_ax_2605_18729:
+    first_public: '2026-05-18'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.18729
+  survey_ax_2605_26349:
+    first_public: '2026-05-25'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.26349
+  survey_ax_2605_26637:
+    first_public: '2026-05-26'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.26637
+  survey_ax_2606_00083:
+    first_public: '2026-05-22'
+    venue: RLJ
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.00083
+    - https://rlj.cs.umass.edu/2026/papers/Paper12.html
+  survey_ax_2606_00104:
+    first_public: '2026-05-26'
+    venue: ICRA Workshop
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.00104
+  survey_ax_2606_01672:
+    first_public: '2026-06-01'
+    venue: RLJ
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.01672
+    - https://rlj.cs.umass.edu/2026/papers/Paper81.html
+  survey_ax_2606_04172:
+    first_public: '2026-06-02'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.04172
+  survey_ax_2606_05395:
+    first_public: '2026-06-03'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.05395
+  survey_ax_2606_06061:
+    first_public: '2026-06-04'
+    venue: RO-MAN
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.06061
+  survey_ax_2606_07723:
+    first_public: '2026-06-05'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.07723
+  survey_ax_2606_08094:
+    first_public: '2026-06-06'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.08094
+  survey_ax_2606_08610:
+    first_public: '2026-06-07'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.08610
+  survey_ax_2606_09630:
+    first_public: '2026-06-08'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.09630
+  survey_ax_2606_10267:
+    first_public: '2026-06-09'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.10267
+  survey_ax_2606_10577:
+    first_public: '2026-06-09'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.10577
+  survey_ax_2606_12299:
+    first_public: '2026-06-10'
+    venue: CoRL
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.12299
+  survey_ax_2606_13497:
+    first_public: '2026-06-11'
+    venue: CoRL
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.13497
+  survey_ax_2606_13578:
+    first_public: '2026-06-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.13578
+  survey_ax_2606_16458:
+    first_public: '2026-06-15'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.16458
+  survey_ax_2606_17446:
+    first_public: '2026-06-16'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.17446
+  survey_ax_2606_18247:
+    first_public: '2026-06-16'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.18247
+    - https://www.roboticsproceedings.org/rss22/p079.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.079
+  survey_ax_2606_18363:
+    first_public: '2026-06-16'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.18363
+  survey_ax_2606_19419:
+    first_public: '2026-06-17'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.19419
+  survey_ax_2606_19980:
+    first_public: '2026-06-18'
+    venue: CoRL
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.19980
+  survey_ax_2606_22136:
+    first_public: '2026-06-20'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.22136
+  survey_ax_2606_22142:
+    first_public: '2026-06-20'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.22142
+  survey_ax_2606_23280:
+    first_public: '2026-06-22'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.23280
+  survey_ax_2606_23565:
+    first_public: '2026-06-22'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.23565
+  survey_ax_2606_27871:
+    first_public: '2026-06-26'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.27871
+  survey_ax_2606_28276:
+    first_public: '2026-06-26'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.28276
+  survey_ax_2607_00272:
+    first_public: '2026-06-30'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.00272
+  survey_ax_2607_01088:
+    first_public: '2026-07-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.01088
+  survey_ax_2607_03449:
+    first_public: '2026-07-03'
+    venue: ICML
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.03449
+    - https://proceedings.mlr.press/v306/ji26k.html
+    - https://proceedings.mlr.press/v306/
+  survey_ax_2607_04162:
+    first_public: '2026-07-05'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.04162
+  survey_ax_2607_04434:
+    first_public: '2026-07-05'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.04434
+  survey_ax_2607_04610:
+    first_public: '2026-07-06'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.04610
+    - https://www.roboticsproceedings.org/rss22/p095.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.095
+  survey_ax_2607_05369:
+    first_public: '2026-07-06'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.05369
+  survey_ax_2607_05377:
+    first_public: '2026-07-06'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.05377
+  survey_ax_2607_06256:
+    first_public: '2026-07-07'
+    venue: RSS SemRob Workshop
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.06256
+  survey_ax_2607_06501:
+    first_public: '2026-07-07'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.06501
+    - https://www.roboticsproceedings.org/rss22/p181.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.181
+  survey_ax_2607_06990:
+    first_public: '2026-07-08'
+    venue: RSS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.06990
+    - https://www.roboticsproceedings.org/rss22/p036.html
+    - https://api.crossref.org/works/10.15607/RSS.2026.XXII.036
+  survey_ax_2607_07459:
+    first_public: '2026-07-08'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.07459
+  survey_ax_2607_08448:
+    first_public: '2026-07-09'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.08448
+  survey_ax_2607_10350:
+    first_public: '2026-07-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.10350
+  survey_ax_2607_10383:
+    first_public: '2026-07-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.10383
+  survey_ax_2607_11119:
+    first_public: '2026-07-13'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.11119
+  survey_ax_2607_13049:
+    first_public: '2026-06-29'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.13049
+  survey_ax_2607_13653:
+    first_public: '2026-07-15'
+    venue: ECCV
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.13653
+    - https://link.springer.com/chapter/10.1007/978-3-032-37422-6_36
+    - https://api.crossref.org/works/10.1007/978-3-032-37422-6_36
+  survey_ax_2607_14047:
+    first_public: '2026-07-15'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.14047
+  survey_ax_2607_14252:
+    first_public: '2026-07-15'
+    venue: EMNLP
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.14252
+  survey_ax_2607_16636:
+    first_public: '2026-07-18'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.16636
+  survey_ax_2607_17213:
+    first_public: '2026-07-19'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.17213
+  survey_ax_2607_18060:
+    first_public: '2026-07-20'
+    venue: ECCV AIW Workshop
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.18060
+  survey_ax_2607_19190:
+    first_public: '2026-07-21'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.19190
+  survey_ax_2607_21725:
+    first_public: '2026-07-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.21725
+  survey_ax_2607_22014:
+    first_public: '2026-07-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.22014
+  survey_ax_2607_22832:
+    first_public: '2026-07-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.22832
+  survey_ax_2607_22999:
+    first_public: '2026-07-25'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.22999
+  survey_ax_2607_23532:
+    first_public: '2026-07-26'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.23532
+  survey_ax_2607_23784:
+    first_public: '2026-07-26'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.23784
+  survey_ax_2607_26809:
+    first_public: '2026-07-29'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.26809
+  survey_ax_2607_29600:
+    first_public: '2026-07-31'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.29600
+  survey_ax_2608_00337:
+    first_public: '2026-07-31'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.00337
+  survey_ax_2608_03924:
+    first_public: '2026-08-04'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.03924
+  survey_ax_2608_04933:
+    first_public: '2026-08-05'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.04933
+  survey_ax_2608_07555:
+    first_public: '2026-08-02'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.07555
+  survey_ax_2608_08036:
+    first_public: '2026-08-08'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.08036
+  survey_ax_2608_09410:
+    first_public: '2026-08-10'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.09410
+  survey_ax_2608_09516:
+    first_public: '2026-08-10'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.09516
+  survey_ax_2608_11246:
+    first_public: '2026-08-03'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.11246
+  survey_ax_2608_11350:
+    first_public: '2026-08-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.11350
+  survey_ax_2608_14047:
+    first_public: '2026-08-14'
+    venue: CVPR Findings
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.14047
+  survey_ax_2608_14944:
+    first_public: '2026-08-14'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.14944
+  survey_ax_2608_15549:
+    first_public: '2026-08-16'
+    venue: ECCV ACVR Workshop
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.15549
+  survey_ax_2608_16590:
+    first_public: '2026-08-17'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.16590
+  survey_ax_2608_16889:
+    first_public: '2026-08-17'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.16889
+  survey_ax_2608_17129:
+    first_public: '2026-08-17'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.17129
+  survey_ax_2608_17209:
+    first_public: '2026-08-17'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.17209
+  survey_ax_2608_17386:
+    first_public: '2026-08-18'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.17386
+  survey_ax_2608_22657:
+    first_public: '2026-08-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.22657
+  survey_ax_2608_26645:
+    first_public: 2026-06
+    venue: CVPR
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.26645
+    - https://openaccess.thecvf.com/content/CVPR2026/html/Zhao_FLARE_A_Failure-Aware_Framework_for_Autonomous_Correction_and_Recovery_in_CVPR_2026_paper.html
+  survey_ax_2608_28300:
+    first_public: '2026-08-28'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.28300
+  survey_ax_2608_29379:
+    first_public: '2026-08-29'
+    venue: ECCV Workshop
+    venue_year: null
+    sources:
+    - https://arxiv.org/abs/2608.29379
+  survey_ax_2608_30396:
+    first_public: '2026-08-31'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2608.30396
+  survey_ax_2609_01281:
+    first_public: '2026-09-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.01281
+  survey_ax_2609_02653:
+    first_public: '2026-09-02'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.02653
+  survey_ax_2609_05178:
+    first_public: '2026-09-04'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.05178
+  survey_ax_2609_05927:
+    first_public: '2026-09-05'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.05927
+  survey_ax_2609_05985:
+    first_public: '2026-09-05'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.05985
+  survey_ax_2609_06508:
+    first_public: '2026-09-06'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.06508
+  survey_ax_2609_07047:
+    first_public: '2026-09-07'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.07047
+  survey_ax_2609_08292:
+    first_public: '2026-09-08'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.08292
+  survey_ax_2609_08402:
+    first_public: '2026-09-08'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.08402
+  survey_ax_2609_08444:
+    first_public: '2026-09-08'
+    venue: CoRL
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.08444
+  survey_ax_2609_10522:
+    first_public: '2026-09-09'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.10522
+  survey_ax_2609_10895:
+    first_public: '2026-09-09'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.10895
+  survey_ax_2609_11225:
+    first_public: '2026-09-10'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.11225
+  survey_ax_2609_11308:
+    first_public: '2026-09-10'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.11308
+  survey_ax_2609_11561:
+    first_public: '2026-09-10'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.11561
+  survey_ax_2609_12075:
+    first_public: '2026-09-10'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.12075
+  survey_ax_2609_12285:
+    first_public: '2026-09-10'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.12285
+  survey_ax_2609_12541:
+    first_public: '2026-09-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.12541
+  survey_ax_2609_13082:
+    first_public: '2026-09-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.13082
+  survey_ax_2609_13335:
+    first_public: '2026-09-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.13335
+  survey_ax_2609_15195:
+    first_public: '2026-09-14'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.15195
+  survey_ax_2609_15976:
+    first_public: '2026-09-14'
+    venue: CoRL
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.15976
+  survey_ax_2609_16331:
+    first_public: '2026-09-14'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.16331
+  survey_ax_2609_17210:
+    first_public: '2026-09-15'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.17210
+  survey_ax_2609_18520:
+    first_public: '2026-09-16'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.18520
+  survey_ax_2609_18869:
+    first_public: '2026-09-16'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.18869
+  survey_ax_2609_19138:
+    first_public: '2026-09-16'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.19138
+  survey_ax_2609_19315:
+    first_public: '2026-09-16'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.19315
+  survey_ax_2609_19347:
+    first_public: '2026-09-16'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.19347
+  survey_ax_2609_19413:
+    first_public: '2026-09-16'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.19413
+  survey_ax_2609_19554:
+    first_public: '2026-09-17'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.19554
+  survey_ax_2609_19906:
+    first_public: '2026-09-17'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.19906
+  survey_ax_2609_20615:
+    first_public: '2026-09-17'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.20615
+  survey_ax_2609_20822:
+    first_public: '2026-09-17'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.20822
+  survey_ax_2609_22966:
+    first_public: '2026-09-19'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.22966
+  survey_ax_2609_23103:
+    first_public: '2026-09-19'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.23103
+  survey_ax_2609_23997:
+    first_public: '2026-09-21'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.23997
+  survey_ax_2609_24124:
+    first_public: '2026-09-21'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.24124
+  survey_ax_2609_24563:
+    first_public: '2026-09-21'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.24563
+  survey_ax_2609_26360:
+    first_public: '2026-09-22'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.26360
+  survey_ax_2609_27308:
+    first_public: '2026-09-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.27308
+  survey_ax_2609_27526:
+    first_public: '2026-09-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.27526
+  survey_ax_2609_27720:
+    first_public: '2026-09-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.27720
+  survey_ax_2609_28247:
+    first_public: '2026-09-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.28247
+  survey_ax_2609_28429:
+    first_public: '2026-09-23'
+    venue: CoRL
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.28429
+  survey_ax_2609_29166:
+    first_public: '2026-09-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.29166
+  survey_ax_2609_29389:
+    first_public: '2026-09-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.29389
+  survey_ax_2609_29394:
+    first_public: '2026-09-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.29394
+  survey_ax_2609_29964:
+    first_public: '2026-09-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.29964
+  survey_ax_2609_30249:
+    first_public: '2026-09-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.30249
+  survey_ax_2609_31760:
+    first_public: '2026-09-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.31760
+  survey_ax_2609_32069:
+    first_public: '2026-09-25'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.32069
+  survey_ax_2609_34484:
+    first_public: '2026-09-28'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.34484
+  survey_ax_2609_35318:
+    first_public: '2026-09-28'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.35318
+  survey_ax_2609_36024:
+    first_public: '2026-09-28'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.36024
+  survey_ax_2609_36380:
+    first_public: '2026-09-28'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.36380
+  survey_ax_2609_36777:
+    first_public: '2026-09-29'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.36777
+  survey_ax_2609_37655:
+    first_public: '2026-09-29'
+    venue: NeurIPS
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.37655
+  survey_ax_2609_37810:
+    first_public: '2026-09-29'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.37810
+  survey_ax_2609_38905:
+    first_public: '2026-09-30'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.38905
+  survey_ax_2609_39378:
+    first_public: '2026-09-30'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.39378
+  survey_ax_2610_00854:
+    first_public: '2026-10-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.00854
+  survey_ax_2610_02204:
+    first_public: '2026-10-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.02204
+  survey_ax_2610_02274:
+    first_public: '2026-10-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.02274
+  survey_ax_2610_03715:
+    first_public: '2026-10-02'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.03715
+  survey_ax_2610_04432:
+    first_public: '2026-10-03'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.04432
+  survey_ax_2610_07969:
+    first_public: '2026-10-06'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.07969
+  survey_ax_2610_10409:
+    first_public: '2026-10-07'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.10409
+  survey_doi_07c1d81a50e5849a:
+    first_public: '2026-09-03'
+    venue: Sensors
+    venue_year: 2026
+    sources:
+    - https://api.crossref.org/works/10.3390/s26175595
+  survey_doi_353abec881f4d997:
+    first_public: '2026-03-16'
+    venue: HRI
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.02951
+    - https://api.crossref.org/works/10.1145/3757279.3785641
+  survey_doi_ddc6fc88fa219f08:
+    first_public: '2026-08-04'
+    venue: Front. Comput. Sci.
+    venue_year: 2026
+    sources:
+    - https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1848830/full
+    - https://api.crossref.org/works/10.3389/fcomp.2026.1848830
+  survey_iclr_2026_8833c8aa:
+    first_public: null
+    venue: ICLR
+    venue_year: 2026
+    sources:
+    - https://proceedings.iclr.cc/paper_files/paper/2026/hash/8833c8aa10542d24d693bbaf6a4598f5-Abstract-Conference.html
+  survey_pmlr_v305_feng25b:
+    first_public: '2025-02-23'
+    venue: CoRL
+    venue_year: 2025
+    sources:
+    - https://arxiv.org/abs/2502.16707
+    - https://proceedings.mlr.press/v305/feng25b.html
+    - https://proceedings.mlr.press/v305/
+  survey_ax_2609_40306:
+    first_public: '2026-09-30'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.40306
+  survey_ax_2606_12372:
+    first_public: '2026-06-10'
+    venue: CoRL
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.12372
+    - https://github.com/Denghaoyuan123/UniIntervene
+  survey_ax_2605_18727:
+    first_public: '2026-05-18'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2605.18727
+  survey_ax_2609_32698:
+    first_public: '2026-09-26'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.32698

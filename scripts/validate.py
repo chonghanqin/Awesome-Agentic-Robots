@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check the public manuscript snapshot, safe markup and generated README."""
 from collections import Counter
+from datetime import date
 from html.parser import HTMLParser
 from pathlib import Path
 import re
@@ -68,6 +69,37 @@ def load_records(name):
 
 def load_papers(): return load_records('papers')
 def load_tables(): return load_records('tables')
+
+
+def load_publications(papers):
+    data = yaml.safe_load((ROOT/'data/publications.yaml').read_text(encoding='utf-8'))
+    if not isinstance(data, dict) or set(data) != {'checked_on', 'papers'}:
+        raise ValueError('Invalid publication metadata')
+    cutoff = date.fromisoformat(data['checked_on'])
+    records = data['papers']
+    if not isinstance(records, dict) or set(records) != {p['id'] for p in papers}:
+        raise ValueError('Publication metadata must cover every work exactly once')
+    for record in records.values():
+        if set(record) != {'first_public', 'venue', 'venue_year', 'sources'}:
+            raise ValueError('Invalid publication record')
+        first = record['first_public']
+        if first is not None:
+            if not isinstance(first, str) or not re.fullmatch(r'\d{4}(?:-\d{2}(?:-\d{2})?)?', first):
+                raise ValueError('Invalid first public date')
+            padded = first + {4: '-01-01', 7: '-01', 10: ''}[len(first)]
+            if date.fromisoformat(padded) > cutoff:
+                raise ValueError('First public date is after the verification cutoff')
+        if not isinstance(record['venue'], str) or not record['venue'].strip():
+            raise ValueError('Missing venue')
+        year = record['venue_year']
+        if year is not None and (type(year) is not int or not 1900 <= year <= cutoff.year):
+            raise ValueError('Invalid venue year')
+        if first is None and year is None:
+            raise ValueError('A record needs a verified date or venue year')
+        if not isinstance(record['sources'], list) or not record['sources']:
+            raise ValueError('Publication metadata needs source URLs')
+        for source in record['sources']: url(source)
+    return records
 
 
 def load_additions(papers):
@@ -143,10 +175,11 @@ def main():
     try:
         papers, tables = load_papers(), load_tables(); counts = validate(papers, tables)
         additions = load_additions(papers)
+        publications = load_publications(papers + additions)
         from generate_readme import updated_readme, listing_rows
         readme = (ROOT/'README.md').read_text(encoding='utf-8')
         if updated_readme(readme, papers, tables) != readme: raise ValueError('README is stale')
-        listed = sum(len(listing_rows(t, additions)) for t in tables)
+        listed = sum(len(listing_rows(t, additions, publications)) for t in tables)
         print(f'PASS: {len(papers)+len(additions)} works, {len(tables)} paper lists, {listed} listed entries '
               f'({sum(counts.values())} source comparison rows)')
         for key,count in counts.items(): print(f'  {key}: {count} source rows')

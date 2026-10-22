@@ -5,7 +5,7 @@ from hashlib import sha256
 from html import escape
 from urllib.parse import quote
 
-from validate import DOMAINS, ROOT, load_additions, load_papers, load_tables, validate
+from validate import DOMAINS, ROOT, load_additions, load_papers, load_publications, load_tables, validate
 
 BEGIN = '<!-- BEGIN AUTO-GENERATED PAPER LIST -->'
 END = '<!-- END AUTO-GENERATED PAPER LIST -->'
@@ -31,7 +31,22 @@ def icon_link(label, name, url):
     return link(icon, url)
 
 
-def listing_rows(table, additions=()):
+def publication_sort_key(record):
+    first = record['first_public']
+    parts = [int(part) for part in (first or str(record['venue_year'])).split('-')]
+    return tuple(parts + [0] * (3 - len(parts)))
+
+
+def publication_label(record):
+    first = record['first_public']
+    released = first[:7].replace('-', '/') if first else ''
+    venue = record['venue']
+    if venue != 'arXiv' and record['venue_year'] is not None:
+        venue += ' ' + str(record['venue_year'])
+    return ' · '.join(part for part in (released, venue) if part)
+
+
+def listing_rows(table, additions=(), publications=None):
     # Annotation output groups can repeat a work; list each work once per category.
     grouped = {}
     for row in table['rows']:
@@ -39,15 +54,19 @@ def listing_rows(table, additions=()):
     for p in additions:
         if table['key'] in p['categories']:
             grouped[p['id']] = [dict(bibkey=p['id'], paper=p['paper'], code=p['code'], code_partial=False)]
-    return list(grouped.values())
+    rows = list(grouped.values())
+    if publications is not None:
+        rows.sort(key=lambda group: publication_sort_key(publications[group[0]['bibkey']]), reverse=True)
+    return rows
 
 
-def table_lines(table, papers, additions=()):
+def table_lines(table, papers, additions, publications):
     lines = ['<table width="100%">', '<thead><tr>',
-             '<th width="89%" align="left">Paper Title</th>',
-             '<th width="11%" align="center" nowrap>Code</th>',
+             '<th width="20%" align="left">Publication</th>',
+             '<th width="70%" align="left">Paper Title</th>',
+             '<th width="10%" align="center" nowrap>Code</th>',
              '</tr></thead>', '<tbody>']
-    for rows in listing_rows(table, additions):
+    for rows in listing_rows(table, additions, publications):
         row = rows[0]
         # Prefer a recorded code link if another annotation group supplies it.
         codes = {r['code'] for r in rows if r['code']}
@@ -56,7 +75,8 @@ def table_lines(table, papers, additions=()):
         title = link(escape(papers[row['bibkey']]['title']), row['paper'])
         links = icon_link('GitHub repository', 'github', code) if code else '—'
         if any(r['code_partial'] for r in rows): links += '<sup>†</sup>'
-        lines.append('<tr><td>'+title+'</td><td align="center" nowrap>'+links+'</td></tr>')
+        publication = escape(publication_label(publications[row['bibkey']]))
+        lines.append('<tr><td>'+publication+'</td><td>'+title+'</td><td align="center" nowrap>'+links+'</td></tr>')
     lines += ['</tbody>', '</table>']
     if any(row['code_partial'] for row in table['rows']):
         lines += ['<p><sup>†</sup> Partial code release.</p>']
@@ -65,6 +85,7 @@ def table_lines(table, papers, additions=()):
 
 def render(papers, tables):
     validate(papers,tables); additions = load_additions(papers)
+    publications = load_publications(papers + additions)
     lookup = {p['id']:p for p in papers + additions}; lines=[]
     for domain in DOMAINS:
         navigation = ' · '.join(link(escape(category), '#'+category.lower().replace(' ', '-'))
@@ -79,7 +100,7 @@ def render(papers, tables):
             if table['domain'] == domain:
                 anchor = table['category'].lower().replace(' ', '-')
                 lines += [f'<a id="{anchor}"></a>', '',
-                          f'#### {domain} · {table["category"]}', '', *table_lines(table,lookup,additions), '']
+                          f'#### {domain} · {table["category"]}', '', *table_lines(table,lookup,additions,publications), '']
         lines += ['<p align="right"><a href="#taxonomy">↑ Back to contents</a></p>', '', '---', '']
     return '\n'.join(lines)
 
