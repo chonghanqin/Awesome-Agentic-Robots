@@ -73,9 +73,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.17210v1">FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence</a></td><td align="center" nowrap><a href="https://github.com/FluxVLA/FluxVLA"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -102,9 +102,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29389v1">Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation</a></td><td align="center" nowrap><a href="https://github.com/Robo-Harness/k1"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -134,9 +134,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.27720v1">CoRelNav: Collaborative Relational Navigation for Multi-Robot Spatially Constrained Semantic Navigation</a></td><td align="center" nowrap>—</td></tr>
@@ -180,9 +180,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29389v1">Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation</a></td><td align="center" nowrap><a href="https://github.com/Robo-Harness/k1"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -216,9 +216,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.32698">SEES: A Self-Evolving Embodied System via Failure-Guided VLA Policy Adaptation</a></td><td align="center" nowrap>—</td></tr>
@@ -267,9 +267,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.38905v3">EmbodiRSI: Recursive Self-Improvement for Data-Efficient Robot Adaptation</a></td><td align="center" nowrap>—</td></tr>
@@ -297,9 +297,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.39378v2">EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos</a></td><td align="center" nowrap><a href="https://github.com/Ropedia/EgoTools"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -330,9 +330,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.34484v1">ARS: Agentic Reward System for Robot Learning</a></td><td align="center" nowrap>—</td></tr>
@@ -363,9 +363,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.04432v2">Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos</a></td><td align="center" nowrap><a href="https://github.com/AetherLabsAI/Video2World"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -402,9 +402,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.07969">EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation</a></td><td align="center" nowrap>—</td></tr>
@@ -431,9 +431,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.10409v1">RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments</a></td><td align="center" nowrap>—</td></tr>
@@ -490,9 +490,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>
@@ -527,9 +527,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29964">World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal</a></td><td align="center" nowrap>—</td></tr>
@@ -569,9 +569,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>
@@ -618,9 +618,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.02204">Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents</a></td><td align="center" nowrap>—</td></tr>
@@ -668,9 +668,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.11225">Harness Robotic OS: A Unified Embodied-Agent Runtime for Closed-Loop Quadruped Inspection</a></td><td align="center" nowrap>—</td></tr>
@@ -710,9 +710,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 
 <table width="100%">
 <thead><tr>
-<th width="15%" align="left">Publication</th>
+<th width="19%" align="left">Publication</th>
 <th width="75%" align="left">Paper Title</th>
-<th width="10%" align="center" nowrap>Code</th>
+<th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>

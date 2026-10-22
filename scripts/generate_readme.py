@@ -62,9 +62,9 @@ def listing_rows(table, additions=(), publications=None):
 
 def table_lines(table, papers, additions, publications):
     lines = ['<table width="100%">', '<thead><tr>',
-             '<th width="15%" align="left">Publication</th>',
+             '<th width="19%" align="left">Publication</th>',
              '<th width="75%" align="left">Paper Title</th>',
-             '<th width="10%" align="center" nowrap>Code</th>',
+             '<th width="6%" align="center" nowrap>Code</th>',
              '</tr></thead>', '<tbody>']
     for rows in listing_rows(table, additions, publications):
         row = rows[0]
