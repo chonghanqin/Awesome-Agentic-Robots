@@ -2022,3 +2022,10 @@ papers:
     sources:
     - https://arxiv.org/abs/2610.22496
     - https://robot-agent-exploration.com/
+  report_flora_2026:
+    first_public: '2026-10-20'
+    venue: Report
+    venue_year: 2026
+    sources:
+    - https://research.nvidia.com/labs/gear/flora/assets/paper/flora.pdf?v=2026-10-19c
+    - https://research.nvidia.com/labs/gear/flora/

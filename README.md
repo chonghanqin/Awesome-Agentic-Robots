@@ -304,6 +304,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/10 · Report’26</td><td><a href="https://research.nvidia.com/labs/gear/flora/assets/paper/flora.pdf?v=2026-10-19c">Flora: An Open Model Suite for Scaling Robotics Data Engines</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.39378v2">EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos</a></td><td align="center" nowrap><a href="https://github.com/Ropedia/EgoTools"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · NeurIPS’26</td><td><a href="https://arxiv.org/abs/2609.37655">Exemplar2VQA: A Scalable Exemplar-Driven Visual Question Answering Generation Framework via Multi-Agent Coding</a></td><td align="center" nowrap><a href="https://github.com/yingjiayu12/Exemplar2VQA"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.34484v1">ARS: Agentic Reward System for Robot Learning</a></td><td align="center" nowrap>—</td></tr>
