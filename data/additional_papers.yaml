@@ -33,3 +33,45 @@
   code: null
   venue: arXiv
   year: 2026
+- id: project_embodied_first_exam
+  title: Embodied First Exam
+  categories:
+  - environment.benchmarking
+  paper: https://www.embodied-first-exam.ai/
+  code: https://github.com/mll-lab-nu/embodied-first-exam
+  venue: Project
+  year: 2026
+- id: survey_ax_2610_22471
+  title: Has GPT-6-Astra Achieved Embodied Intelligence?
+  categories:
+  - environment.benchmarking
+  paper: https://arxiv.org/abs/2610.22471
+  code: https://github.com/OpenSenseNova/SenseNova-RoboRSI
+  code_partial: true
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2610_27039
+  title: 'Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning'
+  categories:
+  - environment.benchmarking
+  paper: https://arxiv.org/abs/2610.27039
+  code: https://github.com/Winniechen2002/Embodied-Playground
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2610_30136
+  title: Agentic World Action Models
+  categories:
+  - model.planning
+  - model.robot_control
+  paper: https://arxiv.org/abs/2610.30136
+  code: https://github.com/ZhuoyangLiu2005/agentic-wam
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2610_22496
+  title: Scaling Online Exploration for Robot Agents
+  categories:
+  - harness.skills
+  paper: https://arxiv.org/abs/2610.22496
+  code: https://github.com/robot-agent-exploration/rax
+  venue: arXiv
+  year: 2026

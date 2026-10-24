@@ -106,7 +106,7 @@ def load_additions(papers):
     additions = load_records('additional_papers')
     ids = {p['id'] for p in papers}
     for p in additions:
-        if set(p) != {'id', 'title', 'categories', 'paper', 'code', 'venue', 'year'}:
+        if set(p) - {'code_partial'} != {'id', 'title', 'categories', 'paper', 'code', 'venue', 'year'}:
             raise ValueError('Unexpected additional paper schema')
         if not isinstance(p['id'], str) or not re.fullmatch(r'[\w:.\-/]+', p['id']) or p['id'] in ids:
             raise ValueError('Duplicate or invalid additional paper identity')
@@ -117,6 +117,8 @@ def load_additions(papers):
         if not isinstance(cats, list) or not cats or len(cats) != len(set(cats)) or set(cats)-TAXONOMY.keys():
             raise ValueError('Unknown or duplicate additional paper placements')
         url(p['paper']); url(p['code'], optional=True)
+        if type(p.get('code_partial', False)) is not bool or p.get('code_partial') and not p['code']:
+            raise ValueError('Invalid additional partial code release')
         if not isinstance(p['venue'], str) or not p['venue'].strip() or type(p['year']) is not int:
             raise ValueError('Invalid additional paper venue or year')
     return additions

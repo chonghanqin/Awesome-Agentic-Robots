@@ -139,6 +139,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.30136">Agentic World Action Models</a></td><td align="center" nowrap><a href="https://github.com/ZhuoyangLiu2005/agentic-wam"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.27720v1">CoRelNav: Collaborative Relational Navigation for Multi-Robot Spatially Constrained Semantic Navigation</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.27526v2">NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation</a></td><td align="center" nowrap><a href="https://github.com/liujy25/NavProbe"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.26360v1">Hierarchical Floorplan-Guided Vision-Language Exploration for Embodied Question Answering</a></td><td align="center" nowrap><a href="https://github.com/ntnu-arl/hflex_eqa"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -185,6 +186,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.30136">Agentic World Action Models</a></td><td align="center" nowrap><a href="https://github.com/ZhuoyangLiu2005/agentic-wam"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29389v1">Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation</a></td><td align="center" nowrap><a href="https://github.com/Robo-Harness/k1"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29964v1">World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · CoRL’26</td><td><a href="https://arxiv.org/abs/2609.28429v1">Watch, Recall, Act: Always-On Robots in Concurrent Embodied Streams</a></td><td align="center" nowrap>—</td></tr>
@@ -436,6 +438,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/10 · Project</td><td><a href="https://www.embodied-first-exam.ai/">Embodied First Exam</a></td><td align="center" nowrap><a href="https://github.com/mll-lab-nu/embodied-first-exam"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.27039">Embodied Playground: A Long-Horizon Agentic Robotics Benchmark for Physical, Strategic, and Spatial Reasoning</a></td><td align="center" nowrap><a href="https://github.com/Winniechen2002/Embodied-Playground"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.22471">Has GPT-6-Astra Achieved Embodied Intelligence?</a></td><td align="center" nowrap><a href="https://github.com/OpenSenseNova/SenseNova-RoboRSI"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a><sup>†</sup></td></tr>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.10409v1">RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.00854">Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena</a></td><td align="center" nowrap><a href="https://github.com/embodied-agent-arena/embodied-agent-arena"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.27308v2">EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics</a></td><td align="center" nowrap><a href="https://github.com/EmbodiedSWE/EmbodiedSWE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -468,6 +473,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <tr><td>23/06 · NeurIPS’23</td><td><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/8c3c666820ea055a77726d66fc7d447f-Abstract-Datasets_and_Benchmarks.html">LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning</a></td><td align="center" nowrap><a href="https://github.com/Lifelong-Robot-Learning/LIBERO"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 </tbody>
 </table>
+<p><sup>†</sup> Partial code release.</p>
 
 <p align="right"><a href="#taxonomy">↑ Back to contents</a></p>
 
@@ -623,6 +629,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.22496">Scaling Online Exploration for Robot Agents</a></td><td align="center" nowrap><a href="https://github.com/robot-agent-exploration/rax"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.02204">Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.37810">Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents</a></td><td align="center" nowrap><a href="https://github.com/SII-dannyXSC/RoboSkill"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29166">HarnessPAI: An Evolving Harness for Physical AI</a></td><td align="center" nowrap>—</td></tr>

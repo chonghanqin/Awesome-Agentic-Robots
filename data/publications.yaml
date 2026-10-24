@@ -1,4 +1,4 @@
-checked_on: '2026-10-22'
+checked_on: '2026-10-24'
 papers:
   adaptation_ax_2212_07398:
     first_public: '2022-12-14'
@@ -1986,3 +1986,39 @@ papers:
     venue_year: 2026
     sources:
     - https://arxiv.org/abs/2609.32698
+  project_embodied_first_exam:
+    first_public: '2026-10-19'
+    venue: Project
+    venue_year: null
+    sources:
+    - https://www.embodied-first-exam.ai/
+    - https://github.com/mll-lab-nu/embodied-first-exam
+  survey_ax_2610_22471:
+    first_public: '2026-10-15'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.22471
+    - https://www.sensenova.ai/has-gpt-6-astra-achieved-embodied-intelligence
+    - https://github.com/OpenSenseNova/SenseNova-RoboRSI
+  survey_ax_2610_27039:
+    first_public: '2026-10-19'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.27039
+    - https://winniechen2002.github.io/Agent-bench-website/
+  survey_ax_2610_30136:
+    first_public: '2026-10-21'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.30136
+    - https://agentic-wam.github.io/
+  survey_ax_2610_22496:
+    first_public: '2026-10-15'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.22496
+    - https://robot-agent-exploration.com/

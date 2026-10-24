@@ -53,7 +53,8 @@ def listing_rows(table, additions=(), publications=None):
         grouped.setdefault(row['bibkey'], []).append(row)
     for p in additions:
         if table['key'] in p['categories']:
-            grouped[p['id']] = [dict(bibkey=p['id'], paper=p['paper'], code=p['code'], code_partial=False)]
+            grouped[p['id']] = [dict(bibkey=p['id'], paper=p['paper'], code=p['code'],
+                                     code_partial=p.get('code_partial', False))]
     rows = list(grouped.values())
     if publications is not None:
         rows.sort(key=lambda group: publication_sort_key(publications[group[0]['bibkey']]), reverse=True)
@@ -66,7 +67,8 @@ def table_lines(table, papers, additions, publications):
              '<th width="75%" align="left">Paper Title</th>',
              '<th width="6%" align="center" nowrap>Code</th>',
              '</tr></thead>', '<tbody>']
-    for rows in listing_rows(table, additions, publications):
+    groups = listing_rows(table, additions, publications)
+    for rows in groups:
         row = rows[0]
         # Prefer a recorded code link if another annotation group supplies it.
         codes = {r['code'] for r in rows if r['code']}
@@ -78,7 +80,7 @@ def table_lines(table, papers, additions, publications):
         publication = escape(publication_label(publications[row['bibkey']]))
         lines.append('<tr><td>'+publication+'</td><td>'+title+'</td><td align="center" nowrap>'+links+'</td></tr>')
     lines += ['</tbody>', '</table>']
-    if any(row['code_partial'] for row in table['rows']):
+    if any(row['code_partial'] for group in groups for row in group):
         lines += ['<p><sup>†</sup> Partial code release.</p>']
     return lines
 
