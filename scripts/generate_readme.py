@@ -76,12 +76,9 @@ def table_lines(table, papers, additions, publications):
         code = next(iter(codes), None)
         title = link(escape(papers[row['bibkey']]['title']), row['paper'])
         links = icon_link('GitHub repository', 'github', code) if code else '—'
-        if any(r['code_partial'] for r in rows): links += '<sup>†</sup>'
         publication = escape(publication_label(publications[row['bibkey']]))
         lines.append('<tr><td>'+publication+'</td><td>'+title+'</td><td align="center" nowrap>'+links+'</td></tr>')
     lines += ['</tbody>', '</table>']
-    if any(row['code_partial'] for group in groups for row in group):
-        lines += ['<p><sup>†</sup> Partial code release.</p>']
     return lines
 
 
