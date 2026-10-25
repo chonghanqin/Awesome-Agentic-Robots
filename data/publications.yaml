@@ -2029,3 +2029,10 @@ papers:
     sources:
     - https://research.nvidia.com/labs/gear/flora/assets/paper/flora.pdf?v=2026-10-19c
     - https://research.nvidia.com/labs/gear/flora/
+  survey_ax_2610_01863:
+    first_public: '2026-10-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.01863
+    - https://github.com/LiteReality/LiteReality-Agent

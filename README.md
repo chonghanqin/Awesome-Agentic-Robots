@@ -501,6 +501,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.01863">LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction</a></td><td align="center" nowrap><a href="https://github.com/LiteReality/LiteReality-Agent"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.23997">RoboTalk: Learning Multi-Robot Communication and Coordination from Multimodal Demonstrations</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.18520">AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution</a></td><td align="center" nowrap><a href="https://github.com/Admire-ljb/AeroWeaver"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>

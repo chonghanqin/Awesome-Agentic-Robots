@@ -83,3 +83,11 @@
   code: null
   venue: Report
   year: 2026
+- id: survey_ax_2610_01863
+  title: 'LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction'
+  categories:
+  - harness.orchestration
+  paper: https://arxiv.org/abs/2610.01863
+  code: https://github.com/LiteReality/LiteReality-Agent
+  venue: arXiv
+  year: 2026
