@@ -1,4 +1,4 @@
-checked_on: '2026-10-24'
+checked_on: '2026-10-30'
 papers:
   adaptation_ax_2212_07398:
     first_public: '2022-12-14'
@@ -2036,3 +2036,46 @@ papers:
     sources:
     - https://arxiv.org/abs/2610.01863
     - https://github.com/LiteReality/LiteReality-Agent
+  survey_ax_2610_18867:
+    first_public: '2026-10-13'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.18867
+    - https://lab.einsia.ai/embodiedevo/
+  survey_ax_2610_34649:
+    first_public: '2026-10-26'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.34649
+    - https://aetherlabsai.github.io/RobotAgentBench/
+  survey_ax_2610_35832:
+    first_public: '2026-09'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.35832
+    - https://internrobotics.github.io/EBench-Astra-Tech-Report/
+    - https://github.com/InternRobotics/EBench
+  survey_ax_2610_35385:
+    first_public: '2026-10-26'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.35385
+    - https://github.com/HexaFuture/EmbodiedLab
+  survey_ax_2610_34527:
+    first_public: '2026-10-25'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.34527
+    - https://github.com/PhysLadder-Benchmark/PhysLadder
+  project_physical_rsi_robocasa:
+    first_public: null
+    venue: Project
+    venue_year: 2026
+    sources:
+    - https://stacx-lab.github.io/physical-rsi/
+    - https://stacx-lab.github.io/kinex/

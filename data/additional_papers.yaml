@@ -91,3 +91,52 @@
   code: https://github.com/LiteReality/LiteReality-Agent
   venue: arXiv
   year: 2026
+- id: survey_ax_2610_18867
+  title: 'EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence'
+  categories:
+  - harness.skills
+  paper: https://arxiv.org/abs/2610.18867
+  code: https://github.com/Einsia/EmbodiedEvo
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2610_34649
+  title: 'RobotAgentBench: Towards Open-world Robot Autonomy'
+  categories:
+  - environment.benchmarking
+  paper: https://arxiv.org/abs/2610.34649
+  code: https://github.com/AetherLabsAI/RobotAgentBench
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2610_35832
+  title: 'Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy'
+  categories:
+  - environment.benchmarking
+  - harness.layered_systems
+  paper: https://arxiv.org/abs/2610.35832
+  code: null
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2610_35385
+  title: 'EmbodiedLab: Benchmarking Embodied Agents That Act to Know'
+  categories:
+  - environment.benchmarking
+  paper: https://arxiv.org/abs/2610.35385
+  code: https://github.com/HexaFuture/EmbodiedLab
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2610_34527
+  title: 'How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched Sim-Real Benchmark for Physical Interaction'
+  categories:
+  - environment.benchmarking
+  paper: https://arxiv.org/abs/2610.34527
+  code: https://github.com/PhysLadder-Benchmark/PhysLadder
+  venue: arXiv
+  year: 2026
+- id: project_physical_rsi_robocasa
+  title: Physical RSI on RoboCasa
+  categories:
+  - harness.skills
+  paper: https://stacx-lab.github.io/physical-rsi/
+  code: null
+  venue: Project
+  year: 2026
