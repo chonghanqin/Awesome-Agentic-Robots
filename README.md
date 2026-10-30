@@ -543,6 +543,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.36808">Spotter: Let the Embodied Model Lead, and the VLM Reflect for It</a></td><td align="center" nowrap><a href="https://github.com/zqc3117/Spotter"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29964">World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29389">Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation</a></td><td align="center" nowrap><a href="https://github.com/Robo-Harness/k1"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · CoRL’26</td><td><a href="https://arxiv.org/abs/2609.28429">Watch, Recall, Act: Always-On Robots in Concurrent Embodied Streams</a></td><td align="center" nowrap>—</td></tr>
@@ -586,6 +587,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 </tr></thead>
 <tbody>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>
+<tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.36808">Spotter: Let the Embodied Model Lead, and the VLM Reflect for It</a></td><td align="center" nowrap><a href="https://github.com/zqc3117/Spotter"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.20822v2">Coding Agents with Harness for Safe Robot Control</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.19413">From Rollout to Reset: A Graph-Based Harness for Autonomous Long-Horizon Manipulation Evaluation</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.15195">HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness</a></td><td align="center" nowrap>—</td></tr>

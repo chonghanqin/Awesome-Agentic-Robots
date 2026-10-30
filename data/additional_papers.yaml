@@ -140,3 +140,12 @@
   code: null
   venue: Project
   year: 2026
+- id: survey_ax_2609_36808
+  title: 'Spotter: Let the Embodied Model Lead, and the VLM Reflect for It'
+  categories:
+  - harness.monitoring_and_recovery
+  - harness.memory
+  paper: https://arxiv.org/abs/2609.36808
+  code: https://github.com/zqc3117/Spotter
+  venue: arXiv
+  year: 2026
