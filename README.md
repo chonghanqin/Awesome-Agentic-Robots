@@ -689,6 +689,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.01560">Democratizing Robot-Use Agents: A Unified Harness with Open Models</a></td><td align="center" nowrap><a href="https://github.com/Open-RUA/uni-robot-agent"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.11225">Harness Robotic OS: A Unified Embodied-Agent Runtime for Closed-Loop Quadruped Inspection</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.12075">Efficient Vision-Language-Action Management and Serving for Robot Factories</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.10522">Show-Harness: Just a VLM Agent Can Play Robots</a></td><td align="center" nowrap><a href="https://github.com/showlab/Show-Harness"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>

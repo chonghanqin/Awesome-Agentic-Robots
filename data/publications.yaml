@@ -1,4 +1,4 @@
-checked_on: '2026-10-31'
+checked_on: '2026-11-04'
 papers:
   adaptation_ax_2212_07398:
     first_public: '2022-12-14'
@@ -2086,3 +2086,10 @@ papers:
     sources:
     - https://arxiv.org/abs/2609.36808
     - https://github.com/zqc3117/Spotter
+  survey_ax_2611_01560:
+    first_public: '2026-11-01'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2611.01560
+    - https://github.com/Open-RUA/uni-robot-agent

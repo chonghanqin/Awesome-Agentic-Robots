@@ -149,3 +149,11 @@
   code: https://github.com/zqc3117/Spotter
   venue: arXiv
   year: 2026
+- id: survey_ax_2611_01560
+  title: 'Democratizing Robot-Use Agents: A Unified Harness with Open Models'
+  categories:
+  - harness.infrastructure
+  paper: https://arxiv.org/abs/2611.01560
+  code: https://github.com/Open-RUA/uni-robot-agent
+  venue: arXiv
+  year: 2026
