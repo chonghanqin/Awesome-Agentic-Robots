@@ -50,6 +50,10 @@ Agentic robots use foundation models to guide robot execution and learning. We o
 </tbody>
 </table>
 
+## Recent GitHub Pages project roundup
+
+[Ten recent agentic robotics projects with official GitHub Pages sites](RECENT_GITHUB_IO_PROJECTS.md), verified on November 4, 2026, with project/code/paper links, short descriptions, and explicit date sources.
+
 ## Papers
 
 Dates show the earliest verified public release; revisions do not reset them. Each category is sorted newest first.
