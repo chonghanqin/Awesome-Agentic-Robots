@@ -157,3 +157,11 @@
   code: https://github.com/Open-RUA/uni-robot-agent
   venue: arXiv
   year: 2026
+- id: survey_ax_2607_26148
+  title: 'Embodied Agents Take Control: Minimal-Interface Zero-Shot Agents Rival Industrial-Scale Policies in Vision-and-Language Navigation'
+  categories:
+  - model.robot_control
+  paper: https://arxiv.org/abs/2607.26148
+  code: https://github.com/jianzhou0420/MIP
+  venue: arXiv
+  year: 2026

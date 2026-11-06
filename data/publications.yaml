@@ -2093,3 +2093,9 @@ papers:
     sources:
     - https://arxiv.org/abs/2611.01560
     - https://github.com/Open-RUA/uni-robot-agent
+  survey_ax_2607_26148:
+    first_public: '2026-07-28'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2607.26148
