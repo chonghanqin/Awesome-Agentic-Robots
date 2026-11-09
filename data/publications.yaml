@@ -1,4 +1,4 @@
-checked_on: '2026-11-04'
+checked_on: '2026-11-10'
 papers:
   adaptation_ax_2212_07398:
     first_public: '2022-12-14'
@@ -2099,3 +2099,10 @@ papers:
     venue_year: 2026
     sources:
     - https://arxiv.org/abs/2607.26148
+  survey_ax_2610_22276:
+    first_public: '2026-10-15'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.22276
+    - https://github.com/Fr0zenCrane/MJev-Spatial

@@ -165,3 +165,11 @@
   code: https://github.com/jianzhou0420/MIP
   venue: arXiv
   year: 2026
+- id: survey_ax_2610_22276
+  title: 'MJev-Spatial: System One Spatial Intelligence via Native Attention Matching'
+  categories:
+  - model.perception
+  paper: https://arxiv.org/abs/2610.22276
+  code: https://github.com/Fr0zenCrane/MJev-Spatial
+  venue: arXiv
+  year: 2026
