@@ -173,3 +173,19 @@
   code: https://github.com/Fr0zenCrane/MJev-Spatial
   venue: arXiv
   year: 2026
+- id: survey_ax_2611_03622
+  title: 'D&A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models'
+  categories:
+  - model.training
+  paper: https://arxiv.org/abs/2611.03622
+  code: https://github.com/memmelma/dna
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2609_39207
+  title: 'ASENA: Self-evolving Agents for Embodied Navigation'
+  categories:
+  - harness.skills
+  paper: https://arxiv.org/abs/2609.39207
+  code: null
+  venue: arXiv
+  year: 2026

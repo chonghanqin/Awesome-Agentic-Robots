@@ -1,4 +1,4 @@
-checked_on: '2026-11-10'
+checked_on: '2026-11-11'
 papers:
   adaptation_ax_2212_07398:
     first_public: '2022-12-14'
@@ -2106,3 +2106,17 @@ papers:
     sources:
     - https://arxiv.org/abs/2610.22276
     - https://github.com/Fr0zenCrane/MJev-Spatial
+  survey_ax_2611_03622:
+    first_public: '2026-11-02'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2611.03622
+    - https://weirdlabuw.github.io/dna/
+  survey_ax_2609_39207:
+    first_public: '2026-09-30'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2609.39207
+    - https://research.nvidia.com/labs/gear/asena/
