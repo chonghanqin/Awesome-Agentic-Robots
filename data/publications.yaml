@@ -1,4 +1,4 @@
-checked_on: '2026-11-11'
+checked_on: '2026-11-18'
 papers:
   adaptation_ax_2212_07398:
     first_public: '2022-12-14'
@@ -2120,3 +2120,18 @@ papers:
     sources:
     - https://arxiv.org/abs/2609.39207
     - https://research.nvidia.com/labs/gear/asena/
+  survey_ax_2611_09124:
+    first_public: '2026-11-06'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2611.09124
+    - https://github.com/AutoLab-SAI-SJTU/A2MEAS
+  survey_ax_2611_09892:
+    first_public: '2026-11-06'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2611.09892
+    - https://apple-aiml-research.github.io/ml-amp/
+    - https://github.com/apple-aiml-research/ml-amp

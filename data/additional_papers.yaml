@@ -189,3 +189,19 @@
   code: null
   venue: arXiv
   year: 2026
+- id: survey_ax_2611_09124
+  title: Toward the Era of Agentic Embodied Intelligence
+  categories:
+  - model.adaptation
+  paper: https://arxiv.org/abs/2611.09124
+  code: https://github.com/AutoLab-SAI-SJTU/A2MEAS
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2611_09892
+  title: On Agentic Manipulation Policies
+  categories:
+  - model.robot_control
+  paper: https://arxiv.org/abs/2611.09892
+  code: https://github.com/apple-aiml-research/ml-amp
+  venue: arXiv
+  year: 2026
