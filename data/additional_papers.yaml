@@ -37,9 +37,9 @@
   title: Embodied First Exam
   categories:
   - environment.benchmarking
-  paper: https://www.embodied-first-exam.ai/
+  paper: https://arxiv.org/abs/2611.12177
   code: https://github.com/mll-lab-nu/embodied-first-exam
-  venue: Project
+  venue: arXiv
   year: 2026
 - id: survey_ax_2610_22471
   title: Has GPT-6-Astra Achieved Embodied Intelligence?

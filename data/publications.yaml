@@ -1,4 +1,4 @@
-checked_on: '2026-11-18'
+checked_on: '2026-11-20'
 papers:
   adaptation_ax_2212_07398:
     first_public: '2022-12-14'
@@ -1988,11 +1988,12 @@ papers:
     - https://arxiv.org/abs/2609.32698
   project_embodied_first_exam:
     first_public: '2026-10-19'
-    venue: Project
-    venue_year: null
+    venue: arXiv
+    venue_year: 2026
     sources:
     - https://www.embodied-first-exam.ai/
     - https://github.com/mll-lab-nu/embodied-first-exam
+    - https://arxiv.org/abs/2611.12177
   survey_ax_2610_22471:
     first_public: '2026-10-15'
     venue: arXiv
