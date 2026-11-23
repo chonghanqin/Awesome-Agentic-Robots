@@ -45,6 +45,7 @@
   title: Has GPT-6-Astra Achieved Embodied Intelligence?
   categories:
   - environment.benchmarking
+  - harness.layered_systems
   paper: https://arxiv.org/abs/2610.22471
   code: https://github.com/OpenSenseNova/SenseNova-RoboRSI
   code_partial: true
@@ -63,6 +64,7 @@
   categories:
   - model.planning
   - model.robot_control
+  - data.annotation
   paper: https://arxiv.org/abs/2610.30136
   code: https://github.com/ZhuoyangLiu2005/agentic-wam
   venue: arXiv
@@ -185,6 +187,7 @@
   title: 'ASENA: Self-evolving Agents for Embodied Navigation'
   categories:
   - harness.skills
+  - harness.layered_systems
   paper: https://arxiv.org/abs/2609.39207
   code: null
   venue: arXiv
@@ -192,7 +195,7 @@
 - id: survey_ax_2611_09124
   title: Toward the Era of Agentic Embodied Intelligence
   categories:
-  - model.adaptation
+  - harness.monitoring_and_recovery
   paper: https://arxiv.org/abs/2611.09124
   code: https://github.com/AutoLab-SAI-SJTU/A2MEAS
   venue: arXiv
@@ -201,6 +204,7 @@
   title: On Agentic Manipulation Policies
   categories:
   - model.robot_control
+  - harness.memory
   paper: https://arxiv.org/abs/2611.09892
   code: https://github.com/apple-aiml-research/ml-amp
   venue: arXiv
@@ -226,7 +230,6 @@
   title: 'EmbodyAgent: Post-Training Embodied VLM Agents via Distillation, SFT, and RL'
   categories:
   - model.training
-  - data.collection
   paper: https://arxiv.org/abs/2611.26196v1
   code: null
   venue: arXiv

@@ -228,7 +228,6 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
-<tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.09124">Toward the Era of Agentic Embodied Intelligence</a></td><td align="center" nowrap><a href="https://github.com/AutoLab-SAI-SJTU/A2MEAS"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.32698">SEES: A Self-Evolving Embodied System via Failure-Guided VLA Policy Adaptation</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.22966v1">Transferring the Intelligence of VLMs to Robotic Control</a></td><td align="center" nowrap><a href="https://github.com/Hugo-AGI/RoboDawn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.19138v1">In-Context Robot Learning with VLM Agents</a></td><td align="center" nowrap><a href="https://github.com/cheng-haha/GPT-Policy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -280,7 +279,6 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
-<tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.26196v1">EmbodyAgent: Post-Training Embodied VLM Agents via Distillation, SFT, and RL</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.38905v3">EmbodiRSI: Recursive Self-Improvement for Data-Efficient Robot Adaptation</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.32069v2">Find Something You Can&#x27;t Do: Agentic Real-World Reinforcement Learning for Self-Improving VLA Models</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.24563">ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation</a></td><td align="center" nowrap>—</td></tr>
@@ -311,6 +309,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.30136">Agentic World Action Models</a></td><td align="center" nowrap><a href="https://github.com/ZhuoyangLiu2005/agentic-wam"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/10 · Report’26</td><td><a href="https://research.nvidia.com/labs/gear/flora/assets/paper/flora.pdf?v=2026-10-19c">Flora: An Open Model Suite for Scaling Robotics Data Engines</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.39378v2">EgoTools: Towards Tool-Centric Reasoning in Real-World Egocentric Videos</a></td><td align="center" nowrap><a href="https://github.com/Ropedia/EgoTools"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · NeurIPS’26</td><td><a href="https://arxiv.org/abs/2609.37655">Exemplar2VQA: A Scalable Exemplar-Driven Visual Question Answering Generation Framework via Multi-Agent Coding</a></td><td align="center" nowrap><a href="https://github.com/yingjiayu12/Exemplar2VQA"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -553,6 +552,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 </tr></thead>
 <tbody>
 <tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.27689v1">Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation</a></td><td align="center" nowrap>—</td></tr>
+<tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.09892">On Agentic Manipulation Policies</a></td><td align="center" nowrap><a href="https://github.com/apple-aiml-research/ml-amp"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.10498v2">EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.36808">Spotter: Let the Embodied Model Lead, and the VLM Reflect for It</a></td><td align="center" nowrap><a href="https://github.com/zqc3117/Spotter"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29964">World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal</a></td><td align="center" nowrap>—</td></tr>
@@ -597,6 +597,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.09124">Toward the Era of Agentic Embodied Intelligence</a></td><td align="center" nowrap><a href="https://github.com/AutoLab-SAI-SJTU/A2MEAS"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.36808">Spotter: Let the Embodied Model Lead, and the VLM Reflect for It</a></td><td align="center" nowrap><a href="https://github.com/zqc3117/Spotter"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.20822v2">Coding Agents with Harness for Safe Robot Control</a></td><td align="center" nowrap>—</td></tr>
@@ -747,7 +748,9 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.22471">Has GPT-6-Astra Achieved Embodied Intelligence?</a></td><td align="center" nowrap><a href="https://github.com/OpenSenseNova/SenseNova-RoboRSI"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.40306">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</a></td><td align="center" nowrap>—</td></tr>
+<tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.39207">ASENA: Self-evolving Agents for Embodied Navigation</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2610.35832">Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/07 · arXiv</td><td><a href="https://arxiv.org/abs/2607.08448">Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents</a></td><td align="center" nowrap><a href="https://github.com/RLinf/RPent"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/06 · arXiv</td><td><a href="https://arxiv.org/abs/2606.10267">What Matters in Orchestrating Robot Policies: A Systematic Study of Hierarchical VLA Agents</a></td><td align="center" nowrap>—</td></tr>
