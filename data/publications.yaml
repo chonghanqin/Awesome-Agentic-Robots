@@ -2136,3 +2136,12 @@ papers:
     - https://arxiv.org/abs/2611.09892
     - https://apple-aiml-research.github.io/ml-amp/
     - https://github.com/apple-aiml-research/ml-amp
+  xlanglab2026robowild:
+    first_public: '2026-11-20'
+    venue: Technical Report
+    venue_year: null
+    sources:
+    - https://huggingface.co/datasets/xlangai/RoboWild/commit/9686dcd13619e6f39bb3ce38c9acc2990d548d67
+    - https://huggingface.co/datasets/xlangai/RoboWild/blob/40a24c8f22fe567da47de49a8cddba7c51ae5560/RoboWild.pdf
+    - https://github.com/xlang-ai/RoboWild
+    - https://github.com/xlang-ai/RoboWild-Harness

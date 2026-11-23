@@ -205,3 +205,12 @@
   code: https://github.com/apple-aiml-research/ml-amp
   venue: arXiv
   year: 2026
+- id: xlanglab2026robowild
+  title: 'RoboWild: Can Frontier Models Generalize to Robot Use in the Wild?'
+  categories:
+  - environment.benchmarking
+  - harness.infrastructure
+  paper: https://huggingface.co/datasets/xlangai/RoboWild/blob/40a24c8f22fe567da47de49a8cddba7c51ae5560/RoboWild.pdf
+  code: https://github.com/xlang-ai/RoboWild
+  venue: Technical Report
+  year: 2026
