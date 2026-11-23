@@ -252,3 +252,13 @@
   code: null
   venue: arXiv
   year: 2026
+- id: nvidia2026gr00t2
+  title: 'GR00T 2: Scaling Robot Foundation Models for Generalization, Dexterity, and Adaptation'
+  categories:
+  - harness.layered_systems
+  - harness.monitoring_and_recovery
+  - model.training
+  paper: https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf
+  code: null
+  venue: Technical Report
+  year: 2026

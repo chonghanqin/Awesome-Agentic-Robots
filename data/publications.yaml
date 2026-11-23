@@ -2175,3 +2175,11 @@ papers:
     sources:
     - https://arxiv.org/abs/2611.27689v1
     - https://arxiv.org/list/cs.RO/recent?skip=0&show=2000
+  nvidia2026gr00t2:
+    first_public: '2026-11-09'
+    venue: Technical Report
+    venue_year: null
+    sources:
+    - https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf
+    - https://research.nvidia.com/labs/gear/gr00t-2/
+    - https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/
