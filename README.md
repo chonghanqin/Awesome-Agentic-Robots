@@ -470,6 +470,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <tr><td>26/07 · arXiv</td><td><a href="https://arxiv.org/abs/2607.08448">Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents</a></td><td align="center" nowrap><a href="https://github.com/RLinf/RPent"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/07 · arXiv</td><td><a href="https://arxiv.org/abs/2607.04434">RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies</a></td><td align="center" nowrap><a href="https://github.com/RoboDojo-Benchmark/RoboDojo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/06 · arXiv</td><td><a href="https://arxiv.org/abs/2607.00272">ASPIRE: Agentic /Skills Discovery for Robotics</a></td><td align="center" nowrap><a href="https://github.com/NVlabs/ASPIRE"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
+<tr><td>26/05 · arXiv</td><td><a href="https://arxiv.org/abs/2606.00828v1">RoboStressBench: Benchmarking VLM Robustness to Physical Visual Stress in Embodied Scenes</a></td><td align="center" nowrap><a href="https://github.com/YUEVII/RoboStressBench"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/05 · arXiv</td><td><a href="https://arxiv.org/abs/2605.26637">Enabling Extensible Embodied Capabilities with Tools</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/05 · arXiv</td><td><a href="https://arxiv.org/abs/2605.18727v3">DexHoldem: An Agentic Robotics Benchmark for Dexterous Manipulation in Texas Hold&#x27;em</a></td><td align="center" nowrap><a href="https://github.com/DexHoldem/Dexholdem-Policy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/05 · arXiv</td><td><a href="https://arxiv.org/abs/2605.10921">RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark</a></td><td align="center" nowrap><a href="https://github.com/OpenHelix-Team/RoboMemArena"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -769,6 +770,15 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 ---
 
 <!-- END AUTO-GENERATED PAPER LIST -->
+
+## Related Surveys
+
+- [Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use](https://arxiv.org/abs/2610.30108) (PAPAV)
+- [Towards Embodied Agentic AI: Review and Classification of LLM- and VLM-Driven Robot Autonomy and Interaction](https://arxiv.org/abs/2508.05294)
+- [Weights or Skills? A Survey of Robot-Learning Techniques: from Action-Predicting Weights to Robots that Write their Own Skills](https://arxiv.org/abs/2608.01851)
+- [In-Context Learning for Robots: Methods and Applications](https://arxiv.org/abs/2609.36012v1)
+- [Code as Agent Harness](https://arxiv.org/abs/2605.18747)
+- [No Free Checker: A Survey of Verifiers for Robot Policies](https://arxiv.org/abs/2609.09250)
 
 ## Contributing
 

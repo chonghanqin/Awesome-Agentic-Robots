@@ -2145,3 +2145,11 @@ papers:
     - https://huggingface.co/datasets/xlangai/RoboWild/blob/40a24c8f22fe567da47de49a8cddba7c51ae5560/RoboWild.pdf
     - https://github.com/xlang-ai/RoboWild
     - https://github.com/xlang-ai/RoboWild-Harness
+  survey_ax_2606_00828:
+    first_public: '2026-05-30'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2606.00828v1
+    - https://www.yingcong.me/publication/2026-wu-robostressbench/
+    - https://github.com/YUEVII/RoboStressBench
