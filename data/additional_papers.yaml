@@ -222,3 +222,30 @@
   code: https://github.com/YUEVII/RoboStressBench
   venue: arXiv
   year: 2026
+- id: survey_ax_2611_26196
+  title: 'EmbodyAgent: Post-Training Embodied VLM Agents via Distillation, SFT, and RL'
+  categories:
+  - model.training
+  - data.collection
+  paper: https://arxiv.org/abs/2611.26196v1
+  code: null
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2610_10498
+  title: 'EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution'
+  categories:
+  - harness.skills
+  - harness.memory
+  paper: https://arxiv.org/abs/2610.10498v2
+  code: null
+  venue: arXiv
+  year: 2026
+- id: survey_ax_2611_27689
+  title: 'Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation'
+  categories:
+  - harness.skills
+  - harness.memory
+  paper: https://arxiv.org/abs/2611.27689v1
+  code: null
+  venue: arXiv
+  year: 2026

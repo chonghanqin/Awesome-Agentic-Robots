@@ -78,6 +78,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.26196v1">EmbodyAgent: Post-Training Embodied VLM Agents via Distillation, SFT, and RL</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.03622">D&amp;A: Decoupling Description and Assessment Enables VLMs as Zero-Shot Robotic Reward Models</a></td><td align="center" nowrap><a href="https://github.com/memmelma/dna"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.17210v1">FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence</a></td><td align="center" nowrap><a href="https://github.com/FluxVLA/FluxVLA"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.01281v1">EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents</a></td><td align="center" nowrap><a href="https://github.com/ZJU4EmbodiedAI/EmbodiedSkills"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -279,6 +280,7 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.26196v1">EmbodyAgent: Post-Training Embodied VLM Agents via Distillation, SFT, and RL</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.38905v3">EmbodiRSI: Recursive Self-Improvement for Data-Efficient Robot Adaptation</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.32069v2">Find Something You Can&#x27;t Do: Agentic Real-World Reinforcement Learning for Self-Improving VLA Models</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.24563">ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation</a></td><td align="center" nowrap>—</td></tr>
@@ -550,6 +552,8 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.27689v1">Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation</a></td><td align="center" nowrap>—</td></tr>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.10498v2">EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.36808">Spotter: Let the Embodied Model Lead, and the VLM Reflect for It</a></td><td align="center" nowrap><a href="https://github.com/zqc3117/Spotter"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29964">World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.29389">Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation</a></td><td align="center" nowrap><a href="https://github.com/Robo-Harness/k1"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
@@ -643,8 +647,10 @@ Dates show the earliest verified public release; revisions do not reset them. Ea
 <th width="6%" align="center" nowrap>Code</th>
 </tr></thead>
 <tbody>
+<tr><td>26/11 · arXiv</td><td><a href="https://arxiv.org/abs/2611.27689v1">Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.22496">Scaling Online Exploration for Robot Agents</a></td><td align="center" nowrap><a href="https://github.com/robot-agent-exploration/rax"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.18867">EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence</a></td><td align="center" nowrap><a href="https://github.com/Einsia/EmbodiedEvo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>
+<tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.10498v2">EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/10 · arXiv</td><td><a href="https://arxiv.org/abs/2610.02204">Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.39207">ASENA: Self-evolving Agents for Embodied Navigation</a></td><td align="center" nowrap>—</td></tr>
 <tr><td>26/09 · arXiv</td><td><a href="https://arxiv.org/abs/2609.37810">Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents</a></td><td align="center" nowrap><a href="https://github.com/SII-dannyXSC/RoboSkill"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg"><img src="assets/icons/github.svg" width="18" height="18" alt="GitHub repository" title="GitHub repository"></picture></a></td></tr>

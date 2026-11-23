@@ -1,4 +1,4 @@
-checked_on: '2026-11-20'
+checked_on: '2026-11-23'
 papers:
   adaptation_ax_2212_07398:
     first_public: '2022-12-14'
@@ -2153,3 +2153,25 @@ papers:
     - https://arxiv.org/abs/2606.00828v1
     - https://www.yingcong.me/publication/2026-wu-robostressbench/
     - https://github.com/YUEVII/RoboStressBench
+  survey_ax_2611_26196:
+    first_public: '2026-11-20'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2611.26196v1
+    - https://arxiv.org/list/cs.RO/recent?skip=0&show=2000
+  survey_ax_2610_10498:
+    first_public: '2026-10-08'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2610.10498v1
+    - https://info.arxiv.org/help/availability.html
+    - https://geeksongs.github.io/agentic_robotics/
+  survey_ax_2611_27689:
+    first_public: '2026-11-23'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2611.27689v1
+    - https://arxiv.org/list/cs.RO/recent?skip=0&show=2000
