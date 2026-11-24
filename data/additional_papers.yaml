@@ -273,3 +273,12 @@
   code_partial: true
   venue: arXiv
   year: 2026
+- id: survey_ax_2611_31201
+  title: 'Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness'
+  categories:
+  - model.robot_control
+  - harness.layered_systems
+  paper: https://arxiv.org/abs/2611.31201v1
+  code: https://github.com/DravenALG/Embo-Harness
+  venue: arXiv
+  year: 2026

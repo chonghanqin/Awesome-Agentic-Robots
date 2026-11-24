@@ -2192,3 +2192,12 @@ papers:
     - https://arxiv.org/list/cs.RO/new
     - https://lab.einsia.ai/robo-universe/
     - https://github.com/Einsia/RoboUniverse-10K
+  survey_ax_2611_31201:
+    first_public: '2026-11-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2611.31201v1
+    - https://arxiv.org/list/cs.RO/recent?skip=0&show=2000
+    - https://dravenalg.github.io/projects/Embo-Harness/
+    - https://github.com/DravenALG/Embo-Harness
