@@ -262,3 +262,14 @@
   code: null
   venue: Technical Report
   year: 2026
+- id: survey_ax_2611_31002
+  title: 'RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments'
+  categories:
+  - environment.reconstruction
+  - environment.benchmarking
+  - model.training
+  paper: https://arxiv.org/abs/2611.31002v1
+  code: https://github.com/Einsia/RoboUniverse-10K
+  code_partial: true
+  venue: arXiv
+  year: 2026

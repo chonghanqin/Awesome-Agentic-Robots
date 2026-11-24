@@ -1,4 +1,4 @@
-checked_on: '2026-11-23'
+checked_on: '2026-11-24'
 papers:
   adaptation_ax_2212_07398:
     first_public: '2022-12-14'
@@ -2183,3 +2183,12 @@ papers:
     - https://research.nvidia.com/labs/gear/gr00t-2/assets/gr00t2_whitepaper.pdf
     - https://research.nvidia.com/labs/gear/gr00t-2/
     - https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/
+  survey_ax_2611_31002:
+    first_public: '2026-11-24'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2611.31002v1
+    - https://arxiv.org/list/cs.RO/new
+    - https://lab.einsia.ai/robo-universe/
+    - https://github.com/Einsia/RoboUniverse-10K
