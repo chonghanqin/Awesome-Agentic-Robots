@@ -2201,3 +2201,12 @@ papers:
     - https://arxiv.org/list/cs.RO/recent?skip=0&show=2000
     - https://dravenalg.github.io/projects/Embo-Harness/
     - https://github.com/DravenALG/Embo-Harness
+  survey_ax_2611_14115:
+    first_public: '2026-11-11'
+    venue: arXiv
+    venue_year: 2026
+    sources:
+    - https://arxiv.org/abs/2611.14115v1
+    - https://info.arxiv.org/help/availability.html
+    - https://zhuqinfeng1999.github.io/LEASH/
+    - https://github.com/zhuqinfeng1999/LEASH

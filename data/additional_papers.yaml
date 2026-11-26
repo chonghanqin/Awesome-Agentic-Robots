@@ -282,3 +282,12 @@
   code: https://github.com/DravenALG/Embo-Harness
   venue: arXiv
   year: 2026
+- id: survey_ax_2611_14115
+  title: 'LEASH: Stay Safe in Agentic Robotics'
+  categories:
+  - harness.monitoring_and_recovery
+  - environment.benchmarking
+  paper: https://arxiv.org/abs/2611.14115v1
+  code: https://github.com/zhuqinfeng1999/LEASH
+  venue: arXiv
+  year: 2026
